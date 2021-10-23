@@ -4,24 +4,24 @@ Version: 1.0.0
 
 [startbootstrap-creative-codexgq](https://github.com/codexgq/startbootstrap-creative-codexgq) is a one page, creative website theme built with [Bootstrap](https://getbootstrap.com/) originally created by [Start Bootstrap](https://startbootstrap.com/) forked by [codexgq](https://codex.gq/).
 
-startbootstrap-creative-codexgq is an official fork of the [Creative](https://github.com/StartBootstrap/startbootstrap-creative) theme by Start Bootstrap. It is based on the Creative ver. 7.0.5 and a stable LTS version.
+startbootstrap-creative-codexgq is an official fork of the [Creative](https://github.com/StartBootstrap/startbootstrap-creative) theme by Start Bootstrap. It is originally based on the Creative ver. 7.0.5 and a rolling release version.
 
 This fork is SEO friendly, multilingual, and has its own features. It also has some custom CSS and JS, and minor changes in UI & UX.
 
 Custom Implementation:
 
-Progressive Web Application
-Application Cache
-HTML5 Link Prefetch
-Include Content
-Lazy-loading
-Prevent Frame
-Extended Meta Data for SEO and responsive browsing experience
-Schema.org (JSON-LD and microdata)
-Dublin Core
-Multilingual
-Offline
-Minor changes in UI & UX
+- Progressive Web Application
+- Application Cache
+- HTML5 Link Prefetch
+- Include Content
+- Lazy-loading
+- Prevent Frame
+- Extended Meta Data for SEO and responsive browsing experience
+- Schema.org (JSON-LD and microdata)
+- Dublin Core
+- Multilingual
+- Offline
+- Minor changes in UI & UX
 
 It has no SimpleLightbox on board. Meanwhile it is supported in the Core Theme JavaScript still and can easily be deployed.
 
@@ -31,7 +31,7 @@ It has no SimpleLightbox on board. Meanwhile it is supported in the Core Theme J
 
 ### Preview of startbootstrap-creative-codexgq
 
-[![Preview](https://github.com/codexgq/startbootstrap-creative-codexgq/assets/uploads/codexgq.png)](https://codex.gq/)
+[![Preview](https://codex.gq/assets/uploads/codexgq.png)](https://codex.gq/)
 
 **[View Live Preview](https://codexgq.github.io/startbootstrap-creative-codexgq/)**
 
