@@ -1,23 +1,67 @@
-# [Start Bootstrap - Creative](https://startbootstrap.com/theme/creative/)
+# [startbootstrap-creative-codexgq](https://github.com/codexgq/startbootstrap-creative-codexgq)
+
+Version: 1.0.0
+
+[startbootstrap-creative-codexgq](https://github.com/codexgq/startbootstrap-creative-codexgq) is a one page, creative website theme built with [Bootstrap](https://getbootstrap.com/) originally created by [Start Bootstrap](https://startbootstrap.com/) forked by [codexgq](https://codex.gq/).
+
+startbootstrap-creative-codexgq is an official fork of the [Creative](https://github.com/StartBootstrap/startbootstrap-creative) theme by Start Bootstrap. It is based on the Creative ver. 7.0.5 and a stable LTS version.
+
+This fork is SEO friendly, multilingual, and has its own features. It also has some custom CSS and JS, and minor changes in UI & UX.
+
+Custom Implementation:
+
+Progressive Web Application
+Application Cache
+HTML5 Link Prefetch
+Include Content
+Lazy-loading
+Prevent Frame
+Extended Meta Data for SEO and responsive browsing experience
+Schema.org (JSON-LD and microdata)
+Dublin Core
+Multilingual
+Offline
+Minor changes in UI & UX
+
+It has no SimpleLightbox on board. Meanwhile it is supported in the Core Theme JavaScript still and can easily be deployed.
 
 [Creative](https://startbootstrap.com/theme/creative/) is a one page, creative website theme built with [Bootstrap](https://getbootstrap.com/) created by [Start Bootstrap](https://startbootstrap.com/).
 
 ## Preview
 
-[![Creative Preview](https://assets.startbootstrap.com/img/screenshots/themes/creative.png)](https://startbootstrap.github.io/startbootstrap-creative/)
+### Preview of startbootstrap-creative-codexgq
+
+[![Preview](https://github.com/codexgq/startbootstrap-creative-codexgq\assets\uploads\codexgq.png)](https://codex.gq/)
+
+**[View Live Preview](https:codex.gq/)**
+
+### Preview of Creative
+
+[![Preview](https://assets.startbootstrap.com/img/screenshots/themes/creative.png)](https://startbootstrap.github.io/startbootstrap-creative/)
 
 **[View Live Preview](https://startbootstrap.github.io/startbootstrap-creative/)**
 
 ## Status
 
+### Status of startbootstrap-creative-codexgq
+
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/codexgq/startbootstrap-creative-codexgq/master/LICENSE)
+
+### Status of Creative
+
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/StartBootstrap/startbootstrap-creative/master/LICENSE)
 [![npm version](https://img.shields.io/npm/v/startbootstrap-creative.svg)](https://www.npmjs.com/package/startbootstrap-creative)
-[![dependencies Status](https://david-dm.org/StartBootstrap/startbootstrap-creative/status.svg)](https://david-dm.org/StartBootstrap/startbootstrap-creative)
-[![devDependencies Status](https://david-dm.org/StartBootstrap/startbootstrap-creative/dev-status.svg)](https://david-dm.org/StartBootstrap/startbootstrap-creative?type=dev)
 
 ## Download and Installation
 
-To begin using this template, choose one of the following options to get started:
+To begin using this template, choose one of the following options to get started.
+
+### Download and Installation of startbootstrap-creative-codexgq
+
+- Clone the repo: `git clone https://github.com/codexgq/startbootstrap-creative-codexgq.git`
+- [Fork, Clone, or Download on GitHub](https://github.com/codexgq/startbootstrap-creative-codexgq)
+
+### Download and Installation of Creative
 
 - [Download the latest release on Start Bootstrap](https://startbootstrap.com/theme/creative/)
 - Install using npm: `npm i startbootstrap-creative`
@@ -28,11 +72,15 @@ To begin using this template, choose one of the following options to get started
 
 ### Basic Usage
 
-After downloading, simply edit the HTML and CSS files included with `dist` directory. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
+After downloading, simply edit the HTML and CSS files included with `dist` directory (Creative). These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
+
+All custom things are already in `master` directory for startbootstrap-creative-codexgq. There is no `dist` directory in this fork.
 
 ### Advanced Usage
 
-Clone the source files of the theme and navigate into the theme's root directory. Run `npm install` and then run `npm start` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `package.json` file to see which scripts are included.
+Clone the source files of the theme and navigate into the theme's root directory.
+
+For Creative itself run `npm install` and then run `npm start` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `package.json` file to see which scripts are included.
 
 #### npm Scripts
 
@@ -60,25 +108,55 @@ access key. Copy this and paste it into the `data-sb-form-api-token='API_TOKEN'`
 If you aren't using SB Forms, simply delete the custom data attributes from the form, and remove the link above the
 closing `</body>` tag to SB Forms.
 
+There is no Contact Form onboard at startbootstrap-creative-codexgq. We use online contact row instead, and third parties services.
+
 ## Bugs and Issues
+
+### Bugs and Issues of startbootstrap-creative-codexgq
+
+Have a bug or an issue with this template? [Open a new issue](https://github.com/codexgq/startbootstrap-creative-codexgq/issues) here on GitHub or leave a comment on the [official website](https://codex.gq/#contact).
+
+### Bugs and Issues of Creative
 
 Have a bug or an issue with this template? [Open a new issue](https://github.com/StartBootstrap/startbootstrap-creative/issues) here on GitHub or leave a comment on the [theme overview page at Start Bootstrap](https://startbootstrap.com/theme/creative/).
 
 ## About
 
+### About codexgq
+
+codexgq, Inc. (CGQ) is doing fast, trendy and well secured websites since 2014.
+
+If you already have a website, CGQ experts will conduct an audit, fix bugs, reduce the loading time of your project dramatically.
+
+If you create a project from the scratch, they will be happy to provide you a support in choosing a registrar, a hosting and a technology stack.
+
+CGQ also does SEO, and SMM. It has its own hosting and domain name registration. It provides solutions for remote work, cybersecurity and cloud.
+
+#### Business Inquiries
+
+Visit [official website](https://codex.gq/) to submit an order or ask a question.
+
+The codexgq project was created and is maintained by **[mitkine a.k.a. computer god](https://www.linkedin.com/mitkine)**.
+
+- [GitHub](https://github.com/mitkine)
+
+### About Start Bootstrap
+
 Start Bootstrap is an open source library of free Bootstrap themes and templates. All of the free themes and templates on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
 
-- <https://startbootstrap.com>
-- <https://twitter.com/SBootstrap>
+- [Website](https://startbootstrap.com/)
+- [Twitter](https://twitter.com/SBootstrap)
 
 Start Bootstrap was created by and is maintained by **[David Miller](https://davidmiller.io/)**.
 
-- <https://davidmiller.io>
-- <https://twitter.com/davidmillerhere>
-- <https://github.com/davidtmiller>
+- [Personal website](https://davidmiller.io/)
+- [Twitter](https://twitter.com/davidmillerhere)
+- [GitHub](https://github.com/davidtmiller)
 
 Start Bootstrap is based on the [Bootstrap](https://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
 
-## Copyright and License
+## Copyright and Licenses
 
 Copyright 2013-2021 Start Bootstrap LLC. Code released under the [MIT](https://github.com/StartBootstrap/startbootstrap-creative/blob/master/LICENSE) license.
+
+Copyright 2014-2021 codexgq, Inc. Code released under the [MIT](https://github.com/codexgq/startbootstrap-creative-codexgq/blob/master/LICENSE) license.
