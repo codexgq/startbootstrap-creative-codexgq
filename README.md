@@ -31,9 +31,9 @@ It has no SimpleLightbox on board. Meanwhile it is supported in the Core Theme J
 
 ### Preview of startbootstrap-creative-codexgq
 
-[![Preview](https://github.com/codexgq/startbootstrap-creative-codexgq\assets\uploads\codexgq.png)](https://codex.gq/)
+[![Preview](https://github.com/codexgq/startbootstrap-creative-codexgq/assets/uploads/codexgq.png)](https://codex.gq/)
 
-**[View Live Preview](https:codex.gq/)**
+**[View Live Preview](https://codexgq.github.io/startbootstrap-creative-codexgq/)**
 
 ### Preview of Creative
 
@@ -72,7 +72,7 @@ To begin using this template, choose one of the following options to get started
 
 ### Basic Usage
 
-After downloading, simply edit the HTML and CSS files included with `dist` directory (Creative). These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
+After downloading, simply edit the HTML and CSS files included with `dist` directory of Creative. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
 
 All custom things are already in `master` directory for startbootstrap-creative-codexgq. There is no `dist` directory in this fork.
 
@@ -136,7 +136,7 @@ CGQ also does SEO, and SMM. It has its own hosting and domain name registration.
 
 Visit [official website](https://codex.gq/) to submit an order or ask a question.
 
-The codexgq project was created and is maintained by **[mitkine a.k.a. computer god](https://www.linkedin.com/mitkine)**.
+The codexgq project was created and is maintained by **[mitkine a.k.a. computer god](https://github.com/mitkine)**.
 
 - [GitHub](https://github.com/mitkine)
 
