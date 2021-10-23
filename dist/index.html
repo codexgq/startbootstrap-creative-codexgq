@@ -1,175 +1,781 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
+<!-- PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd" -->
+<!--[if lt IE 7]>     <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>        <html class="lt-ie9 lt-ie8">        <![endif]-->
+<!--[if IEMobile 7 ]> <html class="iem7" lang="en"> <![endif]-->
+<!--[if IE 8]>        <html class="lt-ie9">               <![endif]-->
+<!--[if gt IE 8]>     <!-->                           <!--<![endif]-->
+<!-- saved from url=(0014)about:internet -->
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head itemscope itemtype="http://schema.org/WPHeader">
+        <!-- Meta Core-->
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Creative - Start Bootstrap Theme</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Bootstrap Icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
-        <!-- SimpleLightbox plugin CSS-->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <!-- XFN 1.1 Profile-->
+        <link rel="profile" href="https://gmpg.org/xfn/11" />
+        <!-- DCMI Profile-->
+        <link rel="profile" href="https://www.dublincore.org/specifications/dublin-core/dc-html/" />
+        <!-- Dublin Core Metatag Initiative-->
+        <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+        <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+        <!-- Proressive Web Application (PWA) for supported browsers is appeared courtesy to SuperPWA (https://superpwa.com/)-->
+        <!-- PWA Manifest-->
+        <link rel="manifest" href="site.webmanifest" />
+        <!-- Application Cache-->
+        <link rel="manifest" href="default.appcache" />
+        <!-- Register Service Worker-->
+        <script>
+            if ("serviceWorker" in navigator) {
+            if (navigator.serviceWorker.controller) {
+            console.log("SuperPWA active service worker found, no need to register.");
+            } else {
+            navigator.serviceWorker
+            .register("https://codex.gq/superpwa-sw.js", {
+            scope: "https://codex.gq/"
+            })
+            .then(function(reg) {
+            console.log("SuperPWA service worker has been registered for scope: " + reg.scope);
+            });
+            }
+            }
+        </script>
+        <!-- A super tiny, native performant library for lazy-loading JS, CSS, images, iframes... Easily speed up a website courtesy to Mai Nhut Tan-->
+        <script>
+        ! function(e, o, t, n, i, r) { // This script should always go inline as early as possible for better performance.
+            function c(e, t) {
+                r ? n(e, t || 32) : i.push(e, t)
+            }
+            function f(e, t, n, i) {
+                return t && o.getElementById(t) || (i = o.createElement(e || 'SCRIPT'), t && (i.id = t), n && (i.onload = n), o.head.appendChild(i)), i || {}
+            }
+            r = /p/.test(o.readyState), e.addEventListener('on' + t in e ? t : 'load', function() {
+                for (r = 1; i[0];) c(i.shift(), i.shift())
+            }), c._ = f, e.defer = c, e.deferscript = function(e, t, n, i) {
+                c(function() {
+                    f('', t, i).src = e
+                }, n)
+            }
+        }(this, document, 'pageshow', setTimeout, []),
+        function(s, n) {
+            var a = 'IntersectionObserver',
+            d = 'src',
+            l = 'lazied',
+            h = 'data-',
+            m = h + l,
+            y = 'load',
+            p = 'forEach',
+            b = 'getAttribute',
+            g = 'setAttribute',
+            v = Function(),
+            I = s.defer || v,
+            c = I._ || v;           
+            function A(e, t) {
+                return [].slice.call((t || n).querySelectorAll(e))
+            }
+            function e(u) {
+                return function(e, t, o, r, c, f) {
+                    I(function(n, t) {
+                        function i(n) {
+                            !1 !== (r || v).call(n, n) && ((f || ['srcset', d, 'style'])[p](function(e, t) {
+                                (t = n[b](h + e)) && n[g](e, t)
+                            }), A('SOURCE', n)[p](i), y in n && n[y]()), n.className += ' ' + (o || l)
+                        }
+                        t = a in s ? (n = new s[a](function(e) {
+                            e[p](function(e, t) {
+                                e.isIntersecting && (t = e.target) && (n.unobserve(t), i(t))
+                            })
+                        }, c)).observe.bind(n) : i, A(e || u + '[' + h + d + ']:not([' + m + '])')[p](function(e) {
+                            e[b](m) || (e[g](m, u), t(e))
+                        })
+                    }, t)
+                }
+            }
+            function t() {
+                I(function(t, n, i, o, r) {
+                    t = A((i = '[type=deferjs]') + ':not(' + (o = '[async]') + ')').concat(A(i + o)),
+                    function e() {
+                        if (0 != t) {
+                            for (o in (i = t.shift()).parentNode.removeChild(i), i.removeAttribute('type'), n = c(i.nodeName), i) 'string' == typeof(r = i[o]) && n[o] != r && (n[o] = r);
+                            n[d] && !n.hasAttribute('async') ? n.onload = n.onerror = e : I(e, .1)
+                        }
+                    }()
+                }, 4)
+            }
+            t(), s.deferstyle = function(t, n, e, i) {
+                I(function(e) {
+                    (e = c('LINK', n, i)).rel = 'stylesheet', e.href = t
+                }, e)
+            }, s.deferimg = e('IMG'), s.deferiframe = e('IFRAME'), I.all = t
+        }(this, document);
+        </script>
+        <!-- Viewpoint Mode-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5.0, minimum-scale=1.0, shrink-to-fit=no" />
+        <!-- Meta Data - Key-->
+        <meta name="description" lang="en" xml:lang="en" content="Development and promotion of the best sites, landing pages, blogs, and online stores." />
+        <meta name="keywords" lang="en" xml:lang="en" content="web development, digital marketing, wordpress, bootstrap, websites, codexgq" />
+        <!-- ...then Item Property for Schema.org-->
+        <meta itemprop="description" content="Development and promotion of the best sites, landing pages, blogs, and online stores." />
+        <meta itemprop="keywords" content="web development, digital marketing, wordpress, bootstrap, websites, codexgq" />
+        <!-- ...and DCMI-->
+        <meta name="DC.Subject" content="web development, digital marketing, wordpress, bootstrap, websites, codexgq" />
+        <meta name="DC.Description" content="Development and promotion of the best sites, landing pages, blogs, and online stores." />
+        <!-- Meta Data - Additional-->
+        <meta name="abstract" content="Web Development" />
+        <!-- ...then Item Property for Schema.org-->
+        <meta itemprop="abstract" content="Web Development" />
+        <!-- ...and DCMI-->
+        <meta name="DC.Abstract" content="Web Development" />
+        <!-- Title (incl. Item Property for Schema.org)-->
+        <title itemprop="headline">codexgq - Moving The Web</title>
+        <!-- ...and DCMI-->
+        <meta name="DC.Title" content="codexgq - Moving The Web" />
+        <meta name="DCTERMS.Alternative" content="codexgq - Moving The Web" />
+        <!-- Cascade Style Sheets Files (CSS)-->
+        <!-- Google Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet preload" as="style" type="text/css" crossorigin="anonymous" media="all" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet preload" as="style" type="text/css" crossorigin="anonymous" media="all" />      
+        <!-- Core Theme CSS (Includes Bootstrap 5.1.0)-->
+        <link href="css/styles.css" rel="stylesheet" type="text/css" />
+        <!-- END Cascade Style Sheets Files (CSS)-->
+        <!-- UI & UX Custom Inline CSS-->
+        <!-- Scroll To Top Button CSS-->
+        <style>
+            #btn-top {
+                display: none;
+                position: fixed;
+                bottom: 24px;
+                right: 16px;
+                z-index: 99998;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                border-radius: 4px;
+                opacity: 0.50;
+                filter: alpha(opacity=50);
+            }
+            #btn-top:hover {
+                opacity: 0.75;
+                filter: alpha(opacity=75);
+            }
+        </style>
+        <!-- Custom Properties CSS-->
+        <style>
+            /*!
+            Active Button on Hover Behavior
+            */
+            .btn-act:hover {
+                opacity: 0.75;
+                filter: alpha(opacity=75);
+            }
+            /*!
+            Button Standard Width
+            */
+            .btn-std {
+                width: 256px;
+            }
+            /*!
+            Element Enlarge on Hover Behavior
+            */
+            .zoom-2x:hover {
+                transform: scale(1.2);   
+            }
+            .zoom-5x:hover {
+                transform: scale(1.5);   
+            }
+        </style>
+        <!-- END Custom Properties CSS-->
+        <!-- Page Section Background Image-->
+        <style>
+            .bg-ps {
+                padding-top: 10rem;
+                padding-bottom: calc(10rem - 0px);
+                background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("assets/img/camomile-flower.jpg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-attachment: scroll;
+                background-size: cover;
+            }
+        </style>
+        <!-- END UI & UX Custom Inline CSS-->
+        <!-- Facebook Open Graph-->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://codex.gq/" />
+        <meta property="og:title" content="codexgq - Moving The Web" />
+        <meta property="og:description" content="Development and promotion of the best sites, landing pages, blogs, and online stores." />
+        <meta property="og:site_name" content="codexgq" />
+        <meta property="og:locale" content="en" />
+        <meta property="og:image" content="https://codex.gq/assets/img/open-graph-image.jpg" />
+        <!-- Open Graph Image Properties-->
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <!-- Twitter Markup-->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="codexgq - Moving The Web" />
+        <meta name="twitter:description" content="Development and promotion of the best sites, landing pages, blogs, and online stores." />
+        <meta name="twitter:country" content="US" />
+        <meta name="twitter:image" content="https://codex.gq/assets/img/twitter-image.jpg" />
+        <meta name="twitter:image:alt" content="codexgq" />
+        <!-- Twitter Image Properties-->
+        <meta name="twitter:image:width" content="1024" />
+        <meta name="twitter:image:height" content="512" />
+        <!-- Favicon Package-->
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="favicon.ico" />
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png" />
+        <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/android-chrome-192x192.png" />
+        <link rel="icon" type="image/png" sizes="194x194" href="assets/icons/favicon-194x194.png" />
+        <link rel="mask-icon" type="image/svg+xml" href="assets/icons/safari-pinned-tab.svg" color="#cd2653" />
+        <meta name="msapplication-TileImage" content="https://codex.gq/assets/icons/mstile-144x144.png" />
+        <!-- iOS Splash Screen-->
+        <!-- Meta Data - Other-->
+        <meta name="copyright" content="codexgq" />
+        <meta name="reply-to" content="info@codex.gq" />
+        <meta name="publisher" content="codexgq" />
+        <meta name="author" content="codexgq" lang="en" xml:lang="en" title="codexgq Team" />
+        <meta name="designer" content="codexgq" />
+        <meta name="rating" content="General" />
+        <meta name="classification" content="Business" />
+        <meta name="distribution" content="Global" />
+        <meta name="generator" content="Bootstrap ver. 5.1.3" />
+        <meta name="template" content="startbootstrap-creative-codexgq ver. 1.0.0 a fork of Start Bootstrap Creative ver. 7.0.5" />
+        <meta name="resource-type" content="Document" />
+        <!-- ...then Item Property for Schema.org-->
+        <meta itemprop="publisher" content="codexgq" />
+        <!-- ...and DCMI-->
+        <meta name="DC.Creator" content="codexgq" />
+        <meta name="DC.Publisher" content="codexgq" />
+        <meta name="DC.Contributor" content="codexgq" />
+        <meta name="DC.Type" content="Service" />
+        <meta name="DC.Format" content="text/html" />
+        <meta name="DC.Rights" content="codexgq" />
+        <meta name="DCTERMS.RightsHolder" content="codexgq" />
+        <meta name="DC.Audience" content="Business" />
+        <!-- Robots-->
+        <meta name="robots" content="noindex, nofollow" />
+        <meta name="googlebot" content="noindex, nofollow" />
+        <meta name="yandex" content="noindex, nofollow" />
+        <meta name="revisit-after" content="" />
+        <!-- Referrer Policy-->
+        <meta name="referrer" content="no-referrer-when-downgrade" />
+        <!-- Mobile-->
+        <meta name="HandheldFriendly" content="True" />
+        <meta name="MobileOptimized" content="320" />
+        <!-- iOS-->
+        <meta name="apple-mobile-web-app-title" content="codexgq" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="apple-touch-fullscreen" content="yes" />
+        <!-- Android-->
+        <meta name="theme-color" content="#ffffff" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <!-- UC Mobile Browser-->
+        <meta name="full-screen" content="yes" />
+        <meta name="browsermode" content="application" />
+        <meta name="imagemode" content="force" />
+        <meta name="nightmode" content="disable" />
+        <meta name="layoutmode" content="fitscreen" />
+        <meta name="full-screen" content="yes" />
+        <!-- QQ Mobile Browser-->
+        <meta name="X5-fullscreen" content="true" />
+        <meta name="X5-page-mode" content="app" />
+        <!--Fast Mode with 360 Browser Enabled-->
+        <meta name="renderer" content="webkit|ie-comp|ie-stand" />
+        <meta name="force-rendering" content="webkit" />
+        <!-- MS Edge Pinned Sites-->
+        <meta name="application-name" content="codexgq" />
+        <meta name="msapplication-tooltip" content="Moving The Web" />
+        <meta name="msapplication-starturl" content="https://codex.gq/" />
+        <meta name="msapplication-config" content="https://codex.gq/assets/icons/browserconfig.xml" />
+        <!-- Windows Color Scheme-->
+        <meta name="msapplication-navbutton-color" content="#ffffff" />
+        <meta name="msapplication-TileColor" content="#2d89ef" />
+        <!-- Separate Tasks-->
+        <meta name="msapplication-task" content="name=Home;
+            action-uri=https://codex.gq/;
+            icon-uri=https://codex.gq/favicon.ico" />
+            <meta name="msapplication-task" content="name=Russian (Русский язык);
+            action-uri=https://codex.gq/ru/;
+            icon-uri=https://codex.gq/favicon.ico" />
+        <!-- Tap Highlighting-->
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- Internet Explorer-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- Display Mode-->
+        <meta name="display" content="standalone" />
+        <!-- Geo Tags-->
+        <meta name="geo.region" content="US, World" />
+        <!-- ...and DCMI-->
+        <meta name="DC.Coverage" content="US, World" />
+        <!-- Content Language-->
+        <meta name="language" content="en" />
+        <!-- ...then Item Property for Schema.org-->
+        <meta itemprop="inLanguage" content="en" />
+        <!-- ...and DCMI-->
+        <meta name="DC.Language" content="en" />
+        <!-- END Content Language-->
+        <!-- SEO Core-->
+        <link itemprop="url" data-rel="canonical" content="https://codex.gq/" href="https://codex.gq/" />
+        <!-- ...and DCMI-->
+        <meta name="DC.Identifier" content="https://codex.gq/" />
+        <link rel="DC.Identifier" href="https://codex.gq/" />
+        <meta name="DC.Relation" content="https://codex.gq/" />
+        <meta name="DCTERMS.isPartOf" content="https://codex.gq/" />
+        <!-- Hreflang Tags-->
+        <!-- English-->
+        <link rel="alternate" hreflang="en" href="https://codex.gq/" lang="en" xml:lang="en" title="Home Page (English, Английский язык)" />
+        <!-- Russian-->
+        <link rel="alternate" hreflang="ru" href="https://codex.gq/ru/" lang="ru" xml:lang="ru" title="Russian (Русский язык)" />
+        <!-- Default-->
+        <link rel="alternate" hreflang="x-default" href="https://codex.gq/" />
+        <!-- END Hreflang Tags-->
+        <!-- Markup (JSON-LD) structured in Schema.org START-->
+        <!-- WebSite Markup-->
+        <script type='application/ld+json'>
+            {
+                "@context": "https://schema.org/",
+                "@graph": [{
+                    "@type": "WebSite",
+                    "@id": "https://codex.gq/#website",
+                    "url": "https://codex.gq/",
+                    "inLanguage": "en, ru",
+                    "name": "codexgq - Moving The Web",
+                    "description": "Development and promotion of the best sites, landing pages, blogs, and online stores.",
+                    "potentialAction": {
+                        "@type": "SearchAction",
+                        "target": "https://codex.gq/?s={query}",
+                        "query-input": "required name=query"
+                    }
+                }, {
+                    "@type": "WebPage",
+                    "@id": "https://codex.gq/#webpage",
+                    "url": "https://codex.gq/",
+                    "inLanguage": "en",
+                    "name": "codexgq - Moving The Web",
+                    "isPartOf": {
+                        "@id": "https://codex.gq/#website"
+                    }
+                }]
+            }
+        </script>
+        <!-- Organization-->
+        <script type='application/ld+json'>
+            {
+                "@context": "https://schema.org/",
+                "@type": "Organization",
+                "name": "codexgq",
+                "@id": "https://codex.gq/#organization",
+                "url": "https://codex.gq/",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://codex.gq/assets/img/logo-snippet.svg",
+                    "width": 1920,
+                    "height": 1080,
+                    "caption": "codexgq - Moving The Web | Logotype",
+                    "@id": "https://codex.gq/#logo"
+                },
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "email": "info@codex.gq",
+                    "contactType": "customer service",
+                    "areaServed": "US, RU, World",
+                    "availableLanguage": ["en", "Russian"]
+                },
+                "sameAs": ["https://store.codex.gq/",
+                "https://git.codex.gq/"
+                ]
+            }
+        </script>
+        <!-- ServiceChannel-->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org/",
+                "@type": "ServiceChannel",
+                "availableLanguage": [{
+                    "@type": "Language",
+                    "name": "English",
+                    "identifier": "EN"
+                }, {
+                    "@type": "Language",
+                    "name": "Russian",
+                    "identifier": "RU"
+                }]
+            }
+        </script>
+        <!-- BreadcrumbList-->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org/",
+                "@type": "BreadcrumbList",
+                "itemListElement": [{
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home Page",
+                    "item": "https://codex.gq/"
+                }, {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Russian (Русский язык)",
+                    "item": "https://codex.gq/ru/"
+                }]
+            }
+        </script>
+        <!-- Product Markup-->
+        <!-- Web Development-->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org/",
+                "@type": "Product",
+                "name": "Web Development",
+                "id": "web-development",
+                "image": "https://codex.gq/assets/img/bg-masthead.jpg",
+                "description": "Development and promotion of the best sites, landing pages, blogs, and online stores.",
+                "brand": {
+                    "@type": "Organization",
+                    "name": "codexgq"
+                },
+                "sku": "GQ-WD-00-EN-RU",
+                "mpn": "N/A",
+                "gtin8": "N/A",
+                "offers": {
+                    "@type": "Offer",
+                    "url": "https://codex.gq/",
+                    "priceCurrency": "USD",
+                    "price": "25",
+                    "priceValidUntil": "2099-12-31",
+                    "availability": "https://schema.org/OnlineOnly"
+                },
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "5",
+                    "ratingCount": "56",
+                    "reviewCount": "12"
+                },
+                "review": {
+                    "@type": "Review",
+                    "name": "Web Development Review",
+                    "reviewBody": "The team has always done a great job on estimating timelines. The best collaboration experience ever.",
+                    "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5"
+                    },
+                    "author": {
+                        "@type": "Person",
+                        "name": "John Alty, Full Stack Web Developer"
+                    },
+                    "publisher": {
+                        "@type": "Organization",
+                        "name": "codexgq"
+                    }
+                }
+            }
+        </script>
+        <!-- HowTo Markup-->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org/",
+                "@type": "HowTo",
+                "name": "Get Hosting and Domain for Free",
+                "description": "Started a new project? Thought about a reliable hosting and a great domain name? Check out our special offer first!",
+                "image": "https://codex.gq/assets/img/air-balloon-night-sky.jpg",
+                "totalTime": "PT5M",
+                "estimatedCost": {
+                    "@type": "MonetaryAmount",
+                    "currency": "USD",
+                    "value": "0"
+                },
+                "supply": {
+                    "@type": "HowToSupply",
+                    "name": "Free Hosting and Domain"
+                },
+                "tool": {
+                    "@type": "HowToTool",
+                    "name": "Web Development"
+                },
+                "step": [{
+                    "@type": "HowToStep",
+                    "text": "Cloud hosting with an unlimited plan and a domain name in a zone of your choice are provided free of charge when ordering a turnkey website.",
+                    "image": "https://codex.gq/assets/img/clouds-from-aircraft-window.jpg",
+                    "name": "We've Got What You Need!",
+                    "url": "https://codex.gq/#free"
+                }, {
+                    "@type": "HowToStep",
+                    "text": "Ready to start your next project with us? Send us a messages and we will get back to you as soon as possible!",
+                    "image": "https://codex.gq/assets/img/young-pilot-with-airplane.jpg",
+                    "name": "Let's Get In Touch!",
+                    "url": "https://codex.gq/#contact"
+                }]
+            }
+        </script>
+        <!-- END Markup (JSON-LD) structured in Schema.org-->
     </head>
-    <body id="page-top">
+    <body id="home">
+        <span id="website"></span>
+        <span id="webpage"></span>
+        <span id="organization"></span>
+        <!-- START SITE CONTENT-->
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#page-top">Start Bootstrap</a>
+                <a class="navbar-brand zoom-2x" href="#home" title="codexgq - Moving The Web">codexgq</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0" itemscope itemtype="https://schema.org/SiteNavigationElement">
+                        <li class="nav-item"><a itemprop="url" class="nav-link" href="#about"><span itemprop="name" content="About">About</span></a></li>
+                        <li class="nav-item"><a itemprop="url" class="nav-link" href="#services"><span itemprop="name" content="Services">Services</span></a></li>
+                        <li class="nav-item"><a itemprop="url" class="nav-link" href="#solutions"><span itemprop="name" content="Solutions">Solutions</span></a></li>
+                        <li class="nav-item"><a itemprop="url" class="nav-link" href="#products"><span itemprop="name" content="Products">Products</span></a></li>
+                        <li class="nav-item"><a itemprop="url" class="nav-link" href="#contact"><span itemprop="name" content="Contact">Contact</span></a></li>
+                        <li class="nav-item"><a itemprop="url" class="nav-link" href="ru"><span itemprop="name" content="Русский">Русский</span></a></li>
                     </ul>
                 </div>
             </div>
         </nav>
+        <!-- END Navigation-->
         <!-- Masthead-->
         <header class="masthead">
             <div class="container px-4 px-lg-5 h-100">
                 <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
                     <div class="col-lg-8 align-self-end">
-                        <h1 class="text-white font-weight-bold">Your Favorite Place for Free Bootstrap Themes</h1>
+                        <h1 class="text-white font-weight-bold">Creating prominent web projects</h1>
                         <hr class="divider" />
                     </div>
                     <div class="col-lg-8 align-self-baseline">
-                        <p class="text-white-75 mb-5">Start Bootstrap can help you build better websites using the Bootstrap framework! Just download a theme and start customizing, no strings attached!</p>
-                        <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
+                        <p class="text-white-75 mb-5">Moving the web with development and promotion of the best sites, landing pages, blogs, and online stores.</p>
+                        <a href="#about" title="Find Out More" aria-label="Find Out More">
+                            <svg class="bi bi-mouse text-primary btn-act zoom-2x" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-label="Find Out More" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3zm4 8a4 4 0 0 1-8 0V5a4 4 0 1 1 8 0v6zM8 0a5 5 0 0 0-5 5v6a5 5 0 0 0 10 0V5a5 5 0 0 0-5-5z"/>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
         </header>
+        <!-- END Masthead-->
         <!-- About-->
-        <section class="page-section bg-primary" id="about">
-            <div class="container px-4 px-lg-5">
+        <section class="page-section" id="about">
+            <div class="container px-4 px-lg-5" style="margin-bottom: -64px;">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 text-center">
-                        <h2 class="text-white mt-0">We've got what you need!</h2>
-                        <hr class="divider divider-light" />
-                        <p class="text-white-75 mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! Choose one of our open source, free to download, and easy to use themes! No strings attached!</p>
-                        <a class="btn btn-light btn-xl" href="#services">Get Started!</a>
+                        <h2 class="mt-0">About us at a glance</h2>
+                        <hr class="divider divider-primary" />
+                        <br>
+                            <h4 class="text-muted mb-4 mt-0">We are doing fast, trendy and well secured web premises, composing digital stories that people love, leveraging advanced technologies for simple solutions to compound challenges.</h4>
+                        <br>
+                        <a class="btn btn-light btn-xl btn-std btn-act border border-2 border-primary bg-white" href="#services" title="Let's Get Started!">Let's Get Started!</a>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- END About-->
+        <div class="container" style="margin-bottom: -32px;">
+            <hr class="my-5">
+        </div>
         <!-- Services-->
         <section class="page-section" id="services">
-            <div class="container px-4 px-lg-5">
-                <h2 class="text-center mt-0">At Your Service</h2>
+            <div class="container px-4 px-lg-5" style="margin-bottom: -128px;">
+                <h2 class="text-center mt-0">Our Services</h2>
                 <hr class="divider" />
                 <div class="row gx-4 gx-lg-5">
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">
-                            <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">Sturdy Themes</h3>
-                            <p class="text-muted mb-0">Our themes are updated regularly to keep them bug free!</p>
+                            <div class="mb-2"><i class="bi-code-slash fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Development</h3>
+                            <p class="text-muted mb-0">Best websites, landing pages, blogs, and online stores.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">
-                            <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">Up to Date</h3>
-                            <p class="text-muted mb-0">All dependencies are kept current to keep things fresh.</p>
+                            <div class="mb-2"><i class="bi-bar-chart fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Marketing</h3>
+                            <p class="text-muted mb-0">SEO and SMM to enforce online media around the world.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-hdd-network fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Hosting</h3>
+                            <p class="text-muted mb-0">Cloud hosting on a clustered platform in global data centers.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">
                             <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">Ready to Publish</h3>
-                            <p class="text-muted mb-0">You can use this design as is, or you can make changes!</p>
+                            <h3 class="h4 mb-2">Domains</h3>
+                            <p class="text-muted mb-0">Domain names registration, DNS services, and SSL certificates.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- .row-->
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-shield-check fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Security</h3>
+                            <p class="text-muted mb-0">Cybersecurity for yor servers, websites and computers.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">
-                            <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">Made with Love</h3>
-                            <p class="text-muted mb-0">Is it really open source if it's not made with love?</p>
+                            <div class="mb-2"><i class="bi-inboxes fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Data Science</h3>
+                            <p class="text-muted mb-0">Big data analysis and applied transformation.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Consulting</h3>
+                            <p class="text-muted mb-0">Support in choosing and planting of a technology stack.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">On-Demand</h3>
+                            <p class="text-muted mb-0">Ad-hoc collaborations aimed to make the world better.</p>
                         </div>
                     </div>
                 </div>
+                <!-- .row-->
             </div>
+            <!-- .container-->
         </section>
-        <!-- Portfolio-->
-        <div id="portfolio">
-            <div class="container-fluid p-0">
-                <div class="row g-0">
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/1.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
+        <!-- END Services-->
+        <!-- Solutions-->
+        <section class="page-section" id="solutions">
+            <div class="container px-4 px-lg-5" style="margin-bottom: -128px;">
+                <h2 class="text-center mt-0">Solutions</h2>
+                <hr class="divider" />
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-hdd-stack fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">CodexHost™</h3>
+                            <p class="text-muted mb-0">Free and paid web hosting, VPS, domains and SSL for everyone.</p>
+                        </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/2.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/2.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
+                    <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-code-square fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">CodexSites™</h3>
+                            <p class="text-muted mb-0">Websites on Bootstrap, WordPress and other popular CMS, and zero-coding.</p>
+                        </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/3.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/3.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/4.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/4.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/5.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/5.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/6.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/6.jpg" alt="..." />
-                            <div class="portfolio-box-caption p-3">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
+                    <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-joystick fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">CodexRemote™</h3>
+                            <p class="text-muted mb-0">Professional solutions for an enhancement of the remote work.</p>
+                        </div>
                     </div>
                 </div>
+                <!-- .row-->
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-clouds fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">CodexCloud™</h3>
+                            <p class="text-muted mb-0">Multi-CDN, peering network, and private repository for all your needs.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-bag-plus fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">CodexLab™</h3>
+                            <p class="text-muted mb-0">Startups digital business acceleration with prominent MVP solutions.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-music-note-list fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">CodexMedia™</h3>
+                            <p class="text-muted mb-0">Promotion of local artists and musicians on global digital marketplaces.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- .row-->
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-tools fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">CodexTools™</h3>
+                            <p class="text-muted mb-0">Simplify problem resolution and troubleshoot website, network, and CDN issues.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-shield-lock fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">CodexShield™</h3>
+                            <p class="text-muted mb-0">Secure your websites, Internet applications, servers, and devices.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-battery-charging fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">CodexSEO™</h3>
+                            <p class="text-muted mb-0">Supercharge your website with search engines love and pigeons.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- .row-->
             </div>
-        </div>
-        <!-- Call to action-->
-        <section class="page-section bg-dark text-white">
-            <div class="container px-4 px-lg-5 text-center">
-                <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
-                <a class="btn btn-light btn-xl" href="https://startbootstrap.com/theme/creative/">Download Now!</a>
+            <!-- .container-->
+        </section>
+        <!-- Solutions-->
+        <!-- Products-->
+        <section class="page-section" id="products">
+            <div class="container px-4 px-lg-5">
+                <h2 class="text-center mt-0">Products</h2>
+                <hr class="divider" />
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-wordpress fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">WordPress</h3>
+                            <p class="text-muted mb-0">42% of the web uses WordPress, from hobby blogs to the biggest news sites online.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-bootstrap fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Bootstrap</h3>
+                            <p class="text-muted mb-0">The most popular HTML, CSS, and JS library in the world to build fast, responsive sites</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-cloud fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Cloudflare</h3>
+                            <p class="text-muted mb-0">A global network which protects and accelerates your websites, apps, and teams.</p>
+                        </div>
+                    </div>
+                    <div style="margin-bottom: 64px;"></div>
+                    <a class="btn btn-primary btn-xl btn-std btn-act" href="#free" title="Get Hosting and Domain for Free">Special Offer</a>
+                </div>
+                <!-- .row-->
             </div>
+            <!-- .container-->
+        </section>
+        <!-- END Products-->
+        <!-- Call to Action-->
+        <section class="page-section bg-ps text-white" id="free">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="text-white mt-0">We've Got What You Need!</h2>
+                        <hr class="divider divider-light" />
+                        <p class="text-white-75 mb-4">Cloud hosting with an unlimited plan and a domain name in a zone of your choice are provided free of charge when ordering a turnkey website. Cloudflare is included as well.</p>
+                        <a class="btn btn-light btn-xl btn-std btn-act" href="#contact" title="Place an Order Online">Order Now</a>
+                    </div>
+                </div>
+                <!-- .row-->
+            </div>
+            <!-- .container-->
         </section>
         <!-- Contact-->
         <section class="page-section" id="contact">
-            <div class="container px-4 px-lg-5">
+            <div class="container px-4 px-lg-5" style="margin-bottom: -64px;">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 col-xl-6 text-center">
                         <h2 class="mt-0">Let's Get In Touch!</h2>
@@ -177,85 +783,297 @@
                         <p class="text-muted mb-5">Ready to start your next project with us? Send us a messages and we will get back to you as soon as possible!</p>
                     </div>
                 </div>
+                <!-- .row-->
                 <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
                     <div class="col-lg-6">
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                <label for="name">Full name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                        <div class="row gx-4 gx-lg-5 justify-content-center">
+                            <div class="col-lg-4 col-md-6 text-center mb-5 mb-lg-0">
+                                <h3 class="h4 mb-2">Email</h3>
+                                <a href="mailto:info@codex.gq" target="_blank" rel="noopener nofolow" aria-label="Email Us" style="text-decoration:none;">
+                                    <div class="zoom-5x"><i class="bi-envelope fs-2 mb-3 text-muted btn-enl" title="Email Us"></i></div>
+                                    <p class="txt-primary">info@codex.gq</p>
+                                </a>
                             </div>
-                            <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                <label for="email">Email address</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <!-- Phone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">Phone number</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
-                            <!-- Message input-->
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                <label for="message">Message</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            <!-- Submit Button-->
-                            <div class="d-grid"><button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Submit</button></div>
-                        </form>
+                            <div class="col-lg-4 col-md-6 text-center mb-5 mb-lg-0">
+                                <h3 class="h4 mb-2">Telegram</h3>
+                                <a href="https://t.me/codexgq" target="_blank" rel="noopener nofolow" aria-label="Telegram Us" style="text-decoration:none;">
+                                    <div class="zoom-5x"><i class="bi-telegram fs-2 mb-3 text-muted btn-act" title="Telegram Us"></i></div>
+                                    <p class="txt-primary">@codexgq</p>
+                                </a>
+                            </div>                    
+                        </div>
                     </div>
                 </div>
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-4 text-center mb-5 mb-lg-0">
-                        <i class="bi-phone fs-2 mb-3 text-muted"></i>
-                        <div>+1 (555) 123-4567</div>
+                <!-- .row-->
+            </div>
+            <!-- .container-->
+        </section>
+        <!-- END Contact-->
+        <!-- X-tra Section-->
+        <section class="py-3">
+            <div class="container" id="logo">
+                <div style="text-align:center; padding-bottom: 32px;">
+                    <a href="javascript:void(0);" title="codexgq - Moving The Web">
+                    <picture>
+                        <source srcset="assets/img/logo-thumbnail.webp" type="image/webp" style="width:384px; height:216px">
+                        <img src="assets/gifs/defer.gif" data-src="assets/img/logo-thumbnail.png" style="width:384px; height:216px" alt="Logotype" aria-hidden="true" />
+                    </picture>
+                    </a>
+                </div>
+                <!-- .logo-->
+                <h6 style="text-align:center;">
+                    <a class="txt-primary" style="text-decoration:none; padding-right: 11px;" href="https://codex.gq/" title="Home Page (English, Английский язык)">EN</a>|
+                    <a class="txt-primary" style="text-decoration:none; padding-left: 8px;" href="https://codex.gq/ru/" title="Russian (Русский язык)">RU</a>
+                </h6>
+                <!-- .languages-->
+            </div>
+            <!-- .container-->
+        </section>
+        <!-- END X-tra Section-->
+        <!-- Footer Menu-->
+        <section class="py-3">
+            <div class="container">
+                <hr class="my-5">
+                <div class="row">
+                    <div class="col-lg-10 col-md-8 mb-5 mb-md-0">
+                        <a style="text-decoration:none;" href="https://www.linkedin.com/company/codexgq" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn">
+                            <i class="bi-linkedin fs-1 text-primary btn-act zoom-2x" title="LinkedIn" aria-hidden="true"></i>
+                        </a>
+                        <a style="text-decoration:none;" href="https://github.com/codexgq" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
+                            <i class="bi-github fs-1 text-primary btn-act" style="padding-left:16px;" title="GitHub" aria-hidden="true"></i>
+                        </a>
                     </div>
+                    <!-- .col-->
+                    <div class="col-lg-2 col-md-4 mb-5 mb-md-0">
+                        <div class="text-uppercase text-muted text-xs mb-4"><h6>Legal</h6></div>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2">
+                                <a style="text-decoration:none;" href="javascript:void(0);">Privacy</a>
+                            </li>
+                            <li class="mb-2">
+                                <a style="text-decoration:none;" href="javascript:void(0);">Terms</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- .col-->
+                </div>
+                <!-- .row-->
+            </div>
+            <!-- .container-->
+        </section>
+        <!-- END Footer Menu-->
+        <!-- Scroll To Top Button HTML-->
+        <i onclick="topFunction()" id="btn-top" class="bi bi-arrow-up-square fs-1 zoom-2x" title="Scroll To Top" aria-hidden="true"></i>  
+        <!-- Footer-->
+        <footer class="bg-light py-5" itemscope itemtype="http://schema.org/WPFooter">
+            <div class="container px-4 px-lg-5">
+                <div class="small text-center text-muted">Copyright &copy; <span itemprop="copyrightYear">2014-2021</span> - <a style="text-decoration:none;" href="javascript:void(0);" title="codexgq, Inc.">codexgq</a>
                 </div>
             </div>
-        </section>
-        <!-- Footer-->
-        <footer class="bg-light py-5">
-            <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2021 - Company Name</div></div>
+            <meta itemprop="copyrightHolder" content="codexgq">
         </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- SimpleLightbox plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <!-- END SITE CONTENT-->
+        <!-- Defer Cascade Style Sheets Files (CSS)-->
+        <script>
+            deferstyle('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css', 3000); // Bootstrap Icons
+        </script>
+        <!-- Defer JavaScript Files (JS)-->
+        <script>
+            deferscript('https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js', 1200) // Bootstrap Core JS
+        </script>
+        <!-- Core Theme JS-->
+        <script defer src="js/scripts.js"></script>
+        <!-- Inline JavaScript (JS)-->
+        <!-- Lazy Load Media-->
+        <script>
+            deferimg('img[data-src],picture[srcset]')
+        </script>
+        <!-- Scroll To Top Button JS-->
+        <script>
+            // Get the button
+            var mybutton = document.getElementById("btn-top");
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {
+                scrollFunction()
+            };
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+        <!-- HTML5 Link Prefetch-->
+        <script>
+        function add_hint(type, url) {
+            if (!type || !url) return;
+            var el = document.createElement("link");
+            el.setAttribute("rel", type);
+            el.setAttribute("href", url);
+            document.getElementsByTagName("head")[0].appendChild(el);
+        }
+        add_hint('prefetch', 'https://fonts.gstatic.com/');
+        add_hint('prefetch', 'https://fonts.googleapis.com/');
+        </script>
+        <!-- Include Content (includes any file content to visual HTML)-->
+        <script>
+        function includeContent() {
+            var z, i, elmnt, file, xhttp;
+            // Loop through a collection of all file (php, html, txt, and etc.) elements.
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                // Search for elements with a certain atrribute.
+                file = elmnt.getAttribute("include-content");
+                if (file) {
+                    // Make an HTTP request using the attribute value as the file name.
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                            // Remove the attribute, and call this function once more.
+                            elmnt.removeAttribute("include-content");
+                            includeContent();
+                        }
+                    }
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    // Exit the function.
+                    return;
+                }
+            }
+        };
+        </script>
+        <script>
+            includeContent();
+        </script>
+        <!-- END Include Content-->
+        <!-- Prevent Frame-->
+        <script>
+            if (top != self) {
+            	  top.location.href = self.location.href;
+              }
+        </script>
+        <!-- Application Cache-->
+        <script>
+        	var appCache = window.applicationCache;
+            // Cache Status...
+        switch (appCache.status) {
+        	case appCache.UNCACHED: // UNCACHED == 0
+        		return 'UNCACHED';
+        		break;
+        	case appCache.IDLE: // IDLE == 1
+        		return 'IDLE';
+        		break;
+        	case appCache.CHECKING: // CHECKING == 2
+        		return 'CHECKING';
+        		break;
+        	case appCache.DOWNLOADING: // DOWNLOADING == 3
+        		return 'DOWNLOADING';
+        		break;
+        	case appCache.UPDATEREADY: // UPDATEREADY == 4
+        		return 'UPDATEREADY';
+        		break;
+        	case appCache.OBSOLETE: // OBSOLETE == 5
+        		return 'OBSOLETE';
+        		break;
+        	default:
+        		return 'UKNOWN CACHE STATUS'; // UKNOWN...
+        		break;
+        };
+        var appCache = window.applicationCache;
+        // Update Cache...
+        appCache.update(); // Attempt to update the user's cache.
+        if (appCache.status == window.applicationCache.UPDATEREADY) {
+        	appCache.swapCache(); // The fetch was successful, swap in the new cache.
+        }
+        // Monitor Cache Update...
+        // Check if a new cache is available on page load.
+        window.addEventListener('load', function(e) {
+        	window.applicationCache.addEventListener('updateready', function(e) {
+        		if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
+        			// Browser downloaded a new app cache.
+        			// Swap it in and reload the page to get the new hotness.
+        			window.applicationCache.swapCache();
+        			if (confirm('A new version of this site is available. Load it?')) {
+        				window.location.reload();
+        			}
+        		} else {
+        			// Manifest didn't changed. Nothing new to server.
+        		}
+        	}, false);
+        }, false);
+        function handleCacheEvent(e) {
+        	// AppCache Events...
+        }
+        function handleCacheError(e) {
+        	alert('Error: Cache failed to update!');
+        };
+        // Fired after the first cache of the manifest.
+        appCache.addEventListener('cached', handleCacheEvent, false);
+        // Checking for an update. Always the first event fired in the sequence.
+        appCache.addEventListener('checking', handleCacheEvent, false);
+        // An update was found. The browser is fetching resources.
+        appCache.addEventListener('downloading', handleCacheEvent, false);
+        // The manifest returns 404 or 410, the download failed,
+        // or the manifest changed while the download was in progress.
+        appCache.addEventListener('error', handleCacheError, false);
+        // Fired after the first download of the manifest.
+        appCache.addEventListener('noupdate', handleCacheEvent, false);
+        // Fired if the manifest file returns a 404 or 410.
+        // This results in the application cache being deleted.
+        appCache.addEventListener('obsolete', handleCacheEvent, false);
+        // Fired for each resource listed in the manifest as it is being fetched.
+        appCache.addEventListener('progress', handleCacheEvent, false);
+        // Fired when the manifest resources have been newly redownloaded.
+        appCache.addEventListener('updateready', handleCacheEvent, false);
+        </script>
+        <!-- END Application Cache-->
+        <!-- END Inline JavaScript (JS)-->
     </body>
+    <!-- This website and its content are build by codexgq Team based on the Creative theme by Start Bootstrap and licensed under the MIT License.
+        *
+        * codexgq - Moving The Web (https://codex.gq)
+        * Created and maintained by Alexey Mitkin (GitHub: https://github.com/mitkine)
+        * Copyright 2014-2021 codexgq, Inc.
+        * GitHub: https://github.com/codexgq/startbootstrap-creative-codexgq
+        *
+        * Start Bootstrap - Creative ver. 7.0.5 (https://startbootstrap.com/theme/creative)
+        * Created and maintained by David Miller (https://davidmiller.io/)
+        * Copyright 2013-2021 Start Bootstrap
+        * GitHub: https://github.com/StartBootstrap/startbootstrap-creative
+        *
+        * Bootstrap ver. 5.1.3 (https://getbootstrap.com/)
+        * Copyright 2011-2021 The Bootstrap Authors
+        * Copyright 2011-2021 Twitter, Inc.
+        * GitHub: https://github.com/twbs/bootstrap
+        *
+        * GitHub (https://github.com)
+        * Copyright 2021 GitHub, Inc.
+        * GitHub Docs: https://github.wiki/en/rest/reference/licenses
+        *
+        * HTML Standard (https://html.spec.whatwg.org/)
+        * Intellectual Property Rights: https://html.spec.whatwg.org/#ipr
+        *
+        * Cascading Style Sheets (CSS) (https://www.w3.org/Style/CSS/)
+        * Created and maintained by the CSS Working Group (Bert Bos, style activity lead)
+        * Copyright © 1994–2021 W3C®
+        * Privacy Policy: https://www.w3.org/Consortium/Legal/2002/ipr-notice-20021231
+        *
+        * JavaScript (JS)
+        * Designed by Brendan Eich of Netscape (initially)
+        * First appeared December 4, 1995
+        * 'JavaScript' is a trademark of Oracle Corporation in the United States.
+        *
+        * PHP: Hypertext Preprocessor (https://www.php.net/)
+        * Privacy Policy: https://www.php.net/privacy.php
+        *
+    For legal issues other than open source please refer to our Terms & Conditions.-->
 </html>

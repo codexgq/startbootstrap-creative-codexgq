@@ -1,0 +1,10 @@
+User-agent: *
+
+Disallow: /
+
+Crawl-delay: 
+
+Host: https://codex.gq/
+
+Sitemap: https://codex.gq/sitemap.xml
+Sitemap: https://codex.gq/urllist.txt
