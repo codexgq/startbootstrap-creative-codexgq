@@ -2,15 +2,15 @@
 
 /**
  * Progressive Web Application (PWA) Service Worker of SuperPWA
- * To learn more and add one to your website, visit - https://superpwa.com
- * Customized by codexgq Team, visit - https://codex.gq
+ * To learn more and add one to your website, visit - https://superpwa.com/
+ * Customized by codexgq Team, visit - https://codex.gq/
  */
  
 const cacheName = 'codex.gq-superpwa-2.0.2';
 const startPage = 'https://codex.gq/';
 const offlinePage = 'https://codex.gq/index.html';
 const filesToCache = [startPage, offlinePage];
-const neverCacheUrls = [/\/default.appcache/,/\/error-pages/,/\/preview=true/];
+const neverCacheUrls = [/\/src/];
 
 // Install
 self.addEventListener('install', function(e) {
@@ -60,7 +60,7 @@ self.addEventListener('fetch', function(e) {
 	if ( new URL(e.request.url).origin !== location.origin )
 		return;
 	
-	// For POST requests, do not use the cache. Serve offline page if offline.
+	// For GET requests, do not use the cache. Serve offline page if offline.
 	if ( e.request.method !== 'GET' ) {
 		e.respondWith(
 			fetch(e.request).catch( function() {

@@ -20,8 +20,6 @@
         <!-- Proressive Web Application (PWA) for supported browsers is appeared courtesy to SuperPWA (https://superpwa.com/)-->
         <!-- PWA Manifest-->
         <link rel="manifest" href="site.webmanifest" />
-        <!-- Application Cache-->
-        <link rel="manifest" href="default.appcache" />
         <!-- Register Service Worker-->
         <script>
             if ("serviceWorker" in navigator) {
@@ -131,8 +129,8 @@
         <meta name="DCTERMS.Alternative" content="codexgq - Moving The Web" />
         <!-- Cascade Style Sheets Files (CSS)-->
         <!-- Google Fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet preload" as="style" type="text/css" crossorigin="anonymous" media="all" />
-        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet preload" as="style" type="text/css" crossorigin="anonymous" media="all" />      
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700&display=swap" rel="stylesheet preload" as="style" type="text/css" crossorigin="anonymous" media="all" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic&display=swap" rel="stylesheet preload" as="style" type="text/css" crossorigin="anonymous" media="all" />      
         <!-- Core Theme CSS (Includes Bootstrap 5.1.0)-->
         <link href="css/styles.css" rel="stylesheet" type="text/css" />
         <!-- END Cascade Style Sheets Files (CSS)-->
@@ -509,15 +507,14 @@
         </script>
         <!-- END Markup (JSON-LD) structured in Schema.org-->
     </head>
-    <body id="home">
-        <span id="website"></span>
+    <body id="website">
         <span id="webpage"></span>
         <span id="organization"></span>
         <!-- START SITE CONTENT-->
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand zoom-2x" href="#home" title="codexgq - Moving The Web">codexgq</a>
+                <a class="navbar-brand zoom-2x" href="/" title="codexgq - Moving The Web">codexgq</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0" itemscope itemtype="https://schema.org/SiteNavigationElement">
@@ -560,7 +557,7 @@
                         <h2 class="mt-0">About us at a glance</h2>
                         <hr class="divider divider-primary" />
                         <br>
-                            <h4 class="text-muted mb-4 mt-0">We are doing fast, trendy and well secured web premises, composing digital stories that people love, leveraging advanced technologies for simple solutions to compound challenges.</h4>
+                            <p class="text-muted mb-4 mt-0" style="font-size: 120%;">We are doing fast, trendy and well secured web premises, composing digital stories that people love, leveraging advanced technologies for simple solutions to compound challenges.</p>
                         <br>
                         <a class="btn btn-light btn-xl btn-std btn-act border border-2 border-primary bg-white" href="#services" title="Let's Get Started!">Let's Get Started!</a>
                     </div>
@@ -813,7 +810,7 @@
         <section class="py-3">
             <div class="container" id="logo">
                 <div style="text-align:center; padding-bottom: 32px;">
-                    <a href="javascript:void(0);" title="codexgq - Moving The Web">
+                    <a href="/" title="codexgq - Moving The Web">
                     <picture>
                         <source srcset="assets/img/logo-thumbnail.webp" type="image/webp" style="width:384px; height:216px">
                         <img src="assets/gifs/defer.gif" data-src="assets/img/logo-thumbnail.png" style="width:384px; height:216px" alt="Logotype" aria-hidden="true" />
@@ -821,10 +818,12 @@
                     </a>
                 </div>
                 <!-- .logo-->
-                <h6 style="text-align:center;">
-                    <a class="txt-primary" style="text-decoration:none; padding-right: 11px;" href="https://codex.gq/" title="Home Page (English, Английский язык)">EN</a>|
-                    <a class="txt-primary" style="text-decoration:none; padding-left: 8px;" href="https://codex.gq/ru/" title="Russian (Русский язык)">RU</a>
-                </h6>
+                <h4 style="text-align:center;">
+                    <small>
+                        <a class="txt-primary" style="text-decoration:none; padding-right: 11px;" href="https://codex.gq/" title="Home Page (English, Английский язык)">EN</a>|
+                        <a class="txt-primary" style="text-decoration:none; padding-left: 8px;" href="https://codex.gq/ru/" title="Russian (Русский язык)">RU</a>
+                    </small>
+                </h4>
                 <!-- .languages-->
             </div>
             <!-- .container-->
@@ -867,7 +866,7 @@
         <!-- Footer-->
         <footer class="bg-light py-5" itemscope itemtype="http://schema.org/WPFooter">
             <div class="container px-4 px-lg-5">
-                <div class="small text-center text-muted">Copyright &copy; <span itemprop="copyrightYear">2014-2021</span> - <a style="text-decoration:none;" href="javascript:void(0);" title="codexgq, Inc.">codexgq</a>
+                <div class="small text-center text-muted">Copyright &copy; <span itemprop="copyrightYear">2014-2021</span> - <a style="text-decoration:none;" href="/" title="codexgq, Inc.">codexgq</a>
                 </div>
             </div>
             <meta itemprop="copyrightHolder" content="codexgq">
@@ -918,8 +917,8 @@
             el.setAttribute("href", url);
             document.getElementsByTagName("head")[0].appendChild(el);
         }
-        add_hint('prefetch', 'https://fonts.gstatic.com/');
-        add_hint('prefetch', 'https://fonts.googleapis.com/');
+        add_hint('prefetch', 'https://cdn.jsdelivr.net/');
+        add_hint('prefetch', 'https://www.jsdelivr.com/');
         </script>
         <!-- Include Content (includes any file content to visual HTML)-->
         <script>
@@ -961,81 +960,6 @@
             	  top.location.href = self.location.href;
               }
         </script>
-        <!-- Application Cache-->
-        <script>
-        	var appCache = window.applicationCache;
-            // Cache Status...
-        switch (appCache.status) {
-        	case appCache.UNCACHED: // UNCACHED == 0
-        		return 'UNCACHED';
-        		break;
-        	case appCache.IDLE: // IDLE == 1
-        		return 'IDLE';
-        		break;
-        	case appCache.CHECKING: // CHECKING == 2
-        		return 'CHECKING';
-        		break;
-        	case appCache.DOWNLOADING: // DOWNLOADING == 3
-        		return 'DOWNLOADING';
-        		break;
-        	case appCache.UPDATEREADY: // UPDATEREADY == 4
-        		return 'UPDATEREADY';
-        		break;
-        	case appCache.OBSOLETE: // OBSOLETE == 5
-        		return 'OBSOLETE';
-        		break;
-        	default:
-        		return 'UKNOWN CACHE STATUS'; // UKNOWN...
-        		break;
-        };
-        var appCache = window.applicationCache;
-        // Update Cache...
-        appCache.update(); // Attempt to update the user's cache.
-        if (appCache.status == window.applicationCache.UPDATEREADY) {
-        	appCache.swapCache(); // The fetch was successful, swap in the new cache.
-        }
-        // Monitor Cache Update...
-        // Check if a new cache is available on page load.
-        window.addEventListener('load', function(e) {
-        	window.applicationCache.addEventListener('updateready', function(e) {
-        		if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
-        			// Browser downloaded a new app cache.
-        			// Swap it in and reload the page to get the new hotness.
-        			window.applicationCache.swapCache();
-        			if (confirm('A new version of this site is available. Load it?')) {
-        				window.location.reload();
-        			}
-        		} else {
-        			// Manifest didn't changed. Nothing new to server.
-        		}
-        	}, false);
-        }, false);
-        function handleCacheEvent(e) {
-        	// AppCache Events...
-        }
-        function handleCacheError(e) {
-        	alert('Error: Cache failed to update!');
-        };
-        // Fired after the first cache of the manifest.
-        appCache.addEventListener('cached', handleCacheEvent, false);
-        // Checking for an update. Always the first event fired in the sequence.
-        appCache.addEventListener('checking', handleCacheEvent, false);
-        // An update was found. The browser is fetching resources.
-        appCache.addEventListener('downloading', handleCacheEvent, false);
-        // The manifest returns 404 or 410, the download failed,
-        // or the manifest changed while the download was in progress.
-        appCache.addEventListener('error', handleCacheError, false);
-        // Fired after the first download of the manifest.
-        appCache.addEventListener('noupdate', handleCacheEvent, false);
-        // Fired if the manifest file returns a 404 or 410.
-        // This results in the application cache being deleted.
-        appCache.addEventListener('obsolete', handleCacheEvent, false);
-        // Fired for each resource listed in the manifest as it is being fetched.
-        appCache.addEventListener('progress', handleCacheEvent, false);
-        // Fired when the manifest resources have been newly redownloaded.
-        appCache.addEventListener('updateready', handleCacheEvent, false);
-        </script>
-        <!-- END Application Cache-->
         <!-- END Inline JavaScript (JS)-->
     </body>
     <!-- This website and its content are build by codexgq Team based on the Creative theme by Start Bootstrap and licensed under the MIT License.
