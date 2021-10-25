@@ -186,8 +186,7 @@
             .bg-ps {
                 padding-top: 10rem;
                 padding-bottom: calc(10rem - 0px);
-                background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("assets/img/camomile-flower.webp");
-                background: -webkit-linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("assets/img/camomile-flower.jpg"), none;
+                background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("assets/img/camomile-flower.webp"), url("assets/img/clouds-from-aircraft-window.jpg");
                 background-position: center;
                 background-repeat: no-repeat;
                 background-attachment: scroll;
@@ -922,7 +921,7 @@
             <div class="container" id="logo">
                 <div style="text-align:center; padding-bottom: 32px;">
                     <a href="/" title="codexgq - Moving The Web">
-                        <img src="assets/gifs/defer.gif" data-src="assets/img/logo-thumbnail-cropped.svg" style="width:384px; height:216px" alt="Logotype" aria-hidden="true" />
+                        <img src="assets/gifs/defer.gif" data-src="assets/img/logo-cropped.svg" style="width:384px; height:384px" alt="Logotype" aria-hidden="true" />
                     </a>
                 </div>
                 <h4 style="text-align:center;">
@@ -985,6 +984,9 @@
         </footer>
         <!-- END SITE CONTENT-->
         <!-- Defer Cascade Style Sheets Files (CSS)-->
+        <script>
+            deferstyle('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css', rel="preload", as="font", 1000); // Bootstrap Icons
+        </script>
         <!-- Bootstrap Core JS-->
         <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core Theme JS-->
