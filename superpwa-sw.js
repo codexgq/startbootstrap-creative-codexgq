@@ -11,14 +11,8 @@ const startPage = 'https://codex.gq/';
 const offlinePage = 'https://codex.gq/index.html';
 const filesToCache = [startPage, offlinePage];
 const resourcesToCache = [
-	'https://codex.gq/favicon.ico',
-	'https://codex.gq/site.webmanifest',
-	'https://codex.gq/css/styles.css',
-	'https://codex.gq/js/scripts.js',
-	'https://codex.gq/assets/img/bg-masthead.jpg',
-	'https://codex.gq/assets/img/camomile-flower.webp',
-	'https://codex.gq/assets/img/logo-thumbnail.webp',
-	'https://codex.gq/assets/gif/defer.gif'
+	'https://codex.gq/',
+	'https://codex.gq/index.html'
   ];
 const neverCacheUrls = [/\/scripts/,/\/src/,/\/.editorconfig/,/\/.gitignore/,/\/LICENSE/,/\/package.json/,/\/package-lock.json/,/\/README.md/];
 
