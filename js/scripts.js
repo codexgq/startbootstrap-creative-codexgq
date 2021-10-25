@@ -52,8 +52,10 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
     // Activate SimpleLightbox plugin for portfolio items
-    new SimpleLightbox({
-        elements: '#portfolio a.portfolio-box'
-    });
+    // Uncomment the following lines to switch on SimpleLightbox functionality
+    // NB: this should be in HTML <body>: <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+    // new SimpleLightbox({
+        // elements: '#portfolio a.portfolio-box'
+    // });
 
 });
