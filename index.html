@@ -6,7 +6,7 @@
 <!--[if IE 8]>        <html class="lt-ie9">               <![endif]-->
 <!--[if gt IE 8]>     <!-->                           <!--<![endif]-->
 <!-- saved from url=(0014)about:internet -->
-<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <head itemscope itemtype="http://schema.org/WPHeader">
         <!-- Meta Core-->
         <meta charset="utf-8" />
@@ -131,22 +131,21 @@
         <!-- Google Fonts-->
         <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700&display=swap" rel="stylesheet preload" as="style" type="text/css" crossorigin="anonymous" media="all" />
         <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic&display=swap" rel="stylesheet preload" as="style" type="text/css" crossorigin="anonymous" media="all" />
-        <!-- Core Theme CSS (Includes Bootstrap 5.1.0)-->
+        <!-- Core Theme CSS (Includes Bootstrap 5.1.3)-->
         <link href="css/styles.css" rel="stylesheet" type="text/css" />
         <!-- END Cascade Style Sheets Files (CSS)-->
         <!-- UI & UX Custom Inline CSS-->
-        <!-- Scroll To Top Button CSS-->
         <style>
+            /*!
+            Scroll To Top Button CSS
+            */
             #btn-top {
                 display: none;
                 position: fixed;
                 bottom: 16px;
                 right: 16px;
                 z-index: 99998;
-                border: none;
-                outline: none;
                 cursor: pointer;
-                border-radius: 4px;
                 opacity: 0.50;
                 filter: alpha(opacity=50);
             }
@@ -154,9 +153,20 @@
                 opacity: 0.75;
                 filter: alpha(opacity=75);
             }
-        </style>
-        <!-- Custom Properties CSS-->
-        <style>
+            /*!
+            Hreflang Menu Button CSS
+            */
+            #btn-hreflang {
+                position: fixed;
+                top: 88px;
+                right: 16px;
+                z-index: 99999;
+                cursor: pointer;
+            }
+            #btn-hreflang:hover {
+                opacity: 0.75;
+                filter: alpha(opacity=75);
+            }
             /*!
             Active Button on Hover Behavior
             */
@@ -174,24 +184,23 @@
             Element Enlarge on Hover Behavior
             */
             .zoom-2x:hover {
-                transform: scale(1.2);   
+                transform: scale(1.2);
             }
             .zoom-5x:hover {
-                transform: scale(1.5);   
+                transform: scale(1.5);
             }
             /*!
             Element Custom Color and on Hover Behavior
             */
             .el-ac {
-                color: #212529;   
+                color: #212529;
             }
             .el-ac:hover {
-                color: #f4623a;   
-            }            
-        </style>
-        <!-- END Custom Properties CSS-->
-        <!-- Page Section Background Image-->
-        <style>
+                color: #f4623a;
+            }
+            /*!
+            Page Section Background Image-->
+            */
             .bg-ps {
                 padding-top: 10rem;
                 padding-bottom: calc(10rem - 0px);
@@ -340,6 +349,8 @@
         <!-- Default-->
         <link rel="alternate" hreflang="x-default" href="https://codex.gq/" />
         <!-- END Hreflang Tags-->
+        <!-- Linking to Dublin Core™ metadata in XML from HTML-->
+        <link rel="meta" href="dc.xml" />
         <!-- Markup (JSON-LD) structured in Schema.org START-->
         <!-- WebSite Markup-->
         <script type='application/ld+json'>
@@ -528,29 +539,31 @@
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
             <div class="container px-4 px-lg-5">
                 <a class="navbar-brand zoom-2x" href="/" title="codexgq - Moving The Web">codexgq</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle Navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0" itemscope itemtype="https://schema.org/SiteNavigationElement">
                         <li class="nav-item"><a itemprop="url" class="nav-link" href="#about"><span itemprop="name" content="About">About</span></a></li>
                         <li class="nav-item"><a itemprop="url" class="nav-link" href="#services"><span itemprop="name" content="Services">Services</span></a></li>
                         <li class="nav-item"><a itemprop="url" class="nav-link" href="#solutions"><span itemprop="name" content="Solutions">Solutions</span></a></li>
                         <li class="nav-item"><a itemprop="url" class="nav-link" href="#products"><span itemprop="name" content="Products">Products</span></a></li>
                         <li class="nav-item"><a itemprop="url" class="nav-link" href="#contact"><span itemprop="name" content="Contact">Contact</span></a></li>
-                        <li class="nav-item">
-                            <a itemprop="url" class="nav-link zoom-2x" href="ru">
-                                <svg class="bi bi-activity text-primary" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-label="Eyes Catcher" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z"/>
-                                </svg>
-                                <span itemprop="name" content="Russian (Русский язык)">Русский</span>
-                            </a>
-                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- END Navigation-->
-
-
+        <!-- Hreflang Menu Button HTML-->
+        <div class="dropdown" itemscope itemtype="https://schema.org/SiteNavigationElement">
+            <svg id="btn-hreflang" class="bi bi-geo-alt fs-1 text-primary dropdown-toggle" role="button" data-bs-toggle="dropdown" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-haspopup="true" aria-expanded="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+            </svg>
+            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="btn-hreflang">
+                <a itemprop="url" class="dropdown-item" href="javascript:void(0);" hreflang="en"><span itemprop="name" content="English">English</span></a>
+                <a itemprop="url" class="dropdown-item" href="ru" hreflang="ru"><span itemprop="name" content="Russian (Руссский язык)">Russian (Руссский язык)</span></a>
+            </div>
+        </div>
+        <!-- END Hreflang Menu Button HTML-->
         <!-- Masthead-->
         <header class="masthead">
             <div class="container px-4 px-lg-5 h-100">
