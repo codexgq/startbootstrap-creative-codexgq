@@ -1,24 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metadata
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xmlns:dc="http://purl.org/dc/elements/1.1/"
-xmlns:dcterms="http://purl.org/dc/terms/">
-<dc:subject>web development, digital marketing, wordpress, bootstrap, websites, codexgq</dc:subject>
-<dc:description>Development and promotion of the best sites, landing pages, blogs, and online stores.</dc:description>
-<dc:abstract>Web Development</dc:abstract>
-<dc:title>codexgq - Moving The Web</dc:title>
-<dcterms:alternative>codexgq - Moving The Web</dcterms:alternative>
-<dc:creator>codexgq</dc:creator>
-<dc:publisher>codexgq</dc:publisher>
-<dc:contributor>codexgq</dc:contributor>
-<dc:type xsi:type="dcterms:DCMIType">Service</dc:type>
-<dcterms:format xsi:type="dcterms:IMT">text/html</dcterms:format>
-<dc:rights>codexgq</dc:rights>
-<dcterms:rightsholder>codexgq</dcterms:rightsholder>
-<dcterms:audience>Business</dcterms:audience>
-<dc:coverage xsi:type="dcterms:ISO3166">US, GB, CN, IN, DE, FR, RU</dc:coverage>
-<dc:language xsi:type="dcterms:ISO639">en</dc:language>
-<dc:identifier xsi:type="dcterms:URI">https://codex.gq/</dc:identifier>
-<dc:relation xsi:type="dcterms:URI">https://codex.gq/</dc:relation>
-<dcterms:isPartOf xsi:type="dcterms:URI">https://codex.gq/</dcterms:isPartOf>
-</metadata>
+<!DOCTYPE xml>
+<!-- PUBLIC "-//DUBLIN CORE//DCMES DTD 2002/07/31//EN" "http://dublincore.org/specifications/dublin-core/dcmes-xml/2002-07-31/dcmes-xml-dtd.dtd" -->
+<schema
+	xmlns="http://www.w3.org/2001/XMLSchema"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcterms="http://purl.org/dc/terms/" targetNamespace="http://purl.org/dc/elements/1.1/">
+	<annotation>
+		<documentation xml:lang="en" source="http://dublincore.org/documents/2002/07/31/dcmes-xml/"></documentation>
+	</annotation>
+	<!--  Import the XML namespace schema for xml:lang  -->
+	<import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/xml.xsd"/>
+	<dc:subject>web development, digital marketing, wordpress, bootstrap, websites, codexgq</dc:subject>
+	<dc:description>Development and promotion of the best sites, landing pages, blogs, and online stores.</dc:description>
+	<dc:abstract>Web Development</dc:abstract>
+	<dc:title>codexgq - Moving The Web</dc:title>
+	<dcterms:alternative>codexgq - Moving The Web</dcterms:alternative>
+	<dc:creator>codexgq</dc:creator>
+	<dc:publisher>codexgq</dc:publisher>
+	<dc:contributor>codexgq</dc:contributor>
+	<dc:type xsi:type="dcterms:DCMIType">Service</dc:type>
+	<dcterms:format xsi:type="dcterms:IMT">text/html</dcterms:format>
+	<dc:rights>codexgq</dc:rights>
+	<dcterms:rightsholder>codexgq</dcterms:rightsholder>
+	<dcterms:audience>Business</dcterms:audience>
+	<dc:coverage xsi:type="dcterms:ISO3166">US, RU, World</dc:coverage>
+	<dc:language xsi:type="dcterms:ISO639">en</dc:language>
+	<dc:identifier xsi:type="dcterms:URI">https://codex.gq/</dc:identifier>
+	<dc:relation xsi:type="dcterms:URI">https://codex.gq/</dc:relation>
+	<dcterms:isPartOf xsi:type="dcterms:URI">https://codex.gq/</dcterms:isPartOf>
+</schema>
