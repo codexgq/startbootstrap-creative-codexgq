@@ -23,7 +23,7 @@
 	<dc:rights>codexgq</dc:rights>
 	<dcterms:rightsholder>codexgq</dcterms:rightsholder>
 	<dcterms:audience>Business</dcterms:audience>
-	<dc:coverage xsi:type="dcterms:ISO3166">US, RU, World</dc:coverage>
+	<dc:coverage xsi:type="dcterms:ISO3166">US, World</dc:coverage>
 	<dc:language xsi:type="dcterms:ISO639">en</dc:language>
 	<dc:identifier xsi:type="dcterms:URI">https://codex.gq/</dc:identifier>
 	<dc:relation xsi:type="dcterms:URI">https://codex.gq/</dc:relation>
