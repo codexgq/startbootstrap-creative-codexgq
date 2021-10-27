@@ -72,12 +72,10 @@
     "display": "standalone",
     "categories": [
         {
-            "item": "Business",
-            "type": "array"
+            "item": "Business"
         },
         {
-            "item": "Web",
-            "type": "array"
+            "item": "Web"
         }
     ]
 }
