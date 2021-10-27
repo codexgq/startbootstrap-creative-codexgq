@@ -137,7 +137,7 @@
         <!-- UI & UX Custom Inline CSS-->
         <style>
             /*!
-            Scroll To Top Button CSS
+            The Scroll To Top Button CSS
             */
             #btn-top {
                 display: none;
@@ -154,7 +154,7 @@
                 filter: alpha(opacity=75);
             }
             /*!
-            Hreflang Menu Button CSS
+            The Hreflang Menu Button CSS
             */
             #btn-hreflang {
                 position: fixed;
@@ -168,38 +168,35 @@
                 filter: alpha(opacity=75);
             }
             /*!
-            Active Button on Hover Behavior
+            Any Button on Hover Behavior
             */
             .btn-act:hover {
                 opacity: 0.75;
                 filter: alpha(opacity=75);
             }
             /*!
-            Button Standard Width
+            Any Button Enlarge on Hover
+            */
+            .btn-enl-lg:hover {
+                transform: scale(1.2);
+            }
+            .btn-enl-xl:hover {
+                transform: scale(1.5);
+            }
+            /*!
+            BS Button Standard Width
             */
             .btn-std {
                 width: 256px;
             }
             /*!
-            Element Enlarge on Hover Behavior
+            Custom CSS Margins
             */
-            .zoom-2x:hover {
-                transform: scale(1.2);
-            }
-            .zoom-5x:hover {
-                transform: scale(1.5);
+            .mb-6 {
+                margin-bottom: -128px !important;
             }
             /*!
-            Element Custom Color and on Hover Behavior
-            */
-            .el-ac {
-                color: #212529;
-            }
-            .el-ac:hover {
-                color: #f4623a;
-            }
-            /*!
-            Page Section Background Image-->
+            Page Section Background Image
             */
             .bg-ps {
                 padding-top: 10rem;
@@ -209,6 +206,15 @@
                 background-repeat: no-repeat;
                 background-attachment: scroll;
                 background-size: cover;
+            }
+            /*!
+            Any List Item Color and on Hover Behavior
+            */
+            .list-unstyled-item {
+                color: #212529;
+            }
+            .list-unstyled-item:hover {
+                color: #f4623a;
             }
         </style>
         <!-- END UI & UX Custom Inline CSS-->
@@ -538,7 +544,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand zoom-2x" href="/" title="codexgq - Moving The Web">codexgq</a>
+                <a class="navbar-brand btn-enl-lg" href="/" title="codexgq - Moving The Web">codexgq</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle Navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0" itemscope itemtype="https://schema.org/SiteNavigationElement">
@@ -575,7 +581,7 @@
                     <div class="col-lg-8 align-self-baseline">
                         <p class="text-white-75 mb-5">Moving the web with development and promotion of the best sites, landing pages, blogs, and online stores.</p>
                         <a href="#about" title="Find Out More" aria-label="Find Out More">
-                            <svg class="bi bi-mouse text-primary btn-act zoom-2x" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-label="Find Out More" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="bi bi-mouse text-primary btn-act btn-enl-lg" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-label="Find Out More" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M8 3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3zm4 8a4 4 0 0 1-8 0V5a4 4 0 1 1 8 0v6zM8 0a5 5 0 0 0-5 5v6a5 5 0 0 0 10 0V5a5 5 0 0 0-5-5z"/>
                             </svg>
                         </a>
@@ -586,13 +592,13 @@
         <!-- END Masthead-->
         <!-- About-->
         <section class="page-section" id="about">
-            <div class="container px-4 px-lg-5" style="margin-bottom: -64px;">
+            <div class="container px-4 px-lg-5 mb-0">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 text-center">
                         <h2 class="mt-0">About us at a glance</h2>
                         <hr class="divider divider-primary" />
                         <br>
-                            <p class="text-muted mb-4 mt-0" style="font-size: 120%;">We are doing fast, trendy and well secured web premises, composing digital stories that people love, leveraging advanced technologies for simple solutions to compound challenges.</p>
+                            <p class="text-muted mb-4 mt-0 fs-5">We are doing fast, trendy and well secured web premises, composing digital stories that people love, leveraging advanced technologies for simple solutions to compound challenges.</p>
                         <br>
                         <a class="btn btn-light btn-xl btn-std btn-act border border-2 border-primary bg-white" href="#services" title="Let's Get Started!">Let's Get Started!</a>
                     </div>
@@ -600,12 +606,12 @@
             </div>
         </section>
         <!-- END About-->
-        <div class="container" style="margin-bottom: -32px;">
-            <hr class="my-5">
+        <div class="container">
+            <hr class="my-0">  
         </div>
         <!-- Services-->
         <section class="page-section" id="services">
-            <div class="container px-4 px-lg-5" style="margin-bottom: -128px;">
+            <div class="container px-4 px-lg-5 pt-3 mb-6">
                 <h2 class="text-center mt-0">Our Services</h2>
                 <hr class="divider" />
                 <div class="row gx-4 gx-lg-5">
@@ -710,7 +716,7 @@
         <!-- END Services-->
         <!-- Solutions-->
         <section class="page-section" id="solutions">
-            <div class="container px-4 px-lg-5" style="margin-bottom: -128px;">
+            <div class="container px-4 px-lg-5 mb-6">
                 <h2 class="text-center mt-0">Solutions</h2>
                 <hr class="divider" />
                 <div class="row gx-4 gx-lg-5 justify-content-center">
@@ -880,8 +886,7 @@
                             <p class="text-muted mb-0">A global network which protects and accelerates your websites, apps, and teams.</p>
                         </div>
                     </div>
-                    <div style="margin-bottom: 64px;"></div>
-                    <a class="btn btn-light btn-xl btn-std btn-act border border-2 border-primary bg-white" href="#free" title="Get Hosting and Domain for Free">Special Offer</a>
+                    <a class="btn btn-light btn-xl btn-std btn-act border border-2 border-primary bg-white mt-5" href="#free" title="Get Hosting and Domain for Free">Special Offer</a>
                 </div>
                 <!-- .row-->
             </div>
@@ -895,8 +900,8 @@
                     <div class="col-lg-8 text-center">
                         <h2 class="text-white mt-0">We've Got What You Need!</h2>
                         <hr class="divider divider-light" />
-                        <p class="text-white-75 mb-4" style="font-size: 120%;">Cloud hosting with an unlimited plan and a domain name in a zone of your choice are provided free of charge when ordering a turnkey website. Cloudflare is included as well.</p>
-                        <a class="btn btn-light btn-xl btn-std btn-act bg-white" href="#contact" title="Place an Order Online">Order Now</a>
+                        <p class="text-white-75 mb-4 fs-5">Cloud hosting with an unlimited plan and a domain name in a zone of your choice are provided free of charge when ordering a turnkey website. Cloudflare is included as well.</p>
+                        <a class="btn btn-light btn-xl btn-std btn-act bg-white mt-4" href="#contact" title="Place an Order Online">Order Now</a>
                     </div>
                 </div>
                 <!-- .row-->
@@ -905,7 +910,7 @@
         </section>
         <!-- Contact-->
         <section class="page-section" id="contact">
-            <div class="container px-4 px-lg-5" style="margin-bottom: -64px;">
+            <div class="container px-4 px-lg-5 mb-6">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 col-xl-6 text-center">
                         <h2 class="mt-0">Let's Get In Touch!</h2>
@@ -919,9 +924,9 @@
                         <div class="row gx-4 gx-lg-5 justify-content-center">
                             <div class="col-lg-4 col-md-6 text-center mb-5 mb-lg-0">
                                 <h3 class="h4 mb-2">Email</h3>
-                                <a href="mailto:info@codex.gq" target="_blank" rel="noopener nofolow" aria-label="Email Us" style="text-decoration:none;">
-                                    <div class="zoom-5x">
-                                        <svg class="bi bi-envelope fs-1 text-primary fs-2 mb-3 btn-enl" style="margin-top: 8px;" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                                <a class="text-decoration-none" href="mailto:info@codex.gq" target="_blank" rel="noopener nofolow" aria-label="Email Us">
+                                    <div class="btn-enl-xl">
+                                        <svg class="bi bi-envelope fs-1 text-primary fs-2 mb-3 mt-2 btn-enl" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
                                         </svg>
                                     </div>
@@ -930,9 +935,9 @@
                             </div>
                             <div class="col-lg-4 col-md-6 text-center mb-5 mb-lg-0">
                                 <h3 class="h4 mb-2">Telegram</h3>
-                                <a href="https://t.me/codexgq" target="_blank" rel="noopener nofolow" aria-label="Telegram Us" style="text-decoration:none;">
-                                    <div class="zoom-5x">
-                                        <svg class="bi bi-telegram fs-1 text-primary fs-2 mb-3 btn-enl" style="margin-top: 8px;" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                                <a class="text-decoration-none" href="https://t.me/codexgq" target="_blank" rel="noopener nofolow" aria-label="Telegram Us">
+                                    <div class="btn-enl-xl">
+                                        <svg class="bi bi-telegram fs-1 text-primary fs-2 mb-3 mt-2 btn-enl" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
                                         </svg>
                                     </div>
@@ -949,16 +954,16 @@
         <!-- END Contact-->
         <!-- X-tra Section-->
         <section class="py-3">
-            <div class="container" id="logo">
-                <div style="text-align:center; padding-bottom: 32px;">
+            <div class="container align-items-center justify-content-center text-center" id="logo">
+                <div class="pb-4">
                     <a href="/" title="codexgq - Moving The Web">
                         <img src="assets/gifs/defer.gif" data-src="assets/img/logo-cropped.svg" style="width:384px; height:384px" alt="Logotype" aria-hidden="true" />
                     </a>
                 </div>
-                <h4 style="text-align:center;"> 
+                <h4>
                     <small>
-                        <a class="el-ac" style="text-decoration:none; padding-right: 11px;" href="https://codex.gq/" title="Home Page (English, Английский язык)">EN</a>|
-                        <a class="el-ac" style="text-decoration:none; padding-left: 8px;" href="https://codex.gq/ru/" title="Russian (Русский язык)">RU</a>
+                        <a class="list-unstyled-item text-decoration-none pe-2" href="https://codex.gq/" title="Home Page (English, Английский язык)">EN</a>&nbsp;|
+                        <a class="list-unstyled-item text-decoration-none ps-2" href="https://codex.gq/ru/" title="Russian (Русский язык)">RU</a>
                     </small>
                 </h4>
                 <!-- .languages-->
@@ -972,26 +977,28 @@
                 <hr class="my-5">
                 <div class="row">
                     <div class="col-lg-10 col-md-8 mb-5 mb-md-0">
-                        <a style="text-decoration:none;" href="https://www.linkedin.com/company/codexgq" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn">
-                            <svg class="bi-linkedin fs-1 text-primary btn-act zoom-2x" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                        <a class="text-decoration-none" href="https://www.linkedin.com/company/codexgq" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn">
+                            <svg class="bi-linkedin fs-1 text-primary btn-act btn-enl-lg" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
                             </svg>
                         </a>
-                        <a style="text-decoration:none; padding-left:16px;" href="https://github.com/codexgq" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
-                            <svg class="bi-github fs-1 text-primary btn-act zoom-2x" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                        <a class="text-decoration-none ps-3" href="https://github.com/codexgq" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
+                            <svg class="bi-github fs-1 text-primary btn-act btn-enl-lg" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
                             </svg>
                         </a>
                     </div>
                     <!-- .col-->
                     <div class="col-lg-2 col-md-4 mb-5 mb-md-0">
-                        <div class="text-uppercase text-muted text-xs mb-4"><h2 style="font-size: 120%;">Legal</h2></div>
+                        <div class="text-uppercase text-muted mb-4">
+                            <h2 class="fs-5">Legal</h2>
+                        </div>
                         <ul class="list-unstyled mb-0">
                             <li class="mb-2">
-                                <a class="el-ac" style="text-decoration:none;" href="javascript:void(0);">Privacy</a>
+                                <a class="list-unstyled-item text-decoration-none" href="javascript:void(0);">Privacy</a>
                             </li>
                             <li class="mb-2">
-                                <a class="el-ac" style="text-decoration:none;" href="javascript:void(0);">Terms</a>
+                                <a class="list-unstyled-item text-decoration-none" href="javascript:void(0);">Terms</a>
                             </li>
                         </ul>
                     </div>
@@ -1003,7 +1010,7 @@
         </section>
         <!-- END Footer Menu-->
         <!-- Scroll To Top Button HTML-->
-        <svg onclick="topFunction()" id="btn-top" class="bi-arrow-up-square fs-1 zoom-2x" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+        <svg onclick="topFunction()" id="btn-top" class="bi-arrow-up-square fs-1 btn-enl-lg" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
         </svg>
         <!-- Footer-->
