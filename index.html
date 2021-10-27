@@ -1060,8 +1060,9 @@
             el.setAttribute("href", url);
             document.getElementsByTagName("head")[0].appendChild(el);
         }
-        add_hint('prefetch', 'https://cdn.jsdelivr.net/');
-        add_hint('prefetch', 'https://www.jsdelivr.com/');
+        add_hint('dns-prefetch', 'https://cdn.jsdelivr.net/');
+        add_hint('dns-prefetch', 'https://www.jsdelivr.com/');
+        add_hint('dns-prefetch', 'https://fonts.gstatic.com/');
         </script>
         <!-- Include Content (includes any file content to visual HTML)-->
         <script>
