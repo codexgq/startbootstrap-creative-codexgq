@@ -58,7 +58,7 @@
             "purpose": "any"
         },
         {
-            "src": "https://codex.gq/assets/icons/android-chrome-512x512-maskable.png",
+            "src": "https://codex.gq/assets/icons/android-chrome-512x512-masked.png",
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "maskable"
@@ -66,10 +66,9 @@
     ],
     "start_url": "https://codex.gq/",
     "scope": "https://codex.gq/",
-    "update_via_cache": "imports",
     "lang": "en",
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
     "display": "standalone",
-    "categories": "Business, Web"
+    "array": "Business, Web"
 }
