@@ -70,5 +70,14 @@
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
     "display": "standalone",
-    "array": "Business, Web"
+    "categories": [
+        {
+            "item": "Business",
+            "type": "array"
+        },
+        {
+            "item": "Web",
+            "type": "array"
+        }
+    ]
 }
