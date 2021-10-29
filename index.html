@@ -222,68 +222,6 @@
             .span-item {
                 cursor: pointer;
             }
-            /*!
-            Full Screen Content Overlay CSS
-            */
-            .overlay {
-                height: 100%;
-                width: 0;
-                position: fixed;
-                z-index: 9999;
-                top: 0;
-                left: 0;
-                background-color: rgb(0,0,0);
-                background-color: rgba(0,0,0, 0.9);
-                overflow-x: hidden;
-                transition: 0.5s;
-            }
-            .overlay-content {
-                position: relative;
-                top: 10%;
-                bottom: 64px; 
-                margin: auto;
-                max-width: 720px;                
-                background: white;
-                padding: 0;
-                text-align: left;
-                display: block;
-            }
-            .overlay .closebtn {
-                position: absolute;
-                top: 0px;
-                right: 32px;
-                font-size: 60px;
-                color: #818181;
-                text-decoration: none;
-                cursor: pointer;
-            }
-            .overlay .closebtn:hover, .closebtn:focus {
-                color: #f1f1f1;
-            }
-            @media screen and (max-height: 450px) {
-            .overlay a {font-size: 20px}
-            .overlay .closebtn {
-                font-size: 40px;
-                top: 12px;
-                right: 24px;
-                }
-            }
-            /*!
-            Modal Boxes Appearnce
-            */
-            .modal-header {
-                padding: 2px 16px;
-                background-color: #f4623a;
-                color: white;
-            }
-            .modal-body {
-                padding: 2px 16px;
-            }
-            .modal-footer {
-                padding: 2px 16px;
-                background-color: #f4623a;
-                color: white;
-            }
         </style>
         <!-- END UI & UX Custom Inline CSS-->
         <!-- Facebook Open Graph-->
@@ -1078,10 +1016,10 @@
                         </div>
                         <ul class="list-unstyled mb-0">
                             <li class="mb-2">
-                                <span class="list-unstyled-item text-decoration-none span-item" onclick="openOverlay1()">Privacy</span>
+                                <span class="list-unstyled-item text-decoration-none span-item">Privacy</span>
                             </li>                            
                             <li class="mb-2">
-                                <span class="list-unstyled-item text-decoration-none span-item" onclick="openOverlay2()">Terms</span>
+                                <span class="list-unstyled-item text-decoration-none span-item">Terms</span>
                             </li>
                         </ul>
                     </div>
@@ -1091,39 +1029,7 @@
             </div>
             <!-- .container-->
         </section>
-        <!-- END Footer Menu-->
-        <!-- Full Screen Content Overlay HTML-->
-        <!-- Privacy Policy-->
-        <div id="contentOverlay1" class="overlay">
-            <span class="closebtn" onclick="closeOverlay()">&times;</span>
-            <div class="overlay-content">
-                <div class="modal-header">
-                    <h2>Privacy Policy</h2>
-                </div>
-                <div class="modal-body">
-                    <div include-content="legal/privacy.html"></div>
-                </div>
-                <div class="modal-footer fs-6 rcorners-bottom">
-                    <span>Copyright&nbsp;&copy;&nbsp;2014-<script>document.write(new Date().getFullYear());</script>&nbsp;codexgq, Inc.</span>
-                </div>
-            </div>
-        </div>
-        <!-- Terms and Conditions-->
-        <div id="contentOverlay2" class="overlay">
-            <span class="closebtn" onclick="closeOverlay()">&times;</span>
-            <div class="overlay-content">
-                <div class="modal-header">
-                    <h2>Terms and Conditions</h2>
-                </div>
-                <div class="modal-body">
-                    <div include-content="legal/terms.html"></div>
-                </div>
-                <div class="modal-footer fs-6">
-                    <span>Copyright&nbsp;&copy;&nbsp;2014-<script>document.write(new Date().getFullYear());</script>&nbsp;codexgq, Inc.</span>
-                </div>
-            </div>
-        </div>
-        <!-- END Full Screen Content Overlay HTML-->        
+        <!-- END Footer Menu-->     
         <!-- Scroll To Top Button HTML-->
         <svg onclick="topFunction()" id="btn-top" class="bi-arrow-up-square fs-1 btn-enl-lg" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
@@ -1213,21 +1119,6 @@
             includeContent();
         </script>
         <!-- END Include Content-->
-        <!-- Full Screen Content Overlay JS-->
-        <script>
-            // Open content overlays.
-            function openOverlay1() {
-                document.getElementById("contentOverlay1").style.width = "100%";
-            }
-            function openOverlay2() {
-                document.getElementById("contentOverlay2").style.width = "100%";
-            }
-            // Close content overlays.
-            function closeOverlay() {
-                document.getElementById("contentOverlay1").style.width = "0%";
-                document.getElementById("contentOverlay2").style.width = "0%";
-            }
-        </script>
         <!-- Prevent Frame-->
         <script>
             if (top != self) {
