@@ -3,7 +3,5 @@ ServerSignature Off
 AddDefaultCharset UTF-8
 DefaultLanguage en
 RewriteEngine On
-RewriteBase /
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_URI} !(.*)/$
-RewriteRule ^(.*[^/])$ $1/ [L,R=301]
+RewriteRule ^(.*[^/])$ /$1/ [L,R=301]
