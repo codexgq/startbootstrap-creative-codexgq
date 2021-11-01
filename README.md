@@ -11,13 +11,12 @@ This fork is SEO friendly, multilingual, and has its own features. It also has s
 Custom Implementation:
 
 - Progressive Web Application
-- Application Cache
-- HTML5 Link Prefetch
-- Include Content
-- Lazy-loading
+- Include HTML
+- Lazy-loading, incl. images, scripts, styles and iframes
+- HTML5 Link Prefetch with JS
 - Prevent Frame
 - Extended Meta Data for SEO and responsive browsing experience
-- Schema.org (JSON-LD and microdata)
+- Schema.org
 - Dublin Core
 - Multilingual
 - Offline
@@ -31,7 +30,7 @@ It has no SimpleLightbox on board. Meanwhile it is supported in the Core Theme J
 
 ### Preview of startbootstrap-creative-codexgq
 
-[![Preview](https://codex.gq/assets/uploads/codexgq.png)](https://codex.gq/)
+[![Preview](https://codex.gq/assets/screenshots/desktop-homepage.png)](https://codex.gq/)
 
 **[View Live Preview](https://codexgq.github.io/startbootstrap-creative-codexgq/)**
 
@@ -130,7 +129,7 @@ If you already have a website, CGQ experts will conduct an audit, fix bugs, redu
 
 If you create a project from the scratch, they will be happy to provide you a support in choosing a registrar, a hosting and a technology stack.
 
-CGQ also does SEO, and SMM. It has its own hosting and domain name registration. It provides solutions for remote work, cybersecurity and cloud.
+CGQ also does SEO, and SMM. It has its own hosting and domain name registration. It provides solutions for remote work, cybersecurity, data science and cloud.
 
 #### Business Inquiries
 
