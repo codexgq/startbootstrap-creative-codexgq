@@ -1155,6 +1155,7 @@
         }}
         // Monitor Cache Update...
         // Check if a new cache is available on page load.
+        function updateCache() {
         window.addEventListener('load', function(e) {
         	window.applicationCache.addEventListener('updateready', function(e) {
         		if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
@@ -1169,12 +1170,11 @@
         		}
         	}, false);
         }, false);
-        function handleCacheEvent(e) {
-        	// AppCache Events...
         }
+        function handleCacheEvent(e) {
+        	// AppCache Events...    
         function handleCacheError(e) {
         	alert('Error: Cache failed to update!');
-        }
         // Fired after the first cache of the manifest.
         appCache.addEventListener('cached', handleCacheEvent, false);
         // Checking for an update. Always the first event fired in the sequence.
@@ -1193,6 +1193,7 @@
         appCache.addEventListener('progress', handleCacheEvent, false);
         // Fired when the manifest resources have been newly redownloaded.
         appCache.addEventListener('updateready', handleCacheEvent, false);
+        }}
         </script>
         <!-- END Application Cache-->
         <!-- Prevent Frame-->
