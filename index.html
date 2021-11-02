@@ -1127,10 +1127,13 @@
         <!-- END Include Content-->
         <!-- Application Cache-->
         <script>
-            //  If you change the appcache manifest file and reload the page, the browser will download the new files in the cache, and then switch to the new cache.
-            window.applicationCache.addEventListener('updateready', function(){
+        function onUpdateReady() {
+            if(window.applicationCache.status === window.applicationCache.UPDATEREADY) {
                 window.applicationCache.swapCache();
-            }, false);
+                location.reload();
+            }
+        }
+        window.applicationCache.addEventListener('updateready', onUpdateReady);
         </script>
         <!-- Prevent Frame-->
         <script>
