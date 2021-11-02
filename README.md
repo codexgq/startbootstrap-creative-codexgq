@@ -45,6 +45,7 @@ It has no SimpleLightbox on board. Meanwhile it is supported in the Core Theme J
 ### Status of startbootstrap-creative-codexgq
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/codexgq/startbootstrap-creative-codexgq/master/LICENSE)
+[![GitHub version](https://img.shields.io/badge/github-v1.0.0-blue.svg)](https://github.com/codexgq/startbootstrap-creative-codexgq)
 
 ### Status of Creative
 
@@ -123,13 +124,13 @@ Have a bug or an issue with this template? [Open a new issue](https://github.com
 
 ### About codexgq
 
-codexgq, Inc. (CGQ) is doing fast, trendy and well secured websites since 2014.
+codexgq, Inc. (CGQ) is doing fast, trendy and well secured web and cloud based projects since 2014.
 
-If you already have a website, CGQ experts will conduct an audit, fix bugs, reduce the loading time of your project dramatically.
+If you already have an app or a website, CGQ experts will conduct an audit, fix bugs, reduce the loading time of your project dramatically.
 
 If you create a project from the scratch, they will be happy to provide you a support in choosing a registrar, a hosting and a technology stack.
 
-CGQ also does SEO, and SMM. It has its own hosting and domain name registration. It provides solutions for remote work, cybersecurity, data science and cloud.
+CGQ also does digital marketing incl. SEO, and SMM. It has its own hosting and domain names registration. It provides solutions for remote work, cybersecurity, data science and cloud.
 
 #### Business Inquiries
 

@@ -19,7 +19,7 @@
         <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
         <!-- Proressive Web Application (PWA) for supported browsers is appeared courtesy to SuperPWA (https://superpwa.com/)-->
         <!-- PWA Manifest-->
-        <link rel="manifest" href="site.webmanifest" />
+        <link rel="manifest" type="application/manifest+json" href="site.webmanifest" />
         <!-- Register Service Worker-->
         <script>
             if ("serviceWorker" in navigator) {
@@ -36,6 +36,8 @@
             }
             }
         </script>
+        <!-- Application Cache-->
+        <link rel="manifest" type="text/cache-manifest" href="default.appcache" />
         <!-- A super tiny, native performant library for lazy-loading JS, CSS, images, iframes... Easily speed up a website courtesy to Mai Nhut Tan-->
         <script>
         ! function(e, o, t, n, i, r) { // This script should always go inline as early as possible for better performance.
@@ -251,7 +253,7 @@
         <!--[if IE]>
             <link rel="shortcut icon" type="image/x-icon" href="https://codex.gq/favicon.ico" />
         <![endif]-->
-        <link rel="icon" type="image/svg+xml" sizes="any" href="favicon.svg" />
+        <link rel="icon" type="image/svg+xml" sizes="any" href="assets/icons/favicon.svg" />
         <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png" />
         <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
@@ -311,7 +313,7 @@
         <!-- QQ Mobile Browser-->
         <meta name="X5-fullscreen" content="true" />
         <meta name="X5-page-mode" content="app" />
-        <!--Fast Mode with 360 Browser Enabled-->
+        <!-- Fast Mode with 360 Browser Enabled-->
         <meta name="renderer" content="webkit|ie-comp|ie-stand" />
         <meta name="force-rendering" content="webkit" />
         <!-- MS Edge Pinned Sites-->
@@ -336,9 +338,9 @@
         <!-- Display Mode-->
         <meta name="display" content="standalone" />
         <!-- Geo Tags-->
-        <meta name="geo.region" content="US, World" />
+        <meta name="geo.region" content="US, RU" />
         <!-- ...and DCMI-->
-        <meta name="DC.Coverage" content="US, World" />
+        <meta name="DC.Coverage" content="US, RU, World" />
         <!-- Content Language-->
         <meta name="language" content="en" />
         <!-- ...then Item Property for Schema.org-->
@@ -1123,6 +1125,13 @@
             includeContent();
         </script>
         <!-- END Include Content-->
+        <!-- Application Cache-->
+        <script>
+            //  If you change the appcache manifest file and reload the page, the browser will download the new files in the cache, and then switch to the new cache.
+            window.applicationCache.addEventListener('updateready', function(){
+                window.applicationCache.swapCache();
+            }, false);
+        </script>
         <!-- Prevent Frame-->
         <script>
             if (top != self) {
