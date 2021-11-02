@@ -11,6 +11,7 @@ This fork is SEO friendly, multilingual, and has its own features. It also has s
 Custom Implementation:
 
 - Progressive Web Application
+- Application Cache
 - Include HTML
 - Lazy-loading, incl. images, scripts, styles and iframes
 - HTML5 Link Prefetch with JS
