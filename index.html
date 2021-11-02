@@ -1128,11 +1128,6 @@
         <!-- Application Cache-->
         <script>
         var appCache = window.applicationCache;
-        // Update Cache...
-        appCache.update(); // Attempt to update the user's cache.
-        if (appCache.status == window.applicationCache.UPDATEREADY) {
-        	appCache.swapCache(); // The fetch was successful, swap in the new cache.
-        }
         // Monitor Cache Update...
         // Check if a new cache is available on page load.
         window.addEventListener('load', function(e) {
