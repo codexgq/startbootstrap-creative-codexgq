@@ -10,7 +10,7 @@ CACHE:
 favicon.ico
 assets/img/bg-masthead.jpg
 assets/img/camomile-flower.jpg
-css/styles.css
+css/all.slim.min.css
 js/scripts.js
 
 # offline.html will be displayed if an user is offline.
