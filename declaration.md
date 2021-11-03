@@ -54,6 +54,17 @@ Based on defer.js project `(https://github.com/shinsenter/defer.js)`.
 
 Licensed under MIT `(https://github.com/shinsenter/defer.js/blob/master/LICENSE)`.
 
+### PurifyCSS
+
+Remove unused CSS code from your stylesheets and minify output dramatically.
+
+**Resources:**
+
+- PurifyCSS Online `(https://purifycss.online/)`.
+- GitHub `(https://github.com/purifycss/purifycss)`.
+
+Licensed under MIT `(https://github.com/purifycss/purifycss/blob/master/LICENSE)`.
+
 ### HTML5 Link Prefetch and Page Prerender
 
 This bright piece of code appeared courtesy to Yury Matuhin `(https://github.com/ymatuhin)`.
@@ -122,7 +133,6 @@ We used Visual Studio Code `(https://code.visualstudio.com/)` for most of the ca
 - Online HTML Code Beautifier `(https://htmlbeautify.com/)`
 - Online JavaScript Beautifier `(https://beautifier.io/)`
 - Clean CSS `(https://www.cleancss.com/)`
-- PurifyCSS Online `(https://purifycss.online/)`
 - Web Code Tools `(https://webcode.tools/)`
 
 #### Validation

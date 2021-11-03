@@ -22,6 +22,7 @@ This fork is SEO friendly, multilingual, and has its own features. It also has s
 - Include HTML
 - Prevent Frame
 - Scroll to Top
+- PurifyCSS
 - Extended Meta Data for SEO and responsive browsing experience
 - Schema.org
 - Dublin Core
