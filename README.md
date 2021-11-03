@@ -1,6 +1,9 @@
 # [startbootstrap-creative-codexgq](https://github.com/codexgq/startbootstrap-creative-codexgq)
 
+## Credentials
+
 Version: 1.0.0
+
 Release Date: 2021-10-23
 
 [startbootstrap-creative-codexgq](https://github.com/codexgq/startbootstrap-creative-codexgq) is a one page, creative website theme built with [Bootstrap](https://getbootstrap.com/) originally created by [Start Bootstrap](https://startbootstrap.com/) forked by [codexgq](https://codex.gq/).
@@ -9,7 +12,7 @@ startbootstrap-creative-codexgq is an official fork of the [Creative](https://gi
 
 This fork is SEO friendly, multilingual, and has its own features. It also has some custom CSS and JS, and minor changes in UI & UX.
 
-**Custom Implementation:**
+### Custom Implementation
 
 - Progressive Web Application
 - Application Cache
@@ -26,12 +29,18 @@ This fork is SEO friendly, multilingual, and has its own features. It also has s
 - Offline
 - Minor changes in UI & UX
 
-It has no SimpleLightbox on board. Meanwhile it is supported in the Core Theme JavaScript still and can easily be deployed. Just uncomment (delete #) in the `scripts.js` and revert this back to the HTML:
-`<link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />`
-`<script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>`
+### Restrictions
 
-All Bootstrap Icons are inline SVG icons for better performance and stability. If you for any reason prefer to use classes please consider to revert this back to the HTML:
-`<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />`
+It has no `SimpleLightbox` on board. Meanwhile it is supported in the Core Theme JavaScript still and can easily be deployed. Just uncomment (delete #) in the `scripts.js` and revert this back to the HTML:
+
+1. `<link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />`
+2. `<script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>`
+
+All `Bootstrap Icons` are inline SVG icons for better performance and stability. If you for any reason prefer to use classes please consider to revert this back to the HTML:
+
+1. `<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />`
+
+### Origin
 
 [Creative](https://startbootstrap.com/theme/creative/) is a one page, creative website theme built with [Bootstrap](https://getbootstrap.com/) created by [Start Bootstrap](https://startbootstrap.com/).
 
@@ -117,7 +126,7 @@ access key. Copy this and paste it into the `data-sb-form-api-token='API_TOKEN'`
 If you aren't using SB Forms, simply delete the custom data attributes from the form, and remove the link above the
 closing `</body>` tag to SB Forms.
 
-There is no Contact Form onboard at startbootstrap-creative-codexgq. We use online contact row instead, and third parties services.
+**NB:** There is no Contact Form onboard at startbootstrap-creative-codexgq. We use online contact row instead, and third parties services.
 
 ## Bugs and Issues
 
@@ -131,7 +140,7 @@ Have a bug or an issue with this template? [Open a new issue](https://github.com
 
 ## About
 
-### About codexgq
+### About CodexGQ
 
 codexgq, Inc. (CGQ) is doing fast, trendy and well secured web and cloud based projects since 2014.
 
@@ -145,7 +154,7 @@ CGQ also does digital marketing incl. SEO, and SMM. It has its own hosting and d
 
 Visit [official website](https://codex.gq/) to submit an order or ask a question.
 
-The codexgq project was created and is maintained by **[mitkine a.k.a. computer god](https://github.com/mitkine)**.
+The codexgq Project was created and is maintained by **[mitkine a.k.a. computer god](https://github.com/mitkine)**.
 
 - [GitHub](https://github.com/mitkine)
 
@@ -176,6 +185,6 @@ Copyright 2014-2021 codexgq, Inc. Code released under the [MIT](https://github.c
 
 ## Other
 
-For legal issues, acknowledgments, and third-parties code disclaimer please refer to [declaration.md](https://github.com/codexgq/startbootstrap-creative-codexgq/blob/master/declaration.md)
+For legal issues, acknowledgments, and third-parties code disclaimer please refer to [declaration.md](https://github.com/codexgq/startbootstrap-creative-codexgq/blob/master/declaration.md).
 
 **[⬆ back to top](#startbootstrap-creative-codexgq)**
