@@ -1,5 +1,7 @@
 # Open Source Declaration
 
+Effective Date: 2021-11-03
+
 ## Third Parties Code Disclaimer
 
 This website operates some source code originally designed by third parties.
@@ -56,13 +58,13 @@ Licensed under MIT `(https://github.com/shinsenter/defer.js/blob/master/LICENSE)
 
 This bright piece of code appeared courtesy to Yury Matuhin `(https://github.com/ymatuhin)`.
 
-Baseline:
+**Baseline:**
 
 - Resource Hints W3C Working Draft 05 October 2020 `(https://www.w3.org/TR/resource-hints/)`
 - Link prefetching FAQ of MDN Web Docs `(https://developer.mozilla.org/en-US/docs/Web/HTTP/Link_prefetching_FAQ)`
 - Eliminating Roundtrips with Preconnect `(https://www.igvita.com/2015/08/17/eliminating-roundtrips-with-preconnect/)`
 
-### Inline JS based on W3Schools tutorials and templates
+### W3Schools Templates
 
 W3Schools `(https://www.w3schools.com/)`.
 
@@ -77,7 +79,7 @@ This script is based on a number of brilliant ideas grooved from Stack Overflow 
 
 ### Icons
 
-All inline SVG icon are Bootstrap Icons `(https://icons.getbootstrap.com/)`.
+All inline SVG icons are Bootstrap Icons `(https://icons.getbootstrap.com/)`.
 
 ### Official Visualization
 
@@ -138,7 +140,7 @@ We used Visual Studio Code `(https://code.visualstudio.com/)` for most of the ca
 - Screeming Frog `(https://www.screamingfrog.co.uk/seo-spider/)`
 - Smartarget `(https://smartarget.online/)`
 
-### Cloud, CDN, DNS, SSL and other good thing done right
+### Cloud, CDN, DNS, SSL and other good things done right
 
 - G-Core-Labs `(https://gcorelabs.com/)`
 - Hostry `(https://hostry.com/)`
@@ -167,7 +169,7 @@ Copyrights, licenses and open source code are as mentioned below.
 
 ### codexgq - Moving The Web
 
-- Website `https://codex.gq/`
+- Website: `https://codex.gq/`
 - Created and maintained by mitkine a.k.a. computer god `(GitHub: https://github.com/mitkine)`
 - Copyright 2014-2021 codexgq, Inc.
 - GitHub: `https://github.com/codexgq/startbootstrap-creative-codexgq`
@@ -175,32 +177,32 @@ Copyrights, licenses and open source code are as mentioned below.
 
 ### Start Bootstrap - Creative
 
-- Website `https://startbootstrap.com/theme/creative`
+- Website: `https://startbootstrap.com/theme/creative`
 - Created and maintained by David Miller `(https://davidmiller.io/)`
 - Copyright 2013-2021 Start Bootstrap
 - GitHub: `https://github.com/StartBootstrap/startbootstrap-creative`
 
 ### Bootstrap
 
-- Website `https://getbootstrap.com/`
+- Website: `https://getbootstrap.com/`
 - Copyright 2011-2021 The Bootstrap Authors
 - Copyright 2011-2021 Twitter, Inc.
 - GitHub: `https://github.com/twbs/bootstrap`
 
 ### GitHub
 
-- Website `https://github.com/`
+- Website: `https://github.com/`
 - Copyright 2021 GitHub, Inc.
 - GitHub Docs: `https://github.wiki/en/rest/reference/licenses`
 
 ### HTML Standard
 
-- Website `https://html.spec.whatwg.org/`
+- Website: `https://html.spec.whatwg.org/`
 - Intellectual Property Rights: `https://html.spec.whatwg.org/#ipr`
 
 ### Cascading Style Sheets (CSS)
 
-- Website `https://www.w3.org/Style/CSS/`
+- Website: `https://www.w3.org/Style/CSS/`
 - Created and maintained by the CSS Working Group (Bert Bos, style activity lead)
 - Copyright © 1994–2021 W3C®
 - Privacy Policy: `https://www.w3.org/Consortium/Legal/2002/ipr-notice-20021231`
@@ -224,4 +226,4 @@ If you have an issue with this declaration please contact us by email: **info@co
 
 _...Keep Calm And Code!_
 
-**[⬆ back to top](#declaration.md)**
+**[⬆ back to top](#open-source-declaration)**

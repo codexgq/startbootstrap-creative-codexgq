@@ -185,6 +185,6 @@ Copyright 2014-2021 codexgq, Inc. Code released under the [MIT](https://github.c
 
 ## Other
 
-For legal issues, acknowledgments, and third-parties code disclaimer please refer to [declaration.md](https://github.com/codexgq/startbootstrap-creative-codexgq/blob/master/declaration.md).
+For legal issues, acknowledgments, and third-parties code disclaimer please refer to [declaration.md](https://github.com/codexgq/startbootstrap-creative-codexgq/blob/master/declaration.md#open-source-declaration).
 
 **[⬆ back to top](#startbootstrap-creative-codexgq)**
