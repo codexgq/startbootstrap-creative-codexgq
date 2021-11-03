@@ -1,6 +1,7 @@
 # [startbootstrap-creative-codexgq](https://github.com/codexgq/startbootstrap-creative-codexgq)
 
 Version: 1.0.0
+Release Date: 2021-10-23
 
 [startbootstrap-creative-codexgq](https://github.com/codexgq/startbootstrap-creative-codexgq) is a one page, creative website theme built with [Bootstrap](https://getbootstrap.com/) originally created by [Start Bootstrap](https://startbootstrap.com/) forked by [codexgq](https://codex.gq/).
 
@@ -8,14 +9,16 @@ startbootstrap-creative-codexgq is an official fork of the [Creative](https://gi
 
 This fork is SEO friendly, multilingual, and has its own features. It also has some custom CSS and JS, and minor changes in UI & UX.
 
-Custom Implementation:
+**Custom Implementation:**
 
 - Progressive Web Application
 - Application Cache
+- Lazy-loading
+- HTML5 Link Prefetch
+- Page Prerender
 - Include HTML
-- Lazy-loading, incl. images, scripts, styles and iframes
-- HTML5 Link Prefetch with JS
 - Prevent Frame
+- Scroll to Top
 - Extended Meta Data for SEO and responsive browsing experience
 - Schema.org
 - Dublin Core
@@ -23,7 +26,12 @@ Custom Implementation:
 - Offline
 - Minor changes in UI & UX
 
-It has no SimpleLightbox on board. Meanwhile it is supported in the Core Theme JavaScript still and can easily be deployed.
+It has no SimpleLightbox on board. Meanwhile it is supported in the Core Theme JavaScript still and can easily be deployed. Just uncomment (delete #) in the `scripts.js` and revert this back to the HTML:
+`<link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />`
+`<script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>`
+
+All Bootstrap Icons are inline SVG icons for better performance and stability. If you for any reason prefer to use classes please consider to revert this back to the HTML:
+`<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />`
 
 [Creative](https://startbootstrap.com/theme/creative/) is a one page, creative website theme built with [Bootstrap](https://getbootstrap.com/) created by [Start Bootstrap](https://startbootstrap.com/).
 
@@ -141,6 +149,10 @@ The codexgq project was created and is maintained by **[mitkine a.k.a. computer 
 
 - [GitHub](https://github.com/mitkine)
 
+#### Related Projects
+
+Please refer to `declaration.md` for related projects experience.
+
 ### About Start Bootstrap
 
 Start Bootstrap is an open source library of free Bootstrap themes and templates. All of the free themes and templates on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
@@ -161,3 +173,9 @@ Start Bootstrap is based on the [Bootstrap](https://getbootstrap.com/) framework
 Copyright 2013-2021 Start Bootstrap LLC. Code released under the [MIT](https://github.com/StartBootstrap/startbootstrap-creative/blob/master/LICENSE) license.
 
 Copyright 2014-2021 codexgq, Inc. Code released under the [MIT](https://github.com/codexgq/startbootstrap-creative-codexgq/blob/master/LICENSE) license.
+
+## Other
+
+For legal issues, acknowledgments, and third-parties code disclaimer please refer to [declaration.md](https://github.com/codexgq/startbootstrap-creative-codexgq/blob/master/declaration.md)
+
+**[⬆ back to top](#startbootstrap-creative-codexgq)**

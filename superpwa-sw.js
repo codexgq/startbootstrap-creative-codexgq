@@ -1,9 +1,17 @@
 'use strict';
 
-/**
- * Progressive Web Application (PWA) Service Worker of SuperPWA
- * To learn more and add one to your website, visit - https://superpwa.com/
- * Customized by codexgq Team, visit - https://codex.gq/
+/*!
+ * Progressive Web Application (PWA) Service Worker
+ */
+/*!
+ * PWA for supported browsers appeared courtesy to SuperPWA (https://superpwa.com/)
+ * Copyright 2018-2021 SuperPWA
+ * Licensed under GNU GPL (https://github.com/SuperPWA/Super-Progressive-Web-Apps/blob/master/license.txt)
+ */
+/*!
+ * Customized by codexgq Team for startbootstrap-creative-codexgq theme (https://github.com/codexgq/startbootstrap-creative-codexgq)
+ * Copyright 2014-2021 codexgq, Inc.
+ * Licensed under MIT (https://github.com/codexgq/startbootstrap-creative-codexgq/blob/master/LICENSE)
  */
  
 const cacheName = 'codex.gq-superpwa-2.0.2';
@@ -14,7 +22,7 @@ const resourcesToCache = [
 	'https://codex.gq/',
 	'https://codex.gq/index.html'
   ];
-const neverCacheUrls = [/\/scripts/,/\/src/,/\/.editorconfig/,/\/.gitignore/,/\/LICENSE/,/\/package.json/,/\/package-lock.json/,/\/README.md/];
+const neverCacheUrls = [/\/scripts/,/\/src/,/\/.editorconfig/,/\/.gitignore/,/\/CNAME/,/\/declaration.md/,/\/LICENSE/,/\/package.json/,/\/package-lock.json/,/\/README.md/];
 
 // Install
 self.addEventListener('install', function(e) {

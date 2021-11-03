@@ -17,7 +17,7 @@
         <!-- Dublin Core Metatag Initiative-->
         <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
         <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
-        <!-- Proressive Web Application (PWA) for supported browsers is appeared courtesy to SuperPWA (https://superpwa.com/)-->
+        <!-- Progressive Web Application (PWA)-->
         <!-- PWA Manifest-->
         <link rel="manifest" type="application/manifest+json" href="site.webmanifest" />
         <!-- Register Service Worker-->
@@ -38,7 +38,7 @@
         </script>
         <!-- Application Cache-->
         <link rel="manifest" type="text/cache-manifest" href="default.appcache" />
-        <!-- A super tiny, native performant library for lazy-loading JS, CSS, images, iframes... Easily speed up a website courtesy to Mai Nhut Tan-->
+        <!-- A super tiny, native performant library for lazy-loading JS, CSS, images, iframes... Easily speed up a website!-->
         <script>
         ! function(e, o, t, n, i, r) { // This script should always go inline as early as possible for better performance.
             function c(e, t) {
@@ -134,7 +134,7 @@
         <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700&display=swap" rel="stylesheet preload" as="style" type="text/css" crossorigin="anonymous" media="all" />
         <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic&display=swap" rel="stylesheet preload" as="style" type="text/css" crossorigin="anonymous" media="all" />
         <!-- Core Theme CSS (Includes Bootstrap 5.1.3)-->
-        <link href="css/styles.css" rel="stylesheet" type="text/css" />
+        <link href="css/all.css" rel="stylesheet" type="text/css" />
         <!-- END Cascade Style Sheets Files (CSS)-->
         <!-- UI & UX Custom Inline CSS-->
         <style>
@@ -196,18 +196,6 @@
             */
             .mb-6 {
                 margin-bottom: -128px !important;
-            }
-            /*!
-            Page Section Background Image
-            */
-            .bg-ps {
-                padding-top: 10rem;
-                padding-bottom: calc(10rem - 0px);
-                background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("assets/img/camomile-flower.jpg");
-                background-position: center;
-                background-repeat: no-repeat;
-                background-attachment: scroll;
-                background-size: cover;
             }
             /*!
             Any List Item Color and on Hover Behavior
@@ -1055,10 +1043,12 @@
         <!-- Inline JavaScript (JS)-->
         <!-- Lazy Load Images-->
         <script>
+            // Call the function.
             deferimg('img[data-src],picture[srcset]')
         </script>
-        <!-- HTML5 Link Prefetch-->
+        <!-- HTML5 Link Prefetch and Page Prerender-->
         <script>
+            // Define the function.
             function add_hint(type, url) {
                 if (!type || !url) return;
                 var el = document.createElement("link");
@@ -1066,23 +1056,32 @@
                 el.setAttribute("href", url);
                 document.getElementsByTagName("head")[0].appendChild(el);
             }
+            // Prefetch, dns-prefetch, preload, prerender or preconnect links for website acceleretion.
             add_hint('dns-prefetch', 'https://cdn.jsdelivr.net/');
             add_hint('dns-prefetch', 'https://www.jsdelivr.com/');
             add_hint('dns-prefetch', 'https://fonts.gstatic.com/');
-        </script>
+            // Speed up transitions between pages by prerendering them within a domain.
+            document.addEventListener("mousemove", function (e) {
+                if (!e.target.href ||
+                    e.target.href.indexOf(location.host) == -1 ||
+                    e.target.hintAdded) return;
+                add_hint('prerender', e.target.href);
+                e.target.hintAdded =  true;
+            });            
+        </script> 
         <!-- Scroll To Top Button JS-->
         <script>
             // Get the button
-            var mybutton = document.getElementById("btn-top");
+            var topButton = document.getElementById("btn-top");
             // When the user scrolls down 20px from the top of the document, show the button
             window.onscroll = function() {
                 scrollFunction()
             };
             function scrollFunction() {
                 if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                    mybutton.style.display = "block";
+                    topButton.style.display = "block";
                 } else {
-                    mybutton.style.display = "none";
+                    topButton.style.display = "none";
                 }
             }
             // When the user clicks on the button, scroll to the top of the document
@@ -1091,7 +1090,7 @@
                 document.documentElement.scrollTop = 0;
             }
         </script>
-        <!-- Include Content (includes any file content to visual HTML)-->
+        <!-- Include HTML (includes any file content into visual HTML)-->
         <script>
         function includeContent() {
             var z, i, elmnt, file, xhttp;
@@ -1122,13 +1121,14 @@
         };
         </script>
         <script>
+            // Call the function.
             includeContent();
         </script>
-        <!-- END Include Content-->
+        <!-- END Include HTML-->
         <!-- Application Cache-->
         <script>
         function updateCache() {
-            //  If you change the appcache manifest file and reload the page, the browser will download the new files in the cache, and then switch to the new cache.
+            // If you change the appcache manifest file and reload the page, the browser will download the new files in the cache, and then switch to the new cache.
             window.applicationCache.addEventListener('updateready', function(){
                 window.applicationCache.swapCache();
             }, false);
@@ -1142,42 +1142,5 @@
         </script>
         <!-- END Inline JavaScript (JS)-->
     </body>
-    <!-- This website and its content are build by codexgq Team based on the Creative theme by Start Bootstrap and licensed under the MIT License.
-        *
-        * codexgq - Moving The Web (https://codex.gq)
-        * Created and maintained by mitkine a.k.a. computer god (GitHub: https://github.com/mitkine)
-        * Copyright 2014-2021 codexgq, Inc.
-        * GitHub: https://github.com/codexgq/startbootstrap-creative-codexgq
-        *
-        * Start Bootstrap - Creative ver. 7.0.5 (https://startbootstrap.com/theme/creative)
-        * Created and maintained by David Miller (https://davidmiller.io/)
-        * Copyright 2013-2021 Start Bootstrap
-        * GitHub: https://github.com/StartBootstrap/startbootstrap-creative
-        *
-        * Bootstrap ver. 5.1.3 (https://getbootstrap.com/)
-        * Copyright 2011-2021 The Bootstrap Authors
-        * Copyright 2011-2021 Twitter, Inc.
-        * GitHub: https://github.com/twbs/bootstrap
-        *
-        * GitHub (https://github.com)
-        * Copyright 2021 GitHub, Inc.
-        * GitHub Docs: https://github.wiki/en/rest/reference/licenses
-        *
-        * HTML Standard (https://html.spec.whatwg.org/)
-        * Intellectual Property Rights: https://html.spec.whatwg.org/#ipr
-        *
-        * Cascading Style Sheets (CSS) (https://www.w3.org/Style/CSS/)
-        * Created and maintained by the CSS Working Group (Bert Bos, style activity lead)
-        * Copyright © 1994–2021 W3C®
-        * Privacy Policy: https://www.w3.org/Consortium/Legal/2002/ipr-notice-20021231
-        *
-        * JavaScript (JS)
-        * Designed by Brendan Eich of Netscape (initially)
-        * First appeared December 4, 1995
-        * 'JavaScript' is a trademark of Oracle Corporation in the United States.
-        *
-        * PHP: Hypertext Preprocessor (https://www.php.net/)
-        * Privacy Policy: https://www.php.net/privacy.php
-        *
-    For legal issues other than open source please refer to our Terms & Conditions.-->
+    <!-- Please refer to the Open Source Declaration (https://github.com/codexgq/startbootstrap-creative-codexgq/blob/master/declaration.md) for acknowledgments, disclaimer, and legal statement, incl. copyrights, licenses and source code references.-->
 </html>

@@ -1,0 +1,19 @@
+/*!
+ * Custom CSS - startbootstrap-creative-codexgq v1.0.0 (https://github.com/codexgq/startbootstrap-creative-codexgq)
+ * Copyright 2014-2021 codexgq, Inc.
+ * Licensed under MIT (https://github.com/codexgq/startbootstrap-creative-codexgq/blob/master/LICENSE)
+ *
+ * For custom styles not in custom.css please refer to the HTML inline.
+ */
+/*!
+Page Section Background Image
+ */
+.bg-ps {
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - 0px);
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/camomile-flower.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
