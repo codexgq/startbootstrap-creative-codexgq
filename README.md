@@ -28,6 +28,7 @@ This fork is SEO friendly, multilingual, and has its own features. It also has s
 - Dublin Core
 - Multilingual
 - Offline
+- Windows 10 ready
 - Minor changes in UI & UX
 
 ### Restrictions

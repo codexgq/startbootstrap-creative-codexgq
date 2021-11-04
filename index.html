@@ -20,6 +20,9 @@
         <!-- Progressive Web Application (PWA)-->
         <!-- PWA Manifest-->
         <link rel="manifest" type="application/manifest+json" href="site.webmanifest" />
+        <link rel="manifest" type="application/manifest+json" href="manifest.json" />
+        <!-- Application Cache-->
+        <link rel="manifest" type="text/cache-manifest" href="default.appcache" />        
         <!-- Register Service Worker-->
         <script>
             if ("serviceWorker" in navigator) {
@@ -36,8 +39,6 @@
             }
             }
         </script>
-        <!-- Application Cache-->
-        <link rel="manifest" type="text/cache-manifest" href="default.appcache" />
         <!-- A super tiny, native performant library for lazy-loading JS, CSS, images, iframes... Easily speed up a website!-->
         <script>
         ! function(e, o, t, n, i, r) { // This script should always go inline as early as possible for better performance.
@@ -247,8 +248,16 @@
         <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-package/android-chrome-192x192.png" />
         <link rel="mask-icon" type="image/svg+xml" href="assets/favicon-package/safari-pinned-tab.svg" color="#cd2653" />
         <meta name="msapplication-TileImage" content="https://codex.gq/assets/favicon-package/mstile-144x144.png" />
+        <!-- iOS PWA Icons-->
+        <link rel="apple-touch-icon" type="image/png" sizes="152x152" href="assets/favicon-package/apple-touch-icon-152x152.png" />
+        <link rel="apple-touch-icon" type="image/png" sizes="167x167" href="assets/favicon-package/apple-touch-icon-167x167.png" />
         <!-- Simple iOS Splash Screen-->
-        <link rel="apple-touch-startup-image" href="assets/favicon-package/apple-touch-icon-180x180.png">
+        <link rel="apple-touch-startup-image" href="assets/favicon-package/apple-touch-icon-180x180-precomposed.png">
+        <!-- iPad Splash Screen-->
+        <link href="assets/splashscreens/ios/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+        <link href="assets/splashscreens/ios/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+        <link href="assets/splashscreens/ios/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+        <link href="assets/splashscreens/ios/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
         <!-- Meta Data - Other-->
         <meta name="copyright" content="codexgq" />
         <meta name="reply-to" content="info@codex.gq" />
