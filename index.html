@@ -213,6 +213,14 @@
             .span-item {
                 cursor: pointer;
             }
+            /*!
+            Responsive Images
+            */
+            .img-responsive {
+                max-width: 100%;
+                height: auto;
+                margin: auto;
+            }
         </style>
         <!-- END UI & UX Custom Inline CSS-->
         <!-- Facebook Open Graph-->
@@ -253,11 +261,6 @@
         <link rel="apple-touch-icon" type="image/png" sizes="167x167" href="assets/favicon-package/apple-touch-icon-167x167.png" />
         <!-- Simple iOS Splash Screen-->
         <link rel="apple-touch-startup-image" href="assets/favicon-package/apple-touch-icon-180x180-precomposed.png">
-        <!-- iPad Splash Screen-->
-        <link href="assets/splashscreens/ios/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-        <link href="assets/splashscreens/ios/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-        <link href="assets/splashscreens/ios/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-        <link href="assets/splashscreens/ios/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
         <!-- Meta Data - Other-->
         <meta name="copyright" content="codexgq" />
         <meta name="reply-to" content="info@codex.gq" />
@@ -564,7 +567,7 @@
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
             <div class="container px-4 px-lg-5">
                 <a class="navbar-brand btn-enl-lg" href="/" title="codexgq - Moving The Web">codexgq</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle Navigation"><span class="navbar-toggler-icon"></span></button>
+                <button id="dropdownForiOS" class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle Navigation"><div class="navbar-toggler-icon"></div></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0" itemscope itemtype="https://schema.org/SiteNavigationElement">
                         <li class="nav-item"><a itemprop="url" class="nav-link" href="#about"><span itemprop="name" content="About">About</span></a></li>
@@ -578,7 +581,7 @@
         </nav>
         <!-- END Navigation-->
         <!-- Hreflang Menu Button HTML-->
-        <div class="dropdown" itemscope itemtype="https://schema.org/SiteNavigationElement">
+        <div id="dropdownForiOS" class="dropdown" itemscope itemtype="https://schema.org/SiteNavigationElement">
             <svg id="btn-hreflang" class="bi bi-geo-alt fs-1 text-primary dropdown-toggle" role="button" data-bs-toggle="dropdown" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-haspopup="true" aria-expanded="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
@@ -978,7 +981,7 @@
         <!-- X-tra Section-->
         <section class="py-3">
             <div class="container align-items-center justify-content-center text-center" id="logo">
-                <div class="pb-4">
+                <div class="pb-4 img-responsive">
                     <a href="/" title="codexgq - Moving The Web">
                         <img src="data:image/gif;base64,R0lGODlhAQABAPAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="assets/img/logo-cropped.svg" style="width:384px; height:384px" alt="Logotype" aria-hidden="true" />
                     </a>
@@ -1133,6 +1136,19 @@
             includeContent();
         </script>
         <!-- END Include HTML-->
+        <!-- Bootstrap Toggle for iOS-->
+        <script>
+        $scope.showDropdown = function(dropdownForiOS) {
+            var element = document.getElementById(dropdownForiOS);
+            if( element.classList.contains("show") ) {
+                element.classList.remove("show");
+            } else {
+                element.classList.add("show");
+                element.focus();
+                element.scrollIntoView();
+            }
+        };
+        </script>
         <!-- Application Cache-->
         <script>
         function updateCache() {
