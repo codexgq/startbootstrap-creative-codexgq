@@ -1,11 +1,5 @@
 <!DOCTYPE html>
 <!-- PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd" -->
-<!--[if lt IE 7]>     <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>        <html class="lt-ie9 lt-ie8">        <![endif]-->
-<!--[if IEMobile 7 ]> <html class="iem7" lang="en"> <![endif]-->
-<!--[if IE 8]>        <html class="lt-ie9">               <![endif]-->
-<!--[if gt IE 8]>     <!-->                           <!--<![endif]-->
-<!-- saved from url=(0014)about:internet -->
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
     <head itemscope itemtype="http://schema.org/WPHeader">
         <!-- Meta Core-->
@@ -29,8 +23,8 @@
             console.log("SuperPWA active service worker found, no need to register.");
             } else {
             navigator.serviceWorker
-            .register("https://codex.gq/superpwa-sw.js", {
-            scope: "https://codex.gq/"
+            .register("superpwa-sw.js", {
+            scope: "./"
             })
             .then(function(reg) {
             console.log("SuperPWA service worker has been registered for scope: " + reg.scope);
@@ -558,7 +552,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand btn-enl-lg" href="/" title="codexgq - Moving The Web">codexgq</a>
+                <a class="navbar-brand btn-enl-lg" href="/" title="codexgq - Moving The Web">#odexgq</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle Navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0" itemscope itemtype="https://schema.org/SiteNavigationElement">
@@ -1039,8 +1033,6 @@
             <meta itemprop="copyrightHolder" content="codexgq">
         </footer>
         <!-- END SITE CONTENT-->
-        <!-- jQuery for Older Browsers-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <!-- Bootstrap Core JS-->
         <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core Theme JS-->
@@ -1130,6 +1122,12 @@
             includeContent();
         </script>
         <!-- END Include HTML-->
+        <!-- Prevent Frame-->
+        <script>
+            if (top != self) {
+            	  top.location.href = self.location.href;
+                }
+        </script>
         <!-- Application Cache-->
         <script>
         function updateCache() {
@@ -1138,12 +1136,6 @@
                 window.applicationCache.swapCache();
             }, false);
         }
-        </script>
-        <!-- Prevent Frame-->
-        <script>
-            if (top != self) {
-            	  top.location.href = self.location.href;
-                }
         </script>
         <!-- END Inline JavaScript (JS)-->
     </body>
