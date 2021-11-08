@@ -1018,6 +1018,11 @@
 
     "screenshots": [
         {
+            "src": "https://codex.gq/assets/screenshots/mobile-homepage.png",
+            "sizes": "750x1334",
+            "type": "image/png"
+        },
+        {
             "src": "https://codex.gq/assets/screenshots/desktop-homepage.png",
             "sizes": "1280x800",
             "type": "image/png"
