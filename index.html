@@ -212,14 +212,6 @@
             .span-item {
                 cursor: pointer;
             }
-            /*!
-            Responsive Images
-            */
-            .img-responsive {
-                max-width: 100%;
-                height: auto;
-                margin: auto;
-            }
         </style>
         <!-- END UI & UX Custom Inline CSS-->
         <!-- Facebook Open Graph-->
@@ -564,9 +556,9 @@
         <!-- START SITE CONTENT-->
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-            <div class="container px-4 px-lg-5">
+            <div class="container px-4 px-lg-5" id="dropdownForiOS">
                 <a class="navbar-brand btn-enl-lg" href="/" title="codexgq - Moving The Web">codexgq</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle Navigation"><span id="dropdownForiOS" class="navbar-toggler-icon"></span></button>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle Navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0" itemscope itemtype="https://schema.org/SiteNavigationElement">
                         <li class="nav-item"><a itemprop="url" class="nav-link" href="#about"><span itemprop="name" content="About">About</span></a></li>
@@ -980,9 +972,9 @@
         <!-- X-tra Section-->
         <section class="py-3">
             <div class="container align-items-center justify-content-center text-center" id="logo">
-                <div class="pb-4 img-responsive">
+                <div class="pb-4">
                     <a href="/" title="codexgq - Moving The Web">
-                        <img src="data:image/gif;base64,R0lGODlhAQABAPAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-srcset="assets/img/logo-cropped-sm.svg 320w, assets/img/logo-cropped.svg 384w," sizes="(max-width: 320px) 280px, 384px" data-src="assets/img/logo-cropped.svg" alt="Logotype" aria-hidden="true" />
+                        <img src="data:image/gif;base64,R0lGODlhAQABAPAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="assets/img/logo-cropped.svg" style="max-width: 100%; width: 384px; height: auto;" alt="Logotype" aria-hidden="true" />
                     </a>
                 </div>
                 <h4>
