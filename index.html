@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <!-- PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd" -->
+<!--[if lt IE 7]>     <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>        <html class="lt-ie9 lt-ie8">        <![endif]-->
+<!--[if IEMobile 7 ]> <html class="iem7" lang="en"> <![endif]-->
+<!--[if IE 8]>        <html class="lt-ie9">               <![endif]-->
+<!--[if gt IE 8]>     <!-->                           <!--<![endif]-->
+<!-- saved from url=(0014)about:internet -->
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
     <head itemscope itemtype="http://schema.org/WPHeader">
         <!-- Meta Core-->
@@ -552,9 +558,9 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand btn-enl-lg" href="/" title="codexgq - Moving The Web">#codexgq</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle Navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <a class="navbar-brand btn-enl-lg" href="/" title="codexgq - Moving The Web">codexgqc</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle Navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0" itemscope itemtype="https://schema.org/SiteNavigationElement">
                         <li class="nav-item"><a itemprop="url" class="nav-link" href="#about"><span itemprop="name" content="About">About</span></a></li>
                         <li class="nav-item"><a itemprop="url" class="nav-link" href="#services"><span itemprop="name" content="Services">Services</span></a></li>
@@ -1122,6 +1128,12 @@
             includeContent();
         </script>
         <!-- END Include HTML-->
+        <!-- BS Dropdown Issue-->
+        <script>
+            $(document).ready(function() {
+                $(".dropdown-toggle").dropdown();
+            });
+        </script>
         <!-- Application Cache-->
         <script>
         function updateCache() {
@@ -1135,7 +1147,7 @@
         <script>
             if (top != self) {
             	  top.location.href = self.location.href;
-              }
+                }
         </script>
         <!-- END Inline JavaScript (JS)-->
     </body>
