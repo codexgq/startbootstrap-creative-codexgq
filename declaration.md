@@ -12,9 +12,9 @@ All those instances are customized by codexgq Team exclusively for startbootstra
 
 The usage of such code outside this project may not be directly supported by your server and require customization or fine tuning as applicable. Meanwhile we did our best to make it as universal as possible.
 
-For details incl. copyright and licenses please refer to given acknowledgments and legal statement.
+For details incl. copyright and licenses please refer to given acknowledgements and legal statement.
 
-## Acknowledgments
+## Acknowledgements
 
 The following given acknowledgments are presented in order of appearance of the corresponding event within HTML.
 
@@ -91,6 +91,10 @@ This script is based on a number of brilliant ideas grooved from Stack Overflow 
 ### Icons
 
 All inline SVG icons are Bootstrap Icons `(https://icons.getbootstrap.com/)`.
+
+### Shortcuts
+
+Shortcuts icons made by itim2101 `(https://www.flaticon.com/authors/itim2101)` from Flaticon `(https://www.flaticon.com/)`.
 
 ### Official Visualization
 

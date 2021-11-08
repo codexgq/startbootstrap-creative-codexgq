@@ -31,7 +31,7 @@ This fork is SEO friendly, multilingual, and has its own features. It also has s
 - Windows 11 ready
 - Minor changes in UI & UX
 
-### Restrictions
+#### Important Notification
 
 It has no `SimpleLightbox` on board. Meanwhile it is supported in the Core Theme JavaScript still and can easily be deployed. Just uncomment (delete #) in the `scripts.js` and revert this back to the HTML:
 
@@ -146,7 +146,7 @@ Have a bug or an issue with this template? [Open a new issue](https://github.com
 
 codexgq, Inc. (CGQ) is doing fast, trendy and well secured web and cloud based projects since 2014.
 
-If you already have an app or a website, CGQ experts will conduct an audit, fix bugs, reduce the loading time of your project dramatically.
+If you already have an app or a website, CGQ will conduct an audit, fix bugs, reduce the loading time of your project dramatically.
 
 If you create a project from the scratch, they will be happy to provide you a support in choosing a registrar, a hosting and a technology stack.
 
@@ -187,6 +187,6 @@ Copyright 2014-2021 codexgq, Inc. Code released under the [MIT](https://github.c
 
 ## Other
 
-For legal issues, acknowledgments, and third-parties code disclaimer please refer to [declaration.md](https://github.com/codexgq/startbootstrap-creative-codexgq/blob/master/declaration.md#open-source-declaration).
+For legal issues, acknowledgements, and third-parties code disclaimer please refer to [declaration.md](https://github.com/codexgq/startbootstrap-creative-codexgq/blob/master/declaration.md#open-source-declaration).
 
 **[⬆ back to top](#startbootstrap-creative-codexgq)**
