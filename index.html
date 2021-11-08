@@ -20,7 +20,6 @@
         <!-- Progressive Web Application (PWA)-->
         <!-- PWA Manifest-->
         <link rel="manifest" type="application/manifest+json" href="site.webmanifest" />
-        <link rel="manifest" type="application/manifest+json" href="manifest.json" />
         <!-- Application Cache-->
         <link rel="manifest" type="text/cache-manifest" href="default.appcache" />        
         <!-- Register Service Worker-->
@@ -217,7 +216,7 @@
             Responsive Images
             */
             .img-responsive {
-                max-width: 100%;
+                width: 100%;
                 height: auto;
                 margin: auto;
             }
@@ -567,7 +566,7 @@
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
             <div class="container px-4 px-lg-5">
                 <a class="navbar-brand btn-enl-lg" href="/" title="codexgq - Moving The Web">codexgq</a>
-                <button id="dropdownForiOS" class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle Navigation"><div class="navbar-toggler-icon"></div></button>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle Navigation"><span id="dropdownForiOS" class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0" itemscope itemtype="https://schema.org/SiteNavigationElement">
                         <li class="nav-item"><a itemprop="url" class="nav-link" href="#about"><span itemprop="name" content="About">About</span></a></li>
@@ -1136,7 +1135,7 @@
             includeContent();
         </script>
         <!-- END Include HTML-->
-        <!-- Bootstrap Toggle for iOS-->
+        <!-- Bootstrap Toggle/Dropdown for iOS-->
         <script>
         $scope.showDropdown = function(dropdownForiOS) {
             var element = document.getElementById(dropdownForiOS);
