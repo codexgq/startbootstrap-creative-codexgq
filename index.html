@@ -237,10 +237,8 @@
             }
             .overlay-content {
                 position: relative;
-                top: 10%;
                 width: 100%;
                 text-align: center;
-                margin-top: 30px;
             }
             .overlay a {
                 padding: 8px;
@@ -637,14 +635,21 @@
         </div>
         <!-- END Hreflang Menu Button HTML-->
         <!-- Fullscreen Navigation HTML-->
-        <div id="fullscreenNav" class="overlay h-100">
-            <a href="javascript:void(0)" class="closebtn-lg" onclick="closeFullscreenNav()">&times;</a>
-            <div class="overlay-content" onclick="closeFullscreenNav()">
-                <a href="#about">About</a>
-                <a href="#services">Services</a>
-                <a href="#solutions">Solutions</a>
-                <a href="#products">Products</a>
-                <a href="#contact">Contact</a>
+        <div id="fullscreenNav" class="masthead overlay">
+            <div class="container px-4 px-lg-5 h-100">
+                <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                    <div class="col-lg-8 align-self-end">
+                        <a href="javascript:void(0)" class="closebtn-lg" onclick="closeFullscreenNav()">&times;</a>
+                        <div class="overlay-content" onclick="closeFullscreenNav()">
+                            <a href="#about">About</a>
+                            <a href="#services">Services</a>
+                            <a href="#solutions">Solutions</a>
+                            <a href="#products">Products</a>
+                            <a href="#contact">Contact</a>
+                        </div>
+                    </div>
+                    <div class="align-self-baseline"></div>
+                </div>
             </div>
         </div>
         <svg onclick="openFullscreenNav()" id="btn-nav" class="bi bi-justify-left fs-1 text-primary btn-enl-lg" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
