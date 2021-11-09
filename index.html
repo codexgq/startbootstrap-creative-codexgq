@@ -134,7 +134,35 @@
         <!-- UI & UX Custom Inline CSS-->
         <style>
             /*!
-            The Scroll To Top Button CSS
+            Left Extended Navigation Button CSS
+            */
+            #btn-nav-1 {
+                position: fixed;
+                top: 88px;
+                left: 16px;
+                z-index: 999;
+                cursor: pointer;
+            }
+            #btn-nav-1:hover {
+                opacity: 0.75;
+                filter: alpha(opacity=75);
+            }
+            /*!
+            Right Extended Navigation Button CSS
+            */
+            #btn-nav-2 {
+                position: fixed;
+                top: 88px;
+                right: 16px;
+                z-index: 999;
+                cursor: pointer;
+            }
+            #btn-nav-2:hover {
+                opacity: 0.75;
+                filter: alpha(opacity=75);
+            }
+            /*!
+            Scroll To Top Button CSS
             */
             #btn-top {
                 display: none;
@@ -147,34 +175,6 @@
                 filter: alpha(opacity=50);
             }
             #btn-top:hover {
-                opacity: 0.75;
-                filter: alpha(opacity=75);
-            }
-            /*!
-            The Hreflang Menu Button CSS
-            */
-            #btn-hreflang {
-                position: fixed;
-                top: 88px;
-                right: 16px;
-                z-index: 999;
-                cursor: pointer;
-            }
-            #btn-hreflang:hover {
-                opacity: 0.75;
-                filter: alpha(opacity=75);
-            }
-            /*!
-            Fullscreen Navigation Menu Button CSS
-            */
-            #btn-nav {
-                position: fixed;
-                top: 88px;
-                left: 16px;
-                z-index: 999;
-                cursor: pointer;
-            }
-            #btn-nav:hover {
                 opacity: 0.75;
                 filter: alpha(opacity=75);
             }
@@ -195,16 +195,10 @@
                 transform: scale(1.5);
             }
             /*!
-            BS Button Standard Width
+            Any Button Standard Width
             */
             .btn-std {
                 width: 256px;
-            }
-            /*!
-            Custom CSS Margins
-            */
-            .mb-6 {
-                margin-bottom: -128px !important;
             }
             /*!
             Any List Item Color and on Hover Behavior
@@ -220,6 +214,12 @@
             */
             .span-item {
                 cursor: pointer;
+            }
+            /*!
+            Custom CSS Margins
+            */
+            .mb-6 {
+                margin-bottom: -128px !important;
             }
             /*!
             Full Screen Content Overlay CSS
@@ -641,7 +641,7 @@
         <span id="webpage"></span>
         <span id="organization"></span>
         <!-- START SITE CONTENT-->
-        <!-- Navigation-->
+        <!-- Main Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
             <div class="container px-4 px-lg-5">
                 <a class="navbar-brand btn-enl-lg" href="/" title="codexgq - Moving The Web">codexgq</a>
@@ -657,20 +657,9 @@
                 </div>
             </div>
         </nav>
-        <!-- END Navigation-->
-        <!-- Hreflang Menu Button HTML-->
-        <div class="dropdown" itemscope itemtype="https://schema.org/SiteNavigationElement">
-            <svg id="btn-hreflang" class="bi bi-geo-alt fs-1 text-primary dropdown-toggle" role="button" data-bs-toggle="dropdown" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-haspopup="true" aria-expanded="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-            </svg>
-            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="btn-hreflang">
-                <span itemprop="url" class="dropdown-item span-item"><span itemprop="name" content="English">English</span></span>
-                <a itemprop="url" class="dropdown-item" href="ru" hreflang="ru"><span itemprop="name" content="Russian (Руссский язык)">Russian (Руссский язык)</span></a>
-            </div>
-        </div>
-        <!-- END Hreflang Menu Button HTML-->
-        <!-- Fullscreen Navigation HTML-->
+        <!-- END Main Navigation-->
+        <!-- Left Extended Navigation HTML (Full Screen Navigation)-->
+        <!--noindex-->
         <div id="fullscreenNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn-lg" onclick="closeFullscreenNav()">&times;</a>
             <div class="overlay-content flex-box" onclick="closeFullscreenNav()">
@@ -681,20 +670,33 @@
                 <a href="#contact">Contact</a>
             </div>
         </div>
-        <svg onclick="openFullscreenNav()" id="btn-nav" class="bi bi-justify-left fs-1 text-primary btn-enl-lg" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+        <svg onclick="openFullscreenNav()" id="btn-nav-1" class="bi bi-justify-left fs-1 text-primary btn-enl-lg" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
         </svg>
-        <!-- END Fullscreen Navigation HTML-->
+        <!--/noindex-->
+        <!-- END Full Screen Navigation-->
+        <!-- Right Extended Navigation HTML (Hreflang Menu)-->
+        <div class="dropdown" itemscope itemtype="https://schema.org/SiteNavigationElement">
+            <svg id="btn-nav-2" class="bi bi-geo-alt fs-1 text-primary dropdown-toggle" role="button" data-bs-toggle="dropdown" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-haspopup="true" aria-expanded="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+            </svg>
+            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="btn-nav-2">
+                <span itemprop="url" class="dropdown-item span-item"><span itemprop="name" content="English">English</span></span>
+                <a itemprop="url" class="dropdown-item" href="ru" hreflang="ru"><span itemprop="name" content="Russian (Руссский язык)">Russian (Руссский язык)</span></a>
+            </div>
+        </div>
+        <!-- END Hreflang Menu-->
         <!-- Masthead-->
         <header class="masthead">
             <div class="container px-4 px-lg-5 h-100">
                 <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
                     <div class="col-lg-8 align-self-end">
-                        <h1 class="text-white font-weight-bold">Creating prominent web projects</h1>
+                        <h1 class="text-white font-weight-bold">Creating prominent web projects!&nbsp;</h1>
                         <hr class="divider" />
                     </div>
                     <div class="col-lg-8 align-self-baseline">
-                        <p class="text-white-75 mb-5">Moving the web with development and promotion of the best sites, landing pages, blogs, and online stores.</p>
+                        <h2 class="text-white-75 mb-5"><code>Deploying digital ecosystems you dream of.</code></h2>
                         <a href="#about" title="Find Out More" aria-label="Find Out More">
                             <svg class="bi bi-mouse text-primary btn-act btn-enl-lg" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-label="Find Out More" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M8 3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3zm4 8a4 4 0 0 1-8 0V5a4 4 0 1 1 8 0v6zM8 0a5 5 0 0 0-5 5v6a5 5 0 0 0 10 0V5a5 5 0 0 0-5-5z"/>
@@ -712,10 +714,10 @@
             <div class="container px-4 px-lg-5 mb-0">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 text-center">
-                        <h2 class="mt-0">About us at a glance</h2>
+                        <h2 class="mt-0">About us at a glance:&nbsp;</h2>
                         <hr class="divider divider-primary" />
                         <br>
-                            <p class="text-muted mb-4 mt-0 fs-5">We are doing fast, trendy and well secured web and cloud premises, composing digital stories that people love, leveraging advanced technologies for simple solutions to compound challenges.</p>
+                            <p class="text-muted mb-4 mt-0 fs-5">We make fast, trendy and highly secure web and cloud assets, compose digital stories that people love, using advanced technologies for simple solutions to complex problems.</p>
                         <br>
                         <a class="btn btn-light btn-xl btn-std btn-act border border-2 border-primary bg-white" href="#services" title="Let's Get Started!">Let's Get Started!</a>
                     </div>
@@ -1194,7 +1196,7 @@
                 document.documentElement.scrollTop = 0;
             }
         </script>
-        <!-- Fullscreen Navigation JS-->
+        <!-- Full Screen Navigation JS-->
         <script>
             function openFullscreenNav() {
                 document.getElementById("fullscreenNav").style.width = "100%";
@@ -1255,5 +1257,5 @@
         </script>
         <!-- END Inline JavaScript (JS)-->
     </body>
-    <!-- Please refer to the Open Source Declaration (https://github.com/codexgq/startbootstrap-creative-codexgq/blob/master/declaration.md) for acknowledgments, disclaimer, and legal statement, incl. copyrights, licenses and source code references.-->
+    <!-- Please refer to the Open Source Declaration (https://github.com/codexgq/startbootstrap-creative-codexgq/blob/master/declaration.md) for acknowledgements, disclaimer, and legal statement, incl. copyrights, licenses and source code references.-->
 </html>
