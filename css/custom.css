@@ -6,6 +6,30 @@
  * For custom styles not in custom.css please refer to the HTML inline.
  */
 /*!
+Rendering Engines
+ */
+body {
+    -webkit-height-adjust: 100%;
+    -ms-height-adjust: 100%;
+    -moz-height-adjust: 100%;
+    -o-height-adjust: 100%;
+
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -o-text-size-adjust: 100%;
+
+    -webkit-dropdown-adjust: 100%;
+    -ms-dropdown-adjust: 100%;
+    -moz-dropdown-adjust: 100%;
+    -o-dropdown-adjust: 100%;
+
+    -webkit-collapse-adjust: 100%;
+    -ms-collapse-adjust: 100%;
+    -moz-collapse-adjust: 100%;
+    -o-collapse-adjust: 100%;
+}
+/*!
 Page Section Background Image
  */
 .bg-ps {
