@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/"
+    xmlns:moz="http://www.mozilla.org/2006/browser/search/"
+    xmlns:g="http://base.google.com/ns/1.0">
+    <ShortName>Web Search</ShortName>
+    <LongName>codex.gq Web Search</LongName>
+    <Description>This is the Web Search Form for the website at codex.gq. This website is developed and maintained by the codexgq WebDev Team, a part of the codexgq (CGQ) digital agency. CGQ does development and marketing of the best websites, landing pages, blogs, and online stores since 2014. The agency makes fast, trendy and highly secured web and cloud assets, composes digital stories that people love, using advanced technologies for simple solutions to complex problems. CGQ is creating prominent web projects, deploying digital ecosystems you dream of. The company runs its own hosting and domain names registration. Stay in the Cloud while we're moving the Web. Keep Calm and Code!</Description>
+    <Tags>web development, digital marketing, wordpress, bootstrap, websites, codexgq</Tags>
+    <InputEncoding>UTF-8</InputEncoding>
+    <OutputEncoding>UTF-8</OutputEncoding>
+    <Image width="64" height="64" type="image/png">https://codex.gq/assets/icons/opensearch-image-64x64.png</Image>
+    <Image width="32" height="32" type="image/x-icon">https://codex.gq/favicon.ico</Image>
+    <Image width="16" height="16">data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIkSURBVDhPjZNPSFRRFMbPezNWI6EybtyEZppCEMGALaeR0BYJmWNCkJZRQS1soE0QQYugRdQQtJlFmbSSpBSCoI20afVidtEY+GdjBcksCoMar79z3sN4/QE/+O75zrvn3nvuPefJvxDsH/IiaQj2jKQi+RfigZ1DOb7cRM7CMszCE7Ab7oLz8EmmMjOJNdgGwb58oyRcEXkIDsIqnIID8A18JxteUnx3HN0G59kkhxVfByauMx6TX36fqzSvoPWErDiZkJ+Ji+iqfExPsGgv+hY8wjVfYMULOvIH2OCtOO9aZuFZiWucIa8pFt/ILMzc1iCCn+siYkbFcyvM3SXmKFkN+CweZrLGxLQGM3GecQn70PwQ52ATMXPYsi1W+G7cY/dF5CLp9Qbtw2lJbnzFL+IXLChC0HqqhXdqitwtJGGK1D6Yl3CtZsMKxJBZnv6EUcagj0h5XJ15zkql1pndBnSDVe7UHHruvVlP0ma3AX2D+9jLsIt7L9mbOPlCBQ5bBAgaxuqk5VsFqT3wG05e+wwPkDvgPfsoUiCDHpqrJ/KFxVcYdbH2gDaaNp3iadiJHfkS6V9AFsiiSBZX0VlZT16SnbUscyX8sqyl+iW9Xs+hLznkh6zu7tv6F2igV3zsR2oFZqnMd+p+Gq3tXZaa10uV9HEfwzbmczReNf4zhSdr0xy0D04+s+kdlLbtWRadZNNH6Eky1f/l/2CzWNP86YcQ2QQIAayeGBVeggAAAABJRU5ErkJggg==</Image>
+    <Url type="text/html" rel="results" indexOffset="1" pageOffset="1" template="http://codex.gq/?q={searchTerms}&amp;pw={startPage?}">
+        <Param name="web development" value="{searchTerms}" />
+        <Param name="digital marketing" value="{searchTerms}" />
+        <Param name="wordpress" value="{searchTerms}" />
+        <Param name="bootstrap" value="{searchTerms}" />
+        <Param name="websites" value="{searchTerms}" />
+        <Param name="codexgq" value="{searchTerms}" />
+    </Url>
+    <Url type="application/x-moz-keywordsearch" rel="results" template="https://codex.gq/?q={searchTerms}" />
+    <Url type="application/x-suggestions+json" rel="suggestions" template="https://codex.gq/?q={searchTerms}" />
+    <Url type="application/opensearchdescription+xml" rel="self" template="https://codex.gq/opensearch.xml" />
+    <moz:SearchForm>https://codex.gq/</moz:SearchForm>
+    <Query role="example" searchTerms="codexgq" title="Sample Search"/>
+    <opensearch:Query role="request" searchTerms="web development agency" />
+    <opensearch:Query role="related" searchTerms="digital marketing" />
+    <opensearch:Query role="related" searchTerms="wordpress" />
+    <opensearch:Query role="related" searchTerms="bootstrap" />
+    <opensearch:Query role="related" searchTerms="websites" />
+    <opensearch:Query role="related" searchTerms="hosting domains cybersecurity" />
+    <opensearch:Query role="correction" searchTerms="web development agency" totalResults="854000" title="Spelling Correction" />
+    <opensearch:Query role="subset" searchTerms="best web development agency" />
+    <opensearch:Query role="superset" searchTerms="web development" />
+    <opensearch:Query role="custom:synonym" searchTerms="web design" />
+    <opensearch:totalResults>4230000</opensearch:totalResults>
+    <opensearch:startIndex>1</opensearch:startIndex>
+    <opensearch:itemsPerPage>10</opensearch:itemsPerPage>
+    <Contact>info@codex.gq</Contact>
+    <Developer>codexgq Team</Developer>
+    <Attribution>
+        Search Data Copyright © 2014-2021 - codexgq, Inc. All Rights Reserved.
+    </Attribution>
+    <SyndicationRight>open</SyndicationRight>
+    <AdultContent>false</AdultContent>
+    <Language>en</Language>
+    <Language>ru</Language>
+</OpenSearchDescription>

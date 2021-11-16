@@ -8,36 +8,45 @@
 /*!
 Rendering Engines
  */
-body {
-    -webkit-height-adjust: 100%;
-    -ms-height-adjust: 100%;
-    -moz-height-adjust: 100%;
-    -o-height-adjust: 100%;
-
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    -o-text-size-adjust: 100%;
-
-    -webkit-dropdown-adjust: 100%;
-    -ms-dropdown-adjust: 100%;
-    -moz-dropdown-adjust: 100%;
-    -o-dropdown-adjust: 100%;
-
-    -webkit-collapse-adjust: 100%;
-    -ms-collapse-adjust: 100%;
-    -moz-collapse-adjust: 100%;
-    -o-collapse-adjust: 100%;
-}
 /*!
 Page Section Background Image
  */
 .bg-ps {
     padding-top: 10rem;
     padding-bottom: calc(10rem - 0px);
-    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/technical-support.jpg");
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("https://cdn.codex.gq/assets/img/technical-support.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
+}
+/*!
+Custom Tooltip
+*/
+.w3-tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+              
+.w3-tooltip .w3-tooltiptext {
+    visibility: hidden;
+    width: 240px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 6px 0;
+/*!
+Position the Tooltip
+*/
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -21px;
+}
+              
+.w3-tooltip:hover .w3-tooltiptext {
+    visibility: visible;
 }

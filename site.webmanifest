@@ -1,7 +1,7 @@
 {
-    "name": "codexgq",
+    "name": "codexgq - Moving The Web",
     "short_name": "codexgq",
-    "description": "\u004d\u006f\u0076\u0069\u006e\u0067\u0020\u0054\u0068\u0065\u0020\u0057\u0065\u0062",
+    "description": "Development and marketing of the best websites, landing pages, blogs, and online stores.",
     "icons": [
         {
             "src": "https:\/\/codex.gq\/assets\/favicon-package\/android-chrome-36x36.png",
@@ -28,6 +28,12 @@
             "purpose": "any"
         },
         {
+            "src": "https:\/\/codex.gq\/assets\/icons\/chrome-web-app-128x128.png",
+            "sizes": "128x128",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
             "src": "https:\/\/codex.gq\/assets\/favicon-package\/android-chrome-144x144.png",
             "sizes": "144x144",
             "type": "image/png",
@@ -36,6 +42,12 @@
         {
             "src": "https:\/\/codex.gq\/assets\/favicon-package\/android-chrome-192x192.png",
             "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "https:\/\/codex.gq\/assets\/icons\/android-firefox-194x194.png",
+            "sizes": "194x194",
             "type": "image/png",
             "purpose": "any"
         },
@@ -57,7 +69,6 @@
             "type": "image/png",
             "purpose": "any"
         },
-
         {
             "src": "https:\/\/codex.gq\/assets\/favicon-package\/android-chrome-36x36-maskable.png",
             "sizes": "36x36",
@@ -83,6 +94,12 @@
             "purpose": "maskable"
         },
         {
+            "src": "https:\/\/codex.gq\/assets\/icons\/chrome-web-app-128x128-maskable.png",
+            "sizes": "128x128",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
             "src": "https:\/\/codex.gq\/assets\/favicon-package\/android-chrome-144x144-maskable.png",
             "sizes": "144x144",
             "type": "image/png",
@@ -91,6 +108,12 @@
         {
             "src": "https:\/\/codex.gq\/assets\/favicon-package\/android-chrome-192x192-maskable.png",
             "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "https:\/\/codex.gq\/assets\/icons\/android-firefox-194x194-maskable.png",
+            "sizes": "194x194",
             "type": "image/png",
             "purpose": "maskable"
         },
@@ -112,32 +135,6 @@
             "type": "image/png",
             "purpose": "maskable"
         },
-
-        {
-            "src": "https:\/\/codex.gq\/assets\/icons\/chrome-web-app-128x128.png",
-            "sizes": "128x128",
-            "type": "image/png",
-            "purpose": "any"
-        },
-        {
-            "src": "https:\/\/codex.gq\/assets\/icons\/android-firefox-194x194.png",
-            "sizes": "194x194",
-            "type": "image/png",
-            "purpose": "any"
-        },
-        {
-            "src": "https:\/\/codex.gq\/assets\/icons\/icon.webp",
-            "sizes": "512x512",
-            "type": "image/webp",
-            "purpose": "any"
-        },
-        {
-            "src": "https:\/\/codex.gq\/assets\/icons\/icon.svg",
-            "sizes": "683x683",
-            "type": "image/svg+xml",
-            "purpose": "any"
-        },
-
         {
             "src": "https:\/\/codex.gq\/assets\/favicon-package\/safari-pinned-tab.svg",
             "sizes": "any",
@@ -145,7 +142,6 @@
             "purpose": "monochrome"
         }
     ],
-
     "screenshots": [
         {
             "src": "https:\/\/codex.gq\/assets\/screenshots\/mobile-homepage.png",
@@ -158,10 +154,10 @@
             "type": "image/png"
         }
     ],
-
     "shortcuts": [
         {
             "name": "Services",
+            "short_name": "Services",
             "description": "Wide range of digital services for a turnkey projects.",
             "url": "https:\/\/codex.gq\/#services",
             "icons": [
@@ -175,6 +171,7 @@
         },
         {
             "name": "Solutions",
+            "short_name": "Solutions",
             "description": "Ready-to-go solutions and tools to cover the digital business needs.",
             "url": "https:\/\/codex.gq\/#solutions",
             "icons": [
@@ -188,6 +185,7 @@
         },
         {
             "name": "Products",
+            "short_name": "Products",
             "description": "Reliable and well-proven products aimed for the global markets.",
             "url": "https:\/\/codex.gq\/#products",
             "icons": [
@@ -201,11 +199,40 @@
         },
         {
             "name": "Special Offer",
+            "short_name": "Special Offer",
             "description": "Hosting and domain are provided free of charge when ordering a website.",
             "url": "https:\/\/codex.gq\/#free",
             "icons": [
                 {
                     "src": "https:\/\/codex.gq\/assets\/shortcuts\/special-offer-192x192.png",
+                    "sizes": "192x192",
+                    "type": "image/png",
+                    "purpose": "any"
+                }
+            ]
+        },
+        {
+            "name": "About",
+            "short_name": "About",
+            "description": "We make fast, trendy and highly secured web and cloud assets since 2014.",
+            "url": "https:\/\/codex.gq\/#about",
+            "icons": [
+                {
+                    "src": "https:\/\/codex.gq\/assets\/shortcuts\/about-192x192.png",
+                    "sizes": "192x192",
+                    "type": "image/png",
+                    "purpose": "any"
+                }
+            ]
+        },
+        {
+            "name": "Contact",
+            "short_name": "Contact",
+            "description": "Ready to start your next project with us? Let's get in touch!",
+            "url": "https:\/\/codex.gq\/#contact",
+            "icons": [
+                {
+                    "src": "https:\/\/codex.gq\/assets\/shortcuts\/contact-192x192.png",
                     "sizes": "192x192",
                     "type": "image/png",
                     "purpose": "any"
@@ -218,6 +245,10 @@
     "lang": "en",
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
+    "display_override": [
+        "window-control-overlay",
+        "fullscreen"
+    ],
     "display": "standalone",
     "categories": "business"
 }

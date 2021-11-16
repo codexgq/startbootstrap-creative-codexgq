@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <!-- PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd" -->
-<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" xml:lang="en" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
     <head itemscope itemtype="http://schema.org/WPHeader">
         <!-- Meta Core-->
         <meta charset="utf-8" />
         <!-- XFN 1.1 Profile-->
         <link rel="profile" href="https://gmpg.org/xfn/11" />
+        <!-- OpenSearch Profile-->
+        <link rel="profile" href="http://a9.com/-/spec/opensearch/1.1/" />
+        <!-- Data-Vocabulary.org-->
+        <link rel="profile" href="http://www.data-vocabulary.org/" />
         <!-- DCMI Profile-->
         <link rel="profile" href="https://www.dublincore.org/specifications/dublin-core/dc-html/" />
         <!-- Dublin Core Metatag Initiative-->
@@ -14,8 +18,6 @@
         <!-- Progressive Web Application (PWA)-->
         <!-- PWA Manifest-->
         <link rel="manifest" type="application/manifest+json" href="site.webmanifest" />
-        <!-- Application Cache-->
-        <link rel="manifest" type="text/cache-manifest" href="default.appcache" />
         <!-- Register Service Worker-->
         <script>
             if ("serviceWorker" in navigator) {
@@ -32,6 +34,8 @@
             }
             }
         </script>
+        <!-- Application Cache-->
+        <link rel="manifest" type="text/cache-manifest" href="default.appcache" />
         <!-- A super tiny, native performant library for lazy-loading JS, CSS, images, iframes... Easily speed up a website!-->
         <script>
         ! function(e, o, t, n, i, r) { // This script should always go inline as early as possible for better performance.
@@ -104,14 +108,14 @@
         <!-- Viewpoint Mode-->
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5.0, minimum-scale=1.0, shrink-to-fit=no" />
         <!-- Meta Data - Key-->
-        <meta name="description" lang="en" xml:lang="en" content="Development and promotion of the best sites, landing pages, blogs, and online stores." />
+        <meta name="description" lang="en" xml:lang="en" content="Development and marketing of the best websites, landing pages, blogs, and online stores." />
         <meta name="keywords" lang="en" xml:lang="en" content="web development, digital marketing, wordpress, bootstrap, websites, codexgq" />
         <!-- ...then Item Property for Schema.org-->
-        <meta itemprop="description" content="Development and promotion of the best sites, landing pages, blogs, and online stores." />
+        <meta itemprop="description" content="Development and marketing of the best websites, landing pages, blogs, and online stores." />
         <meta itemprop="keywords" content="web development, digital marketing, wordpress, bootstrap, websites, codexgq" />
         <!-- ...and DCMI-->
         <meta name="DC.Subject" content="web development, digital marketing, wordpress, bootstrap, websites, codexgq" />
-        <meta name="DC.Description" content="Development and promotion of the best sites, landing pages, blogs, and online stores." />
+        <meta name="DC.Description" content="Development and marketing of the best websites, landing pages, blogs, and online stores." />
         <!-- Meta Data - Additional-->
         <meta name="abstract" content="Web Development" />
         <!-- ...then Item Property for Schema.org-->
@@ -305,9 +309,10 @@
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://codex.gq/" />
         <meta property="og:title" content="codexgq - Moving The Web" />
-        <meta property="og:description" content="Development and promotion of the best sites, landing pages, blogs, and online stores." />
+        <meta property="og:description" content="Development and marketing of the best websites, landing pages, blogs, and online stores." />
         <meta property="og:site_name" content="codexgq" />
-        <meta property="og:locale" content="en" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:locale:alternate" content="ru_RU" />
         <meta property="og:image" content="https://codex.gq/assets/img/open-graph-image.jpg" />
         <!-- Open Graph Image Properties-->
         <meta property="og:image:width" content="1200" />
@@ -315,7 +320,7 @@
         <!-- Twitter Markup-->
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="codexgq - Moving The Web" />
-        <meta name="twitter:description" content="Development and promotion of the best sites, landing pages, blogs, and online stores." />
+        <meta name="twitter:description" content="Development and marketing of the best websites, landing pages, blogs, and online stores." />
         <meta name="twitter:country" content="US" />
         <meta name="twitter:image" content="https://codex.gq/assets/img/twitter-image.jpg" />
         <meta name="twitter:image:alt" content="codexgq" />
@@ -362,19 +367,29 @@
         <meta name="DC.Rights" content="codexgq" />
         <meta name="DCTERMS.RightsHolder" content="codexgq" />
         <meta name="DC.Audience" content="Business" />
+        <!-- Contacts-->
+        <link rel="help" href="mailto:info@codex.gq" />
+        <meta name="telegram:channel" content="@codexgq" />
         <!-- Robots-->
-        <meta name="robots" content="noindex, nofollow" />
-        <meta name="googlebot" content="noindex, nofollow" />
-        <meta name="yandex" content="noindex, nofollow" />
+        <meta name="robots" content="none, noarchive" />
+        <meta name="googlebot" content="noindex, nofollow, noodp" />
+        <meta name="yandex" content="noindex, nofollow, noyaca" />
+        <meta name="document-state" content="" />
         <meta name="revisit-after" content="" />
+        <!-- OpenSearch-->
+        <link rel="search" type="application/opensearchdescription+xml" title="codex.gq Web Search" href="opensearch.xml" />
+        <meta name="totalResults" content="4230000"/>
+        <meta name="startIndex" content="1"/>
+        <meta name="itemsPerPage" content="10"/>
         <!-- Referrer Policy-->
         <meta name="referrer" content="no-referrer-when-downgrade" />
+        <meta name="referrer" content="none-when-downgrade" />
         <!-- Mobile-->
         <meta name="HandheldFriendly" content="True" />
         <meta name="MobileOptimized" content="320" />
         <!-- iOS-->
         <meta name="apple-mobile-web-app-title" content="codexgq" />
-        <meta name="apple-mobile-web-app-capable" content="no" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-touch-fullscreen" content="yes" />
         <!-- Android-->
@@ -393,25 +408,36 @@
         <!-- Fast Mode with 360 Browser Enabled-->
         <meta name="renderer" content="webkit|ie-comp|ie-stand" />
         <meta name="force-rendering" content="webkit" />
-        <!-- MS Edge Legacy Pinned Sites-->
+        <!-- MS Application-->
+        <meta name="msapplication-config" content="https://codex.gq/assets/icons/browserconfig.xml" />
+        <meta name="msapplication-window" content="width=1024;height=768">
+        <meta name="msapplication-allowDomainMetaTags" content="true">
+        <!-- Pinned Sites-->
         <meta name="application-name" content="codexgq" />
+        <meta name="application-name" lang="ru" content="codexgq - Веб-студия 2.0" />
         <meta name="msapplication-tooltip" content="Moving The Web" />
         <meta name="msapplication-starturl" content="https://codex.gq/" />
-        <!-- Windows 10 Color Scheme-->
+        <!-- Windows 8, 10 Color Scheme-->
         <meta name="msapplication-navbutton-color" content="#ffffff" />
         <meta name="msapplication-TileColor" content="#cd2653" />
-        <meta name="msapplication-config" content="https://codex.gq/assets/icons/browserconfig.xml" />
-        <!-- Separate Tasks-->
+        <!-- IE Separate Tasks-->
         <meta name="msapplication-task" content="name=Home Page;
             action-uri=https://codex.gq/;
-            icon-uri=https://codex.gq/favicon.ico" />
+            icon-uri=https://codex.gq/assets/shortcuts/united-states-of-america-192x192.png" />
             <meta name="msapplication-task" content="name=Russian (Русский язык);
             action-uri=https://codex.gq/ru/;
-            icon-uri=https://codex.gq/favicon.ico" />
+            icon-uri=https://codex.gq/assets/shortcuts/russia-192x192.png" />
         <!-- Tap Highlighting-->
         <meta name="msapplication-tap-highlight" content="no" />
         <!-- Internet Explorer Rendering-->
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- IE Comments-->
+        <!--[if lt IE 7]>     <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+        <!--[if IE 7]>        <html class="lt-ie9 lt-ie8">        <![endif]-->
+        <!--[if IEMobile 7 ]> <html class="iem7" lang="en"> <![endif]-->
+        <!--[if IE 8]>        <html class="lt-ie9">               <![endif]-->
+        <!--[if gt IE 8]>     <!-->                           <!--<![endif]-->
+        <!-- saved from url=(0014)about:internet -->        
         <!-- Display Mode-->
         <meta name="display" content="standalone" />
         <!-- Geo Tags-->
@@ -453,7 +479,7 @@
                     "url": "https://codex.gq/",
                     "inLanguage": "en, ru",
                     "name": "codexgq - Moving The Web",
-                    "description": "Development and promotion of the best sites, landing pages, blogs, and online stores.",
+                    "description": "Development and marketing of the best websites, landing pages, blogs, and online stores.",
                     "potentialAction": {
                         "@type": "SearchAction",
                         "target": "https://codex.gq/?s={query}",
@@ -481,10 +507,10 @@
                 "url": "https://codex.gq/",
                 "logo": {
                     "@type": "ImageObject",
-                    "url": "https://codex.gq/assets/img/logo-snippet.svg",
+                    "url": "https://codex.gq/assets/logo.logoset/logo-snippet.svg",
                     "width": 1920,
                     "height": 1080,
-                    "caption": "codexgq - Moving The Web | Logotype",
+                    "caption": "FHD Logotype | codexgq - Moving The Web",
                     "@id": "https://codex.gq/#logo"
                 },
                 "contactPoint": {
@@ -494,8 +520,13 @@
                     "areaServed": "US, RU, World",
                     "availableLanguage": ["en", "Russian"]
                 },
-                "sameAs": ["https://store.codex.gq/",
-                "https://git.codex.gq/"
+                "sameAs": ["https://cdn.codex.gq/",
+                "https://git.codex.gq/",
+                "https://remote.codex.gq/",
+                "https://sites.codex.gq/",
+                "https://store.codex.gq/",
+                "https://www.codex.gq/",
+                "https://codex.gcdn.co/"
                 ]
             }
         </script>
@@ -515,39 +546,6 @@
                 }]
             }
         </script>
-        <!-- BreadcrumbList-->
-        <script type="application/ld+json">
-            {
-                "@context": "https://schema.org/",
-                "@type": "BreadcrumbList",
-                "itemListElement": [{
-                    "@type": "ListItem",
-                    "position": 1,
-                    "name": "Home Page",
-                    "item": "https://codex.gq/"
-                }, {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "name": "Russian (Русский язык)",
-                    "item": "https://codex.gq/ru/"
-                }, {
-                    "@type": "ListItem",
-                    "position": 3,
-                    "name": "Privacy Policy",
-                    "item": "https://codex.gq/legal/privacy.html"
-                }, {
-                    "@type": "ListItem",
-                    "position": 4,
-                    "name": "Terms and Conditions",
-                    "item": "https://codex.gq/legal/terms.html"
-                }, {
-                    "@type": "ListItem",
-                    "position": 5,
-                    "name": "Disclaimer",
-                    "item": "https://codex.gq/legal/disclaimer.html"
-                }]
-            }
-        </script>
         <!-- Product Markup-->
         <!-- Web Development-->
         <script type="application/ld+json">
@@ -556,8 +554,8 @@
                 "@type": "Product",
                 "name": "Web Development",
                 "id": "web-development",
-                "image": "https://codex.gq/assets/img/bg-masthead.jpg",
-                "description": "Development and promotion of the best sites, landing pages, blogs, and online stores.",
+                "image": "https://codex.gq/assets/img/webdesign-programs.jpg",
+                "description": "Development and marketing of the best websites, landing pages, blogs, and online stores.",
                 "brand": {
                     "@type": "Organization",
                     "name": "codexgq"
@@ -638,8 +636,11 @@
         <!-- END Markup (JSON-LD) structured in Schema.org-->
     </head>
     <body id="website">
+        <!-- .website @id schema.org-->
         <span id="webpage"></span>
+        <!-- .webpage @id schema.org-->
         <span id="organization"></span>
+        <!-- .organization @id schema.org-->
         <!-- START SITE CONTENT-->
         <!-- Main Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
@@ -670,10 +671,10 @@
                 <a href="#contact">Contact</a>
             </div>
         </div>
+        <!--/noindex-->
         <svg onclick="openFullscreenNav()" id="btn-nav-1" class="bi bi-justify-left fs-1 text-primary btn-enl-lg" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
         </svg>
-        <!--/noindex-->
         <!-- END Full Screen Navigation-->
         <!-- Right Extended Navigation HTML (Hreflang Menu)-->
         <div class="dropdown" itemscope itemtype="https://schema.org/SiteNavigationElement">
@@ -682,8 +683,8 @@
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
             </svg>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="btn-nav-2">
-                <span itemprop="url" class="dropdown-item span-item"><span itemprop="name" content="English">English</span></span>
-                <a itemprop="url" class="dropdown-item" href="ru" hreflang="ru"><span itemprop="name" content="Russian (Руссский язык)">Russian (Руссский язык)</span></a>
+                <span itemprop="url" class="dropdown-item span-item" href="/"><span itemprop="name" content="English">English</span></span>
+                <a itemprop="url" class="dropdown-item" href="ru" hreflang="ru"><span itemprop="name" content="Russian (Руссский язык)">Russian (Русский язык)</span></a>
             </div>
         </div>
         <!-- END Hreflang Menu-->
@@ -692,11 +693,11 @@
             <div class="container px-4 px-lg-5 h-100">
                 <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
                     <div class="col-lg-8 align-self-end">
-                        <h1 class="text-white font-weight-bold">Creating prominent web projects!&nbsp;</h1>
+                        <h1 class="text-white font-weight-bold">Creating prominent web projects!</h1>
                         <hr class="divider" />
                     </div>
                     <div class="col-lg-8 align-self-baseline">
-                        <h2 class="text-white-75 mb-5"><code>Deploying digital ecosystems you dream of.</code></h2>
+                        <h2 class="mb-5"><code class="text-white-75">&nbsp;Deploying digital ecosystems you dream of.&nbsp;</code></h2>
                         <a href="#about" title="Find Out More" aria-label="Find Out More">
                             <svg class="bi bi-mouse text-primary btn-act btn-enl-lg" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-label="Find Out More" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M8 3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3zm4 8a4 4 0 0 1-8 0V5a4 4 0 1 1 8 0v6zM8 0a5 5 0 0 0-5 5v6a5 5 0 0 0 10 0V5a5 5 0 0 0-5-5z"/>
@@ -711,13 +712,13 @@
         <main>
         <!-- About-->
         <section class="page-section" id="about">
-            <div class="container px-4 px-lg-5 mb-0">
+            <div class="container px-4 px-lg-5 mb-1">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 text-center">
-                        <h2 class="mt-0">About us at a glance:&nbsp;</h2>
+                        <h2 class="mt-0">About us at a glance:</h2>
                         <hr class="divider divider-primary" />
                         <br>
-                            <p class="text-muted mb-4 mt-0 fs-5">We make fast, trendy and highly secure web and cloud assets, compose digital stories that people love, using advanced technologies for simple solutions to complex problems.</p>
+                            <p class="text-muted mb-4 mt-0 fs-5">&nbsp;We make fast, trendy and highly secured web and cloud assets, compose digital stories that people love, using advanced technologies for simple solutions to complex problems.&nbsp;</p>
                         <br>
                         <a class="btn btn-light btn-xl btn-std btn-act border border-2 border-primary bg-white" href="#services" title="Let's Get Started!">Let's Get Started!</a>
                     </div>
@@ -730,7 +731,7 @@
         </div>
         <!-- Services-->
         <section class="page-section" id="services">
-            <div class="container px-4 px-lg-5 pt-3 mb-6">
+            <div class="container px-4 px-lg-5 pt-0 mb-6">
                 <h2 class="text-center mt-0">Our Services</h2>
                 <hr class="divider" />
                 <div class="row gx-4 gx-lg-5">
@@ -1074,17 +1075,21 @@
         </main>
         <!-- END Main Content-->
         <!-- X-tra Section-->
-        <section class="py-1">
-            <div class="container align-items-center justify-content-center text-center" id="logo">
-                <div class="pb-4">
+        <section class="py-1" id="logo">
+            <div class="container align-items-center justify-content-center text-center">
+                <div class="pb-4" itemscope itemtype="https://schema.org/ImageObject">
                     <a href="/" title="codexgq - Moving The Web">
-                        <img class="img-fluid" src="data:image/gif;base64,R0lGODlhAQABAPAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="assets/img/logo-cropped.svg" alt="Logotype" aria-hidden="true" />
+                        <img class="img-fluid" src="data:image/gif;base64,R0lGODlhAQABAPAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://cdn.codex.gq/assets/img/logo-cropped.svg" alt="Logotype" aria-hidden="true" />
+                        <meta itemprop="width" content="512">
+                        <meta itemprop="height" content="512">
+                        <meta itemprop="caption" content="Square Logotype | codexgq - Moving The Web">
+                        <link itemprop="url" href="logo.logoset/logo-cropped.svg">
                     </a>
                 </div>
-                <h4>
+                <h4 itemscope itemtype="https://schema.org/SiteNavigationElement">
                     <small>
-                        <a class="list-unstyled-item text-decoration-none pe-2" href="https://codex.gq/" title="Home Page (English, Английский язык)">EN</a>&nbsp;|
-                        <a class="list-unstyled-item text-decoration-none ps-2" href="https://codex.gq/ru/" title="Russian (Русский язык)">RU</a>
+                        <a itemprop="url" class="list-unstyled-item text-decoration-none pe-2" href="https://codex.gq/" title="Home Page (English, Английский язык)"><span itemprop="name" content="Home Page">EN</span></a>&nbsp;|
+                        <a itemprop="url" class="list-unstyled-item text-decoration-none ps-2" href="https://codex.gq/ru/" title="Russian (Русский язык)"><span itemprop="name" content="Russian (Русский язык)">RU</span></a>
                     </small>
                 </h4>
                 <!-- .languages-->
@@ -1094,21 +1099,43 @@
         <!-- END X-tra Section-->
         <!-- Footer Menu-->
         <section class="py-3">
-            <div class="container">
+            <div class="container" itemscope itemtype="https://schema.org/SiteNavigationElement">
                 <hr class="my-5">
                 <div class="row">
-                    <div class="col-lg-10 col-md-8 mb-5 mb-md-0">
-                        <a class="text-decoration-none" href="https://www.linkedin.com/company/codexgq" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn">
-                            <svg class="bi-linkedin fs-1 text-primary btn-act btn-enl-lg" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                    <div class="col-lg-8 col-md-8 mb-5 mb-md-0" itemscope itemtype="http://schema.org/Organization">
+                        <a itemprop="sameAs" class="text-decoration-none" href="https://www.linkedin.com/company/codexgq" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn">
+                            <svg class="bi bi-linkedin fs-1 text-primary btn-act btn-enl-lg" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
                             </svg>
+                            <meta itemprop="name" content="LinkedIn" />
                         </a>
-                        <a class="text-decoration-none ps-3" href="https://github.com/codexgq" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
-                            <svg class="bi-github fs-1 text-primary btn-act btn-enl-lg" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                        <a itemprop="sameAs" class="text-decoration-none ps-3" href="https://github.com/codexgq" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
+                            <svg class="bi bi-github fs-1 text-primary btn-act btn-enl-lg" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
                             </svg>
+                            <meta itemprop="name" content="GitHub" />
                         </a>
                     </div>
+                    <!-- .col-->
+                    <div class="col-lg-2 col-md-4 mb-5 mb-md-0">
+                        <div class="text-uppercase text-muted mb-4">
+                            <h2 class="fs-5">Projects</h2>
+                        </div>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2">
+                                <a itemprop="url" class="list-unstyled-item text-decoration-none span-item" href="https://store.codex.gq/" target="_blank" rel="noopener">
+                                    <span itemprop="name" class="w3-tooltip" content="Store">Store
+                                        <span class="w3-tooltiptext">
+                                            We have our own hosting and domain names registration incl. free hosting for everyone. Visit our store!
+                                        </span>
+                                        <!-- .w3-tooltiptext-->
+                                    </span>
+                                    <!-- .w3-tooltip-->
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- .col-->
                     <!-- .col-->
                     <div class="col-lg-2 col-md-4 mb-5 mb-md-0">
                         <div class="text-uppercase text-muted mb-4">
@@ -1116,10 +1143,19 @@
                         </div>
                         <ul class="list-unstyled mb-0">
                             <li class="mb-2">
-                                <a class="list-unstyled-item text-decoration-none span-item" href="legal/privacy.html">Privacy</a>
-                            </li>                            
+                                <a itemprop="url" class="list-unstyled-item text-decoration-none span-item" href="legal/privacy.html">
+                                    <span itemprop="name" content="Privacy">Privacy</span>
+                                </a>
+                            </li>
                             <li class="mb-2">
-                                <a class="list-unstyled-item text-decoration-none span-item" href="legal/terms.html">Terms</a>
+                                <a itemprop="url" class="list-unstyled-item text-decoration-none span-item" href="legal/terms.html">
+                                    <span itemprop="name" content="Terms">Terms</span>
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a itemprop="url" class="list-unstyled-item text-decoration-none span-item" href="legal/disclaimer.html">
+                                    <span itemprop="name" content="Disclaimer">Disclaimer</span>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -1142,10 +1178,62 @@
             <meta itemprop="copyrightHolder" content="codexgq">
         </footer>
         <!-- END SITE CONTENT-->
+        <!-- START Microdata Inline Markup -->
+        <div itemscope itemtype="http://schema.org/BreadcrumbList">
+            <div style="display: none;">
+                <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <a itemprop="url" href="/" rel="index up up up">
+                        <span itemprop="name" content="Home Page"></span>
+                    </a>
+                        <meta itemprop="title" content="codexgq - Moving The Web" />
+                        <meta itemprop="description" content="Development and marketing of the best websites, landing pages, blogs, and online stores." />
+                    <span>
+                        <span itemprop="child" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+                            <a itemprop="url" href="ru" rel="up up">
+                                <span itemprop="name" content="Russian (Русский язык)"></span>
+                            </a>
+                            <meta itemprop="title" content="codexgq - Веб-студия 2.0" />
+                            <meta itemprop="description" content="Разработка и продвижение лучших сайтов, лэндингов, блогов и интернет-магазинов." />
+                        </span>
+                        <span itemprop="child" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+                            <a itemprop="url" href="legal" rel="up up">
+                                <span itemprop="name" content="Legal Agreements"></span>
+                            </a>
+                            <span itemprop="title" content="Legal Agreements"></span>
+                            <meta itemprop="description" content="codexgq, Inc. Legal Agreements" />
+                            <span>
+                                <span itemprop="child" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+                                    <a itemprop="url" href="legal/privacy.html" rel="up">
+                                        <span itemprop="name" content="Privacy Policy"></span>
+                                    </a>
+                                    <meta itemprop="title" content="Privacy Policy" />
+                                    <meta itemprop="description" content="codexgq, Inc. Privacy Policy" />
+                                </span>
+                                <span itemprop="child" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+                                    <a itemprop="url" href="legal/terms.html" rel="up">
+                                        <span itemprop="name" content="Terms and Conditions"></span>
+                                    </a>
+                                    <meta itemprop="title" content="Terms and Conditions" />
+                                    <meta itemprop="description" content="codexgq, Inc. Terms and Conditions" />
+                                </span>
+                                <span itemprop="child" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+                                    <a itemprop="url" href="legal/disclaimer.html" rel="up">
+                                        <span itemprop="name" content="Disclaimer"></span>
+                                    </a>
+                                    <meta itemprop="title" content="Disclaimer" />
+                                    <meta itemprop="description" content="codexgq, Inc. Disclaimer Statement" />
+                                </span>
+                            </span>
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </div>
+        <!-- END Microdata Inline Markup -->
         <!-- Bootstrap Core JS-->
         <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core Theme JS-->
-        <script defer src="js/scripts.js"></script>
+        <script defer src="https://cdn.codex.gq/js/scripts.js"></script>
         <!-- Inline JavaScript (JS)-->
         <!-- Lazy Load Images-->
         <script>
@@ -1163,9 +1251,14 @@
                 document.getElementsByTagName("head")[0].appendChild(el);
             }
             // Prefetch, dns-prefetch, preload, prerender or preconnect links for website acceleretion.
+            add_hint('dns-prefetch', 'https://cdn.codex.gq/');
             add_hint('dns-prefetch', 'https://cdn.jsdelivr.net/');
             add_hint('dns-prefetch', 'https://www.jsdelivr.com/');
             add_hint('dns-prefetch', 'https://fonts.gstatic.com/');
+            add_hint('dns-prefetch', 'https://fonts.googleapis.com/');
+            add_hint('preload', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js', as='script');
+            add_hint('preload', 'https://cdn.codex.gq/js/scripts.js', as='script');
+            add_hint('preload', 'https://cdn.codex.gq/css/all.slim.min.css', as='style');
             // Speed up transitions between pages by prerendering them within a domain.
             document.addEventListener("mousemove", function (e) {
                 if (!e.target.href ||
