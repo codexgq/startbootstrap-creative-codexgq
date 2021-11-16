@@ -37,9 +37,6 @@ Custom Tooltip
     text-align: center;
     border-radius: 6px;
     padding: 6px 0;
-/*!
-Position the Tooltip
-*/
     position: absolute;
     z-index: 1;
     bottom: 100%;
