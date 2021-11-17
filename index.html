@@ -141,11 +141,11 @@
             Left Extended Navigation Button CSS
             */
             #btn-nav-1 {
-                position: fixed;
+                position: fixed !important;
                 top: 88px;
                 left: 16px;
-                z-index: 999;
-                cursor: pointer;
+                z-index: 999 !important;
+                cursor: pointer !important;
             }
             #btn-nav-1:hover {
                 opacity: 0.75;
@@ -155,11 +155,11 @@
             Right Extended Navigation Button CSS
             */
             #btn-nav-2 {
-                position: fixed;
+                position: fixed !important;
                 top: 88px;
                 right: 16px;
-                z-index: 999;
-                cursor: pointer;
+                z-index: 999 !important;
+                cursor: pointer !important;
             }
             #btn-nav-2:hover {
                 opacity: 0.75;
@@ -169,12 +169,12 @@
             Scroll To Top Button CSS
             */
             #btn-top {
-                display: none;
-                position: fixed;
+                display: none !important;
+                position: fixed !important;
                 bottom: 16px;
                 right: 16px;
-                z-index: 999;
-                cursor: pointer;
+                z-index: 999 !important;
+                cursor: pointer !important;
                 opacity: 0.50;
                 filter: alpha(opacity=50);
             }
@@ -202,22 +202,22 @@
             Any Button Standard Width
             */
             .btn-std {
-                width: 256px;
+                width: 256px !important;
             }
             /*!
             Any List Item Color and on Hover Behavior
             */
             .list-unstyled-item {
-                color: #212529;
+                color: #212529 !important;
             }
             .list-unstyled-item:hover {
-                color: #f4623a;
+                color: #f4623a !important;
             }
             /*!
             Empty Link Item
             */
             .span-item {
-                cursor: pointer;
+                cursor: pointer !important;
             }
             /*!
             Custom CSS Margins
@@ -229,38 +229,38 @@
             Full Screen Content Overlay CSS
             */
             .overlay {
-                height: 100%;
-                min-height: 100vh;
+                height: 100% !important;
+                min-height: 100vh !important;
                 width: 0;
-                position: fixed;
-                z-index: 9999;
-                top: -70px;
+                position: fixed !important;
+                z-index: 9999 !important;
+                top: -70px !important;
                 left: 0;
                 right: 0;
                 bottom: 0;
-                padding-bottom: 70px;
-                transform: translateY(70px);
+                padding-bottom: 70px !important;
+                transform: translateY(70px) !important;
                 background-color: rgb(0,0,0);
                 background-color: rgba(0,0,0, 0.9);
-                overflow-x: hidden;
+                overflow-x: hidden !important;
             }
             .overlay-content {
-                position: relative;
+                position: relative !important;
                 top: 0;
                 width: 100%;
-                text-align: center;
+                text-align: center !important;
                 margin-top: 0;
             }
             .overlay a {
                 padding: 8px;
-                text-decoration: none;
+                text-decoration: none !important;
                 font-size: 36px;
-                color: #818181;
-                display: block;
+                color: #818181 !important;
+                display: block !important;
                 transition: 0.3s;
             }
             .overlay a:hover, .overlay a:focus {
-                color: #f1f1f1;
+                color: #f1f1f1 !important;
             }
             @media screen and (max-width: 768px) {
                 .overlay a {
@@ -273,16 +273,16 @@
                 }
             }
             .overlay .closebtn-lg {
-                position: absolute;
+                position: absolute !important;
                 top: 0;
                 right: 24px;
                 font-size: 60px;
-                color: #818181;
-                text-decoration: none;
-                cursor: pointer;
+                color: #818181 !important;
+                text-decoration: none !important;
+                cursor: pointer !important;
             }
             .overlay .closebtn-lg:hover, .closebtn-lg:focus {
-                color: #f1f1f1;
+                color: #f1f1f1 !important;
             }
             @media screen and (max-width: 768px) {
                 .overlay .closebtn-lg {
@@ -295,16 +295,16 @@
                 }
             }
             .overlay-item:hover, .overlay-item:focus {
-                color: #f4623a;
+                color: #f4623a !important;
             }
             /*!
             Flex Box (Place It in the Very Center)
             */
             .flex-box {
-                position: relative;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
+                position: relative !important;
+                top: 50% !important;
+                left: 50% !important;
+                transform: translate(-50%, -50%) !important;
             }
             /*!
             Dotted Underline
@@ -702,18 +702,35 @@
         </nav>
         <!-- END Main Navigation-->
         <!-- Left Extended Navigation HTML (Full Screen Navigation)-->
-        <!--noindex-->
-        <div id="fullscreenNav" class="overlay">
+        <div id="fullscreenNav" class="overlay" itemscope itemtype="https://schema.org/SiteNavigationElement">
+            <meta itemprop="name" content="Learn more about us!" />
+            <meta itemprop="description" content="Our agency is developing and promotinng the best websites, landings, blogs and online stores since 2014." />
             <span class="closebtn-lg span-item" onclick="closeFullscreenNav()">&times;</span>
-            <div class="overlay-content flex-box" onclick="closeFullscreenNav()" itemscope itemtype="https://schema.org/SiteNavigationElement">
-                <a itemprop="url" href="#about"><span itemprop="name" content="About">About</span></a>
-                <a itemprop="url" href="#services"><span itemprop="name" content="Services">Services</span></a>
-                <a itemprop="url" href="#solutions"><span itemprop="name" content="Solutions">Solutions</span></a>
-                <a itemprop="url" href="#products"><span itemprop="name" content="Products">Products</span></a>
-                <a itemprop="url" href="#free"><span itemprop="name" content="Special Offer">Special Offer</span>
+            <div class="overlay-content flex-box" onclick="closeFullscreenNav()">
+                <a itemprop="url" href="#about">
+                    <span itemprop="name" content="About">About</span>
+                    <meta itemprop="description" content="Take a glance at our Team." />
+                </a>
+                <a itemprop="url" href="#services">
+                    <span itemprop="name" content="Services">Services</span>
+                    <meta itemprop="description" content="Explore our Services!" />
+                </a>
+                <a itemprop="url" href="#solutions">
+                    <span itemprop="name" content="Solutions">Solutions</span>
+                    <meta itemprop="description" content="Dive into the deep for disruptive technologies!" />
+                </a>
+                <a itemprop="url" href="#products">
+                    <span itemprop="name" content="Products">Products</span>
+                    <meta itemprop="description" content="Get familiar with our global Products!" />
+                </a>
+                <a itemprop="url" href="#free">
+                    <span itemprop="name" content="Special Offer">Special Offer</span>
                     <meta itemprop="description" content="Get hosting and domain for free!" />
                 </a>
-                <a itemprop="url" href="#contact"><span itemprop="name" content="Contact">Contact</span></a>
+                <a itemprop="url" href="#contact">
+                    <span itemprop="name" content="Contact">Contact</span>
+                    <meta itemprop="description" content="Let's get in touch!" />
+                </a>
                 <hr class="divider divider-primary" />
                 <a itemprop="url" href="https://store.codex.gq/" target="_blank" rel="noopener" title="Free and paid hosting and domain name registration is here!">
                     <svg class="bi bi-activity btn-enl-lg overlay-item" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
@@ -724,20 +741,23 @@
                 </a>
             </div>
         </div>
-        <!--/noindex-->
         <svg onclick="openFullscreenNav()" id="btn-nav-1" class="bi bi-justify-left fs-1 text-primary btn-enl-lg" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
         </svg>
         <!-- END Full Screen Navigation-->
         <!-- Right Extended Navigation HTML (Hreflang Menu)-->
         <div class="dropdown" itemscope itemtype="https://schema.org/SiteNavigationElement">
+            <meta itemprop="name" content="codexgq - Веб-студия 2.0" />
+            <meta itemprop="description" content="Разработка и продвижение лучших сайтов, лэндингов, блогов и интернет-магазинов." />
             <svg id="btn-nav-2" class="bi bi-geo-alt fs-1 text-primary dropdown-toggle" role="button" data-bs-toggle="dropdown" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-haspopup="true" aria-expanded="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
             </svg>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="btn-nav-2">
-                <span itemprop="url" class="dropdown-item span-item"><span itemprop="name" content="English">English</span></span>
-                <a itemprop="url" class="dropdown-item" href="ru" hreflang="ru"><span itemprop="name" content="Russian (Русский язык)">Russian (Русский язык)</span></a>
+                <span class="dropdown-item span-item">English</span>
+                <a itemprop="url" class="dropdown-item" href="ru" hreflang="ru"><span itemprop="name" content="Russian (Русский язык)">Russian (Русский язык)</span>
+                    <meta itemprop="description" content="Наши разработчики помогут реализовать Ваши самые смелые проекты. Мы говорим по-русски!" />
+                </a>
             </div>
         </div>
         <!-- END Hreflang Menu-->
@@ -1183,7 +1203,7 @@
         <!-- END X-tra Section-->
         <!-- Footer Menu-->
         <section class="py-3">
-            <div class="container" itemscope itemtype="https://schema.org/SiteNavigationElement">
+            <div class="container">
                 <hr class="my-5">
                 <div class="row">
                     <div class="col-lg-8 col-md-8 mb-5 mb-md-0" itemscope itemtype="http://schema.org/Organization">
@@ -1201,14 +1221,16 @@
                         </a>
                     </div>
                     <!-- .col-->
-                    <div class="col-lg-2 col-md-4 mb-5 mb-md-0">
+                    <div class="col-lg-2 col-md-4 mb-5 mb-md-0" itemscope itemtype="https://schema.org/SiteNavigationElement">
+                        <meta itemprop="name" content="Our Projects" />
+                        <meta itemprop="description" content="We run commercial and Open Source projects aimed to make the World better!" />                        
                         <div class="text-uppercase text-muted mb-4">
                             <h2 class="fs-5">Projects</h2>
                         </div>
                         <ul class="list-unstyled mb-0">
                             <li class="mb-2">
                                 <a itemprop="url" class="list-unstyled-item text-decoration-none span-item border-bottom-1" href="https://store.codex.gq/" target="_blank" rel="noopener">
-                                    <span itemprop="name" content="Store">Store</span>
+                                    <span itemprop="name" content="Online Store">Store</span>
                                     <meta itemprop="description" content="We have our own hosting and domain name registration services. Visit our Store!" />
                                 </a>
                             </li>
@@ -1216,24 +1238,29 @@
                     </div>
                     <!-- .col-->
                     <!-- .col-->
-                    <div class="col-lg-2 col-md-4 mb-5 mb-md-0">
+                    <div class="col-lg-2 col-md-4 mb-5 mb-md-0" itemscope itemtype="https://schema.org/SiteNavigationElement">
+                        <meta itemprop="name" content="Legal Agreements" />
+                        <meta itemprop="description" content="Your agreement with us includes but not limited to Terms, Privacy and Disclaimer." />  
                         <div class="text-uppercase text-muted mb-4">
                             <h2 class="fs-5">Legal</h2>
                         </div>
                         <ul class="list-unstyled mb-0">
                             <li class="mb-2">
                                 <a itemprop="url" class="list-unstyled-item text-decoration-none span-item" href="legal/privacy.html">
-                                    <span itemprop="name" content="Privacy">Privacy</span>
+                                    <span itemprop="name" content="Privacy Policy">Privacy</span>
+                                    <meta itemprop="description" content="Our Privacy Policy explains how we collect, safeguard and disclose information that results from your use of our Service." />
                                 </a>
                             </li>
                             <li class="mb-2">
                                 <a itemprop="url" class="list-unstyled-item text-decoration-none span-item" href="legal/terms.html">
-                                    <span itemprop="name" content="Terms">Terms</span>
+                                    <span itemprop="name" content="Terms and Conditions">Terms</span>
+                                    <meta itemprop="description" content="Our Terms and Conditions govern your use of our Platform including all directly related subdomains and applications." />
                                 </a>
                             </li>
                             <li class="mb-2">
                                 <a itemprop="url" class="list-unstyled-item text-decoration-none span-item" href="legal/disclaimer.html">
                                     <span itemprop="name" content="Disclaimer">Disclaimer</span>
+                                    <meta itemprop="description" content="Our liabilities are limited to as described in the Disclaimer Statement and related documents." />
                                 </a>
                             </li>
                         </ul>
@@ -1328,6 +1355,7 @@
                 el.setAttribute("rel", type);
                 el.setAttribute("href", url);
                 document.getElementsByTagName("head")[0].appendChild(el);
+                document.getElementsByTagName("body")[0].appendChild(el);
             }
             // Prefetch, dns-prefetch, preload, prerender or preconnect links for website acceleretion.
             add_hint('dns-prefetch', 'https://cdn.codex.gq/');
@@ -1335,6 +1363,9 @@
             add_hint('dns-prefetch', 'https://www.jsdelivr.com/');
             add_hint('dns-prefetch', 'https://fonts.gstatic.com/');
             add_hint('dns-prefetch', 'https://fonts.googleapis.com/');
+            add_hint('preload', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js', as='script');
+            add_hint('preload', 'https://cdn.codex.gq/js/scripts.js', as='script');            
+	        add_hint('preload', 'https://cdn.codex.gq/css/all.slim.min.css', as='style');
             // Speed up transitions between pages by prerendering them within a domain.
             document.addEventListener("mousemove", function (e) {
                 if (!e.target.href ||
@@ -1374,41 +1405,6 @@
                 document.getElementById("fullscreenNav").style.width = "0%";
             }
         </script>
-        <!-- Include HTML (includes any file content into visual HTML)-->
-        <script>
-        function includeContent() {
-            var z, i, elmnt, file, xhttp;
-            // Loop through a collection of all file (html, php, txt, and etc.) elements.
-            z = document.getElementsByTagName("*");
-            for (i = 0; i < z.length; i++) {
-                elmnt = z[i];
-                // Search for elements with a certain atrribute.
-                file = elmnt.getAttribute("data-href");
-                if (file) {
-                    // Make an HTTP request using the attribute value as the file name.
-                    xhttp = new XMLHttpRequest();
-                    xhttp.onreadystatechange = function() {
-                        if (this.readyState == 4) {
-                            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-                            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-                            // Remove the attribute, and call this function once more.
-                            elmnt.removeAttribute("data-href");
-                            includeContent();
-                        }
-                    }
-                    xhttp.open("GET", file, true);
-                    xhttp.send();
-                    // Exit the function.
-                    return;
-                }
-            }
-        };
-        </script>
-        <script>
-            // Call the function.
-            includeContent();
-        </script>
-        <!-- END Include HTML-->
         <!-- Prevent Frame-->
         <script>
             if (top != self) {
