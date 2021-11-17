@@ -28,7 +28,7 @@
             "purpose": "any"
         },
         {
-            "src": "https:\/\/codex.gq\/assets\/icons\/chrome-web-app-128x128.png",
+            "src": "https:\/\/codex.gq\/assets\/favicon-package\/chrome-web-app-128x128.png",
             "sizes": "128x128",
             "type": "image/png",
             "purpose": "any"
@@ -46,7 +46,7 @@
             "purpose": "any"
         },
         {
-            "src": "https:\/\/codex.gq\/assets\/icons\/android-firefox-194x194.png",
+            "src": "https:\/\/codex.gq\/assets\/favicon-package\/android-firefox-194x194.png",
             "sizes": "194x194",
             "type": "image/png",
             "purpose": "any"
@@ -94,7 +94,7 @@
             "purpose": "maskable"
         },
         {
-            "src": "https:\/\/codex.gq\/assets\/icons\/chrome-web-app-128x128-maskable.png",
+            "src": "https:\/\/codex.gq\/assets\/favicon-package\/chrome-web-app-128x128-maskable.png",
             "sizes": "128x128",
             "type": "image/png",
             "purpose": "maskable"
@@ -112,7 +112,7 @@
             "purpose": "maskable"
         },
         {
-            "src": "https:\/\/codex.gq\/assets\/icons\/android-firefox-194x194-maskable.png",
+            "src": "https:\/\/codex.gq\/assets\/favicon-package\/android-firefox-194x194-maskable.png",
             "sizes": "194x194",
             "type": "image/png",
             "purpose": "maskable"
