@@ -20,28 +20,3 @@ Page Section Background Image
     background-attachment: scroll;
     background-size: cover;
 }
-
-.w3-tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-}
-              
-.w3-tooltip .w3-tooltiptext {
-    visibility: hidden;
-    width: 240px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 6px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -21px;
-}
-              
-.w3-tooltip:hover .w3-tooltiptext {
-    visibility: visible;
-}
