@@ -3,6 +3,7 @@
 <html lang="en" xml:lang="en" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
     <head itemscope itemtype="http://schema.org/WPHeader">
         <meta charset="utf-8" /><!-- Meta Core-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" /><!-- Internet Explorer Rendering-->
         <!-- XFN 1.1 Profile-->
         <link rel="profile" href="https://gmpg.org/xfn/11" />
         <!-- OpenSearch Profile-->
@@ -105,7 +106,7 @@
         }(this, document);
         </script>
         <!-- Viewpoint Mode-->
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5.0, minimum-scale=1.0, shrink-to-fit=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <!-- Meta Data - Key-->
         <meta name="description" lang="en" xml:lang="en" content="Development and marketing of the best websites, landing pages, blogs, and online stores." />
         <meta name="keywords" lang="en" xml:lang="en" content="web development, digital marketing, wordpress, bootstrap, websites, codexgq" />
@@ -427,8 +428,6 @@
             icon-uri=https://codex.gq/assets/shortcuts/russia-192x192.png" />
         <!-- Tap Highlighting-->
         <meta name="msapplication-tap-highlight" content="no" />
-        <!-- Internet Explorer Rendering-->
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <!-- IE Comments-->
         <!--[if lt IE 7]>     <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
         <!--[if IE 7]>        <html class="lt-ie9 lt-ie8">        <![endif]-->
@@ -660,7 +659,7 @@
         <!-- Left Extended Navigation HTML (Full Screen Navigation)-->
         <!--noindex-->
         <div id="fullscreenNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn-lg" onclick="closeFullscreenNav()">&times;</a>
+            <a href="#" class="closebtn-lg" onclick="closeFullscreenNav()">&times;</a>
             <div class="overlay-content flex-box" onclick="closeFullscreenNav()">
                 <a href="#about">About</a>
                 <a href="#services">Services</a>
@@ -1180,42 +1179,42 @@
         <div itemscope itemtype="http://schema.org/BreadcrumbList">
             <div style="display: none;">
                 <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-                    <a itemprop="url" href="/" rel="index up up up" aria-hidden="true">
+                    <a itemprop="url" href="/" rel="index up up up" title="codexgq - Moving The Web">
                         <span itemprop="name" content="Home Page"></span>
                     </a>
                         <meta itemprop="title" content="codexgq - Moving The Web" />
                         <meta itemprop="description" content="Development and marketing of the best websites, landing pages, blogs, and online stores." />
                     <span>
                         <span itemprop="child" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-                            <a itemprop="url" href="ru" rel="up up" aria-hidden="true">
+                            <a itemprop="url" href="ru" rel="up up" title="codexgq - Веб-студия 2.0">
                                 <span itemprop="name" content="Russian (Русский язык)"></span>
                             </a>
                             <meta itemprop="title" content="codexgq - Веб-студия 2.0" />
                             <meta itemprop="description" content="Разработка и продвижение лучших сайтов, лэндингов, блогов и интернет-магазинов." />
                         </span>
                         <span itemprop="child" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-                            <a itemprop="url" href="legal" rel="up up" aria-hidden="true">
+                            <a itemprop="url" href="legal" rel="up up" title="Legal Agreements">
                                 <span itemprop="name" content="Legal Agreements"></span>
                             </a>
                             <span itemprop="title" content="Legal Agreements"></span>
                             <meta itemprop="description" content="codexgq, Inc. Legal Agreements" />
                             <span>
                                 <span itemprop="child" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-                                    <a itemprop="url" href="legal/privacy.html" rel="up" aria-hidden="true">
+                                    <a itemprop="url" href="legal/privacy.html" rel="up" title="Privacy Policy">
                                         <span itemprop="name" content="Privacy Policy"></span>
                                     </a>
                                     <meta itemprop="title" content="Privacy Policy" />
                                     <meta itemprop="description" content="codexgq, Inc. Privacy Policy" />
                                 </span>
                                 <span itemprop="child" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-                                    <a itemprop="url" href="legal/terms.html" rel="up" aria-hidden="true">
+                                    <a itemprop="url" href="legal/terms.html" rel="up" title="Terms and Conditions">
                                         <span itemprop="name" content="Terms and Conditions"></span>
                                     </a>
                                     <meta itemprop="title" content="Terms and Conditions" />
                                     <meta itemprop="description" content="codexgq, Inc. Terms and Conditions" />
                                 </span>
                                 <span itemprop="child" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-                                    <a itemprop="url" href="legal/disclaimer.html" rel="up" aria-hidden="true">
+                                    <a itemprop="url" href="legal/disclaimer.html" rel="up" title="Disclaimer">
                                         <span itemprop="name" content="Disclaimer"></span>
                                     </a>
                                     <meta itemprop="title" content="Disclaimer" />
@@ -1256,7 +1255,6 @@
             add_hint('dns-prefetch', 'https://fonts.googleapis.com/');
             add_hint('preload', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js', as='script');
             add_hint('preload', 'https://cdn.codex.gq/js/scripts.js', as='script');
-            add_hint('preload', 'https://cdn.codex.gq/css/all.slim.min.css', as='stylesheet');
             // Speed up transitions between pages by prerendering them within a domain.
             document.addEventListener("mousemove", function (e) {
                 if (!e.target.href ||
