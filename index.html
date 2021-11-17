@@ -138,6 +138,94 @@
         <!-- UI & UX Custom Inline CSS-->
         <style>
             /*!
+            Left Extended Navigation Button CSS
+            */
+            #btn-nav-1 {
+                position: fixed;
+                top: 88px;
+                left: 16px;
+                z-index: 999;
+                cursor: pointer;
+            }
+            #btn-nav-1:hover {
+                opacity: 0.75;
+                filter: alpha(opacity=75);
+            }
+            /*!
+            Right Extended Navigation Button CSS
+            */
+            #btn-nav-2 {
+                position: fixed;
+                top: 88px;
+                right: 16px;
+                z-index: 999;
+                cursor: pointer;
+            }
+            #btn-nav-2:hover {
+                opacity: 0.75;
+                filter: alpha(opacity=75);
+            }
+            /*!
+            Scroll To Top Button CSS
+            */
+            #btn-top {
+                display: none;
+                position: fixed;
+                bottom: 16px;
+                right: 16px;
+                z-index: 999;
+                cursor: pointer;
+                opacity: 0.50;
+                filter: alpha(opacity=50);
+            }
+            #btn-top:hover {
+                opacity: 0.75;
+                filter: alpha(opacity=75);
+            }
+            /*!
+            Any Button on Hover Behavior
+            */
+            .btn-act:hover {
+                opacity: 0.75;
+                filter: alpha(opacity=75);
+            }
+            /*!
+            Any Button Enlarge on Hover
+            */
+            .btn-enl-lg:hover {
+                transform: scale(1.2);
+            }
+            .btn-enl-xl:hover {
+                transform: scale(1.5);
+            }
+            /*!
+            Any Button Standard Width
+            */
+            .btn-std {
+                width: 256px;
+            }
+            /*!
+            Any List Item Color and on Hover Behavior
+            */
+            .list-unstyled-item {
+                color: #212529;
+            }
+            .list-unstyled-item:hover {
+                color: #f4623a;
+            }
+            /*!
+            Empty Link Item
+            */
+            .span-item {
+                cursor: pointer;
+            }
+            /*!
+            Custom CSS Margins
+            */
+            .mb-6 {
+                margin-bottom: -128px !important;
+            }
+            /*!
             Full Screen Content Overlay CSS
             */
             .overlay {
@@ -205,6 +293,15 @@
                 .overlay .closebtn-lg {
                     font-size: 48px;
                 }
+            }
+            /*!
+            Flex Box (Place It in the Very Center)
+            */
+            .flex-box {
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
             }
         </style>
         <!-- END UI & UX Custom Inline CSS-->
