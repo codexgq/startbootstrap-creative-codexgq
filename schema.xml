@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<json>
+  <XML_Serializer_Tag>https://schema.org/</XML_Serializer_Tag>
+  <XML_Serializer_Tag>
+    <XML_Serializer_Tag>WebSite</XML_Serializer_Tag>
+    <XML_Serializer_Tag>https://codex.gq/#website</XML_Serializer_Tag>
+    <url>https://codex.gq/</url>
+    <inLanguage>en, ru</inLanguage>
+    <name>codexgq - Moving The Web</name>
+    <description>Development and marketing of the best websites, landing pages, blogs, and online stores.</description>
+    <potentialAction>
+      <XML_Serializer_Tag>SearchAction</XML_Serializer_Tag>
+      <target>https://codex.gq/?s={query}</target>
+      <query-input>required name=query</query-input>
+    </potentialAction>
+  </XML_Serializer_Tag>
+  <XML_Serializer_Tag>
+    <XML_Serializer_Tag>WebPage</XML_Serializer_Tag>
+    <XML_Serializer_Tag>https://codex.gq/#webpage</XML_Serializer_Tag>
+    <url>https://codex.gq/</url>
+    <inLanguage>en</inLanguage>
+    <name>codexgq - Moving The Web</name>
+    <isPartOf>
+      <XML_Serializer_Tag>https://codex.gq/#website</XML_Serializer_Tag>
+    </isPartOf>
+  </XML_Serializer_Tag>
+  <XML_Serializer_Tag>https://schema.org/</XML_Serializer_Tag>
+  <XML_Serializer_Tag>Organization</XML_Serializer_Tag>
+  <name>codexgq</name>
+  <XML_Serializer_Tag>https://codex.gq/#organization</XML_Serializer_Tag>
+  <url>https://codex.gq/</url>
+  <logo>
+    <XML_Serializer_Tag>ImageObject</XML_Serializer_Tag>
+    <url>https://codex.gq/assets/logo.logoset/logo-snippet.svg</url>
+    <width>1920</width>
+    <height>1080</height>
+    <caption>FHD Logotype | codexgq - Moving The Web</caption>
+    <XML_Serializer_Tag>https://codex.gq/#logo</XML_Serializer_Tag>
+  </logo>
+  <contactPoint>
+    <XML_Serializer_Tag>ContactPoint</XML_Serializer_Tag>
+    <email>info@codex.gq</email>
+    <contactType>customer service</contactType>
+    <areaServed>US, RU, World</areaServed>
+    <availableLanguage>en</availableLanguage>
+    <availableLanguage>Russian</availableLanguage>
+  </contactPoint>
+  <sameAs>https://cdn.codex.gq/</sameAs>
+  <sameAs>https://git.codex.gq/</sameAs>
+  <sameAs>https://remote.codex.gq/</sameAs>
+  <sameAs>https://sites.codex.gq/</sameAs>
+  <sameAs>https://store.codex.gq/</sameAs>
+  <sameAs>https://www.codex.gq/</sameAs>
+  <sameAs>https://codex.gcdn.co/</sameAs>
+  <XML_Serializer_Tag>https://schema.org/</XML_Serializer_Tag>
+  <XML_Serializer_Tag>ServiceChannel</XML_Serializer_Tag>
+  <availableLanguage>
+    <XML_Serializer_Tag>Language</XML_Serializer_Tag>
+    <name>English</name>
+    <identifier>EN</identifier>
+  </availableLanguage>
+  <availableLanguage>
+    <XML_Serializer_Tag>Language</XML_Serializer_Tag>
+    <name>Russian</name>
+    <identifier>RU</identifier>
+  </availableLanguage>
+  <XML_Serializer_Tag>https://schema.org/</XML_Serializer_Tag>
+  <XML_Serializer_Tag>Product</XML_Serializer_Tag>
+  <name>Web Development</name>
+  <id>web-development</id>
+  <image>https://codex.gq/assets/img/webdesign-programs.jpg</image>
+  <description>Development and marketing of the best websites, landing pages, blogs, and online stores.</description>
+  <brand>
+    <XML_Serializer_Tag>Organization</XML_Serializer_Tag>
+    <name>codexgq</name>
+  </brand>
+  <sku>GQ-WD-00-EN-RU</sku>
+  <mpn>N/A</mpn>
+  <gtin8>N/A</gtin8>
+  <offers>
+    <XML_Serializer_Tag>Offer</XML_Serializer_Tag>
+    <url>https://codex.gq/</url>
+    <priceCurrency>USD</priceCurrency>
+    <price>25</price>
+    <priceValidUntil>2099-12-31</priceValidUntil>
+    <availability>https://schema.org/OnlineOnly</availability>
+  </offers>
+  <aggregateRating>
+    <XML_Serializer_Tag>AggregateRating</XML_Serializer_Tag>
+    <ratingValue>5</ratingValue>
+    <ratingCount>56</ratingCount>
+    <reviewCount>12</reviewCount>
+  </aggregateRating>
+  <review>
+    <XML_Serializer_Tag>Review</XML_Serializer_Tag>
+    <name>Web Development Review</name>
+    <reviewBody>The team has always done a great job on estimating timelines. The best collaboration experience ever.</reviewBody>
+    <reviewRating>
+      <XML_Serializer_Tag>Rating</XML_Serializer_Tag>
+      <ratingValue>5</ratingValue>
+    </reviewRating>
+    <author>
+      <XML_Serializer_Tag>Person</XML_Serializer_Tag>
+      <name>John Alty, Full Stack Web Developer</name>
+    </author>
+    <publisher>
+      <XML_Serializer_Tag>Organization</XML_Serializer_Tag>
+      <name>codexgq</name>
+    </publisher>
+  </review>
+  <XML_Serializer_Tag>https://schema.org/</XML_Serializer_Tag>
+  <XML_Serializer_Tag>HowTo</XML_Serializer_Tag>
+  <name>Get Hosting and Domain for Free</name>
+  <description>Started a new project? Thought about a reliable hosting and a great domain name? Check out our special offer first!</description>
+  <image>https://codex.gq/assets/img/air-balloon-night-sky.jpg</image>
+  <totalTime>PT5M</totalTime>
+  <estimatedCost>
+    <XML_Serializer_Tag>MonetaryAmount</XML_Serializer_Tag>
+    <currency>USD</currency>
+    <value>0</value>
+  </estimatedCost>
+  <supply>
+    <XML_Serializer_Tag>HowToSupply</XML_Serializer_Tag>
+    <name>Free Hosting and Domain</name>
+  </supply>
+  <tool>
+    <XML_Serializer_Tag>HowToTool</XML_Serializer_Tag>
+    <name>Web Development</name>
+  </tool>
+  <step>
+    <XML_Serializer_Tag>HowToStep</XML_Serializer_Tag>
+    <text>Cloud hosting with an unlimited plan and a domain name in a zone of your choice are provided free of charge when ordering a turnkey website.</text>
+    <image>https://codex.gq/assets/img/clouds-from-aircraft-window.jpg</image>
+    <name>We've Got What You Need!</name>
+    <url>https://codex.gq/#free</url>
+  </step>
+  <step>
+    <XML_Serializer_Tag>HowToStep</XML_Serializer_Tag>
+    <text>Ready to start your next project with us? Send us a messages and we will get back to you as soon as possible!</text>
+    <image>https://codex.gq/assets/img/young-pilot-with-airplane.jpg</image>
+    <name>Let's Get In Touch!</name>
+    <url>https://codex.gq/#contact</url>
+  </step>
+</json>

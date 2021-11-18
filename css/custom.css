@@ -2,15 +2,14 @@
  * Custom CSS - startbootstrap-creative-codexgq v1.0.0 (https://github.com/codexgq/startbootstrap-creative-codexgq)
  * Copyright 2014-2021 codexgq, Inc.
  * Licensed under MIT (https://github.com/codexgq/startbootstrap-creative-codexgq/blob/master/LICENSE)
- *
+ * 
+ * For easy inline implementation of this code please refer to the following:
+ * GitHub: https://github.com/codexgq/startbootstrap-creative-codexgq/blob/master/src/custom/css/inline.css, https://github.com/codexgq/startbootstrap-creative-codexgq/blob/master/src/custom/html/inline_css.html
+ * URL: https://codex.gq/src/custom/css/inline.css, https://codex.gq/src/custom/html/inline_css.html
+ * 
  * For custom styles not in custom.css please refer to the HTML inline.
  */
-/*!
-Rendering Engines
- */
-/*!
-Page Section Background Image
- */
+
 .bg-ps {
     padding-top: 10rem;
     padding-bottom: calc(10rem - 0px);
@@ -19,4 +18,171 @@ Page Section Background Image
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
+}
+
+#btn-nav-1 {
+    position: fixed !important;
+    top: 88px;
+    left: 16px;
+    z-index: 999 !important;
+    cursor: pointer !important;
+}
+
+#btn-nav-1:hover {
+    opacity: 0.75;
+    filter: alpha(opacity=75);
+}
+
+#btn-nav-2 {
+    position: fixed !important;
+    top: 88px;
+    right: 16px;
+    z-index: 999 !important;
+    cursor: pointer !important;
+}
+
+#btn-nav-2:hover {
+    opacity: 0.75;
+    filter: alpha(opacity=75);
+}
+
+#btn-top {
+    display: none;
+    position: fixed !important;
+    bottom: 16px;
+    right: 16px;
+    z-index: 999 !important;
+    cursor: pointer !important;
+    opacity: 0.50;
+    filter: alpha(opacity=50);
+}
+
+#btn-top:hover {
+    opacity: 0.75;
+    filter: alpha(opacity=75);
+}
+
+.btn-act:hover {
+    opacity: 0.75;
+    filter: alpha(opacity=75);
+}
+
+.btn-enl-lg:hover {
+    transform: scale(1.2);
+}
+
+.btn-enl-xl:hover {
+    transform: scale(1.5);
+}
+
+.btn-std {
+    width: 256px !important;
+}
+
+.list-unstyled-item {
+    color: #212529 !important;
+}
+
+.list-unstyled-item:hover {
+    color: #f4623a !important;
+}
+
+.span-item {
+    cursor: pointer !important;
+}
+
+.mb-6 {
+    margin-bottom: -128px !important;
+}
+
+.overlay {
+    height: 100% !important;
+    min-height: 100vh !important;
+    width: 0;
+    position: fixed !important;
+    z-index: 9999 !important;
+    top: -70px !important;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-bottom: 70px !important;
+    transform: translateY(70px) !important;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden !important;
+    transition: 0;
+}
+
+.overlay-content {
+    position: relative !important;
+    top: 0;
+    width: 100%;
+    text-align: center !important;
+    margin-top: 0;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none !important;
+    font-size: 36px;
+    color: #818181 !important;
+    display: block !important;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1 !important;
+}
+
+@media screen and (max-width: 768px) {
+    .overlay a {
+        font-size: 30px;
+   }
+}
+
+@media screen and (max-width: 576px) {
+    .overlay a {
+        font-size: 24px;
+   }
+}
+
+.overlay .closebtn-lg {
+    position: absolute !important;
+    top: 0;
+    right: 24px;
+    font-size: 60px;
+    color: #818181 !important;
+    text-decoration: none !important;
+    cursor: pointer !important;
+}
+
+.overlay .closebtn-lg:hover, .closebtn-lg:focus {
+    color: #f1f1f1 !important;
+}
+
+@media screen and (max-width: 768px) {
+    .overlay .closebtn-lg {
+        font-size: 54px;
+   }
+}
+
+@media screen and (max-width: 576px) {
+    .overlay .closebtn-lg {
+        font-size: 48px;
+   }
+}
+
+.overlay-item:hover, .overlay-item:focus {
+    color: #f4623a !important;
+}
+
+.flex-box {
+    position: relative !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+}
+
+.border-bottom-1 {
+    border-bottom: 1px dotted black !important;
 }

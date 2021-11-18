@@ -11,7 +11,6 @@ favicon.ico
 assets/img/bg-masthead.jpg
 assets/img/technical-support.jpg
 css/styles.css
-css/custom.css
 js/scripts.js
 
 # offline.html will be displayed if an user is offline.

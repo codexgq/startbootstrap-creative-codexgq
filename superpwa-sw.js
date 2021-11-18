@@ -17,12 +17,18 @@
 const cacheName = 'codex.gq-superpwa-2.0.2';
 const startPage = 'https://codex.gq/';
 const offlinePage = 'https://codex.gq/index.html';
-const filesToCache = [startPage, offlinePage];
+const filesToCache = [
+	startPage, 
+	offlinePage
+];
 const resourcesToCache = [
-	'https://codex.gq/',
-	'https://codex.gq/index.html'
+	'https://codex.gq/assets/favicon-package/android-chrome-144x144.png',
+	'https://codex.gq/assets/screenshots/desktop-homepage.png',
+	'https://codex.gq/assets/screenshots/mobile-homepage.png',
+	'https://codex.gq/favicon.ico',
+	'https://codex.gq/site.webmanifest'
   ];
-const neverCacheUrls = [/\/scripts/,/\/src/,/\/.editorconfig/,/\/.gitignore/,/\/CNAME/,/\/declaration.md/,/\/LICENSE/,/\/package.json/,/\/package-lock.json/,/\/README.md/];
+const neverCacheUrls = [/\/scripts/,/\/src/,/\/.editorconfig/,/\/.gitignore/,/\/CNAME/,/\/declaration.md/,/\/LICENSE/,/\/package.json/,/\/package-lock.json/,/\/README.md/,/\/?s={query}/,/\/?s=/];
 
 // Install
 self.addEventListener('install', function(e) {

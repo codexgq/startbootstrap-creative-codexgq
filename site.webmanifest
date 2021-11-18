@@ -4,139 +4,139 @@
     "description": "Development and marketing of the best websites, landing pages, blogs, and online stores.",
     "icons": [
         {
-            "src": "https:\/\/codex.gq\/assets\/favicon-package\/android-chrome-36x36.png",
+            "src": "https://codex.gq/assets/favicon-package/android-chrome-36x36.png",
             "sizes": "36x36",
             "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "https:\/\/codex.gq\/assets\/favicon-package\/android-chrome-48x48.png",
+            "src": "https://codex.gq/assets/favicon-package/android-chrome-48x48.png",
             "sizes": "48x48",
             "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "https:\/\/codex.gq\/assets\/favicon-package\/android-chrome-72x72.png",
+            "src": "https://codex.gq/assets/favicon-package/android-chrome-72x72.png",
             "sizes": "72x72",
             "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "https:\/\/codex.gq\/assets\/favicon-package\/android-chrome-96x96.png",
+            "src": "https://codex.gq/assets/favicon-package/android-chrome-96x96.png",
             "sizes": "96x96",
             "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "https:\/\/codex.gq\/assets\/favicon-package\/chrome-web-app-128x128.png",
+            "src": "https://codex.gq/assets/favicon-package/chrome-web-app-128x128.png",
             "sizes": "128x128",
             "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "https:\/\/codex.gq\/assets\/favicon-package\/android-chrome-144x144.png",
+            "src": "https://codex.gq/assets/favicon-package/android-chrome-144x144.png",
             "sizes": "144x144",
             "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "https:\/\/codex.gq\/assets\/favicon-package\/android-chrome-192x192.png",
+            "src": "https://codex.gq/assets/favicon-package/android-chrome-192x192.png",
             "sizes": "192x192",
             "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "https:\/\/codex.gq\/assets\/favicon-package\/android-firefox-194x194.png",
+            "src": "https://codex.gq/assets/favicon-package/android-firefox-194x194.png",
             "sizes": "194x194",
             "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "https:\/\/codex.gq\/assets\/favicon-package\/android-chrome-256x256.png",
+            "src": "https://codex.gq/assets/favicon-package/android-chrome-256x256.png",
             "sizes": "256x256",
             "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "https:\/\/codex.gq\/assets\/favicon-package\/android-chrome-384x384.png",
+            "src": "https://codex.gq/assets/favicon-package/android-chrome-384x384.png",
             "sizes": "384x384",
             "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "https:\/\/codex.gq\/assets\/favicon-package\/android-chrome-512x512.png",
+            "src": "https://codex.gq/assets/favicon-package/android-chrome-512x512.png",
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "https:\/\/codex.gq\/assets\/favicon-package\/android-chrome-36x36-maskable.png",
+            "src": "https://codex.gq/assets/favicon-package/android-chrome-36x36-maskable.png",
             "sizes": "36x36",
             "type": "image/png",
             "purpose": "maskable"
         },
         {
-            "src": "https:\/\/codex.gq\/assets\/favicon-package\/android-chrome-48x48-maskable.png",
+            "src": "https://codex.gq/assets/favicon-package/android-chrome-48x48-maskable.png",
             "sizes": "48x48",
             "type": "image/png",
             "purpose": "maskable"
         },
         {
-            "src": "https:\/\/codex.gq\/assets\/favicon-package\/android-chrome-72x72-maskable.png",
+            "src": "https://codex.gq/assets/favicon-package/android-chrome-72x72-maskable.png",
             "sizes": "72x72",
             "type": "image/png",
             "purpose": "maskable"
         },
         {
-            "src": "https:\/\/codex.gq\/assets\/favicon-package\/android-chrome-96x96-maskable.png",
+            "src": "https://codex.gq/assets/favicon-package/android-chrome-96x96-maskable.png",
             "sizes": "96x96",
             "type": "image/png",
             "purpose": "maskable"
         },
         {
-            "src": "https:\/\/codex.gq\/assets\/favicon-package\/chrome-web-app-128x128-maskable.png",
+            "src": "https://codex.gq/assets/favicon-package/chrome-web-app-128x128-maskable.png",
             "sizes": "128x128",
             "type": "image/png",
             "purpose": "maskable"
         },
         {
-            "src": "https:\/\/codex.gq\/assets\/favicon-package\/android-chrome-144x144-maskable.png",
+            "src": "https://codex.gq/assets/favicon-package/android-chrome-144x144-maskable.png",
             "sizes": "144x144",
             "type": "image/png",
             "purpose": "maskable"
         },
         {
-            "src": "https:\/\/codex.gq\/assets\/favicon-package\/android-chrome-192x192-maskable.png",
+            "src": "https://codex.gq/assets/favicon-package/android-chrome-192x192-maskable.png",
             "sizes": "192x192",
             "type": "image/png",
             "purpose": "maskable"
         },
         {
-            "src": "https:\/\/codex.gq\/assets\/favicon-package\/android-firefox-194x194-maskable.png",
+            "src": "https://codex.gq/assets/favicon-package/android-firefox-194x194-maskable.png",
             "sizes": "194x194",
             "type": "image/png",
             "purpose": "maskable"
         },
         {
-            "src": "https:\/\/codex.gq\/assets\/favicon-package\/android-chrome-256x256-maskable.png",
+            "src": "https://codex.gq/assets/favicon-package/android-chrome-256x256-maskable.png",
             "sizes": "256x256",
             "type": "image/png",
             "purpose": "maskable"
         },
         {
-            "src": "https:\/\/codex.gq\/assets\/favicon-package\/android-chrome-384x384-maskable.png",
+            "src": "https://codex.gq/assets/favicon-package/android-chrome-384x384-maskable.png",
             "sizes": "384x384",
             "type": "image/png",
             "purpose": "maskable"
         },
         {
-            "src": "https:\/\/codex.gq\/assets\/favicon-package\/android-chrome-512x512-maskable.png",
+            "src": "https://codex.gq/assets/favicon-package/android-chrome-512x512-maskable.png",
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "maskable"
         },
         {
-            "src": "https:\/\/codex.gq\/assets\/favicon-package\/safari-pinned-tab.svg",
+            "src": "https://codex.gq/assets/favicon-package/safari-pinned-tab.svg",
             "sizes": "any",
             "type": "image/svg+xml",
             "purpose": "monochrome"
@@ -144,13 +144,83 @@
     ],
     "screenshots": [
         {
-            "src": "https:\/\/codex.gq\/assets\/screenshots\/mobile-homepage.png",
-            "sizes": "750x1334",
+            "src": "https://codex.gq/assets/screenshots/mobile-homepage.png",
+            "sizes": "1080x1920",
             "type": "image/png"
         },
         {
-            "src": "https:\/\/codex.gq\/assets\/screenshots\/desktop-homepage.png",
-            "sizes": "1280x800",
+            "src": "https://codex.gq/assets/screenshots/mobile-about.png",
+            "sizes": "1080x1920",
+            "type": "image/png"
+        },
+        {
+            "src": "https://codex.gq/assets/screenshots/mobile-services.png",
+            "sizes": "1080x1920",
+            "type": "image/png"
+        },
+        {
+            "src": "https://codex.gq/assets/screenshots/mobile-solutions.png",
+            "sizes": "1080x1920",
+            "type": "image/png"
+        },
+        {
+            "src": "https://codex.gq/assets/screenshots/mobile-products.png",
+            "sizes": "1080x1920",
+            "type": "image/png"
+        },
+        {
+            "src": "https://codex.gq/assets/screenshots/mobile-free.png",
+            "sizes": "1080x1920",
+            "type": "image/png"
+        },
+        {
+            "src": "https://codex.gq/assets/screenshots/mobile-contact.png",
+            "sizes": "1080x1920",
+            "type": "image/png"
+        },
+        {
+            "src": "https://codex.gq/assets/screenshots/mobile-store.png",
+            "sizes": "1080x1920",
+            "type": "image/png"
+        },
+        {
+            "src": "https://codex.gq/assets/screenshots/desktop-homepage.png",
+            "sizes": "1920x1080",
+            "type": "image/png"
+        },
+        {
+            "src": "https://codex.gq/assets/screenshots/desktop-hreflang.png",
+            "sizes": "1920x1080",
+            "type": "image/png"
+        },
+        {
+            "src": "https://codex.gq/assets/screenshots/desktop-about.png",
+            "sizes": "1920x1080",
+            "type": "image/png"
+        },
+        {
+            "src": "https://codex.gq/assets/screenshots/desktop-services.png",
+            "sizes": "1920x1080",
+            "type": "image/png"
+        },
+        {
+            "src": "https://codex.gq/assets/screenshots/desktop-solutions.png",
+            "sizes": "1920x1080",
+            "type": "image/png"
+        },
+        {
+            "src": "https://codex.gq/assets/screenshots/desktop-contact.png",
+            "sizes": "1920x1080",
+            "type": "image/png"
+        },
+        {
+            "src": "https://codex.gq/assets/screenshots/desktop-store.png",
+            "sizes": "1920x1080",
+            "type": "image/png"
+        },
+        {
+            "src": "https://codex.gq/assets/screenshots/desktop-brand.png",
+            "sizes": "1920x1080",
             "type": "image/png"
         }
     ],
@@ -159,10 +229,10 @@
             "name": "Services",
             "short_name": "Services",
             "description": "Wide range of digital services for a turnkey projects.",
-            "url": "https:\/\/codex.gq\/#services",
+            "url": "https://codex.gq/#services",
             "icons": [
                 {
-                    "src": "https:\/\/codex.gq\/assets\/shortcuts\/services-192x192.png",
+                    "src": "https://codex.gq/assets/shortcuts/services-192x192.png",
                     "sizes": "192x192",
                     "type": "image/png",
                     "purpose": "any"
@@ -173,10 +243,10 @@
             "name": "Solutions",
             "short_name": "Solutions",
             "description": "Ready-to-go solutions and tools to cover the digital business needs.",
-            "url": "https:\/\/codex.gq\/#solutions",
+            "url": "https://codex.gq/#solutions",
             "icons": [
                 {
-                    "src": "https:\/\/codex.gq\/assets\/shortcuts\/solutions-192x192.png",
+                    "src": "https://codex.gq/assets/shortcuts/solutions-192x192.png",
                     "sizes": "192x192",
                     "type": "image/png",
                     "purpose": "any"
@@ -187,10 +257,10 @@
             "name": "Products",
             "short_name": "Products",
             "description": "Reliable and well-proven products aimed for the global markets.",
-            "url": "https:\/\/codex.gq\/#products",
+            "url": "https://codex.gq/#products",
             "icons": [
                 {
-                    "src": "https:\/\/codex.gq\/assets\/shortcuts\/products-192x192.png",
+                    "src": "https://codex.gq/assets/shortcuts/products-192x192.png",
                     "sizes": "192x192",
                     "type": "image/png",
                     "purpose": "any"
@@ -201,10 +271,10 @@
             "name": "Special Offer",
             "short_name": "Special Offer",
             "description": "Hosting and domain are provided free of charge when ordering a website.",
-            "url": "https:\/\/codex.gq\/#free",
+            "url": "https://codex.gq/#free",
             "icons": [
                 {
-                    "src": "https:\/\/codex.gq\/assets\/shortcuts\/special-offer-192x192.png",
+                    "src": "https://codex.gq/assets/shortcuts/special-offer-192x192.png",
                     "sizes": "192x192",
                     "type": "image/png",
                     "purpose": "any"
@@ -215,10 +285,10 @@
             "name": "About",
             "short_name": "About",
             "description": "We make fast, trendy and highly secured web and cloud assets since 2014.",
-            "url": "https:\/\/codex.gq\/#about",
+            "url": "https://codex.gq/#about",
             "icons": [
                 {
-                    "src": "https:\/\/codex.gq\/assets\/shortcuts\/about-192x192.png",
+                    "src": "https://codex.gq/assets/shortcuts/about-192x192.png",
                     "sizes": "192x192",
                     "type": "image/png",
                     "purpose": "any"
@@ -229,10 +299,10 @@
             "name": "Contact",
             "short_name": "Contact",
             "description": "Ready to start your next project with us? Let's get in touch!",
-            "url": "https:\/\/codex.gq\/#contact",
+            "url": "https://codex.gq/#contact",
             "icons": [
                 {
-                    "src": "https:\/\/codex.gq\/assets\/shortcuts\/contact-192x192.png",
+                    "src": "https://codex.gq/assets/shortcuts/contact-192x192.png",
                     "sizes": "192x192",
                     "type": "image/png",
                     "purpose": "any"
@@ -240,11 +310,12 @@
             ]
         }
     ],
-    "start_url": "https:\/\/codex.gq/",
-    "scope": "https:\/\/codex.gq/",
+    "start_url": "https://codex.gq/",
+    "scope": "https://codex.gq/",
     "lang": "en",
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
-    "display": "standalone",
+    "display": "fullscreen",
+    "orientation": "any",
     "categories": "business"
 }

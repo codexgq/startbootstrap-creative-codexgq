@@ -3,7 +3,8 @@
 <html lang="en" xml:lang="en" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
     <head itemscope itemtype="http://schema.org/WPHeader">
         <meta charset="utf-8" /><!-- Meta Core-->
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" /><!-- Internet Explorer Rendering-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" /><!-- Internet Explorer Rendering ("old but not useless")-->
+        <!-- START Profiles-->
         <!-- XFN 1.1 Profile-->
         <link rel="profile" href="https://gmpg.org/xfn/11" />
         <!-- OpenSearch Profile-->
@@ -15,6 +16,7 @@
         <!-- Dublin Core Metatag Initiative-->
         <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
         <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+        <!-- END Profiles-->
         <!-- Progressive Web Application (PWA)-->
         <!-- PWA Manifest-->
         <link rel="manifest" type="application/manifest+json" href="site.webmanifest" />
@@ -34,8 +36,7 @@
             }
             }
         </script>
-        <!-- Application Cache-->
-        <link rel="manifest" type="text/cache-manifest" href="default.appcache" />
+        <!-- END Progressive Web Application (PWA)-->
         <!-- A super tiny, native performant library for lazy-loading JS, CSS, images, iframes... Easily speed up a website!-->
         <script>
         ! function(e, o, t, n, i, r) { // This script should always go inline as early as possible for better performance.
@@ -132,8 +133,200 @@
         <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700&display=swap" rel="stylesheet preload" as="style" type="text/css" crossorigin="anonymous" media="all" />
         <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic&display=swap" rel="stylesheet preload" as="style" type="text/css" crossorigin="anonymous" media="all" />
         <!-- Custom and Core Theme CSS (Includes Bootstrap 5.1.3)-->
-        <link href="https://cdn.codex.gq/css/all.slim.min.css" rel="stylesheet" type="text/css" />
+        <link href="https://cdn.codex.gq/css/styles.css" rel="stylesheet" type="text/css" />
         <!-- END Cascade Style Sheets Files (CSS)-->
+        <!-- UI & UX Custom Inline CSS-->
+        <style>
+        /*!
+        Page Section Background Image
+        */
+        .bg-ps {
+            padding-top: 10rem;
+            padding-bottom: calc(10rem - 0px);
+            background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("https://cdn.codex.gq/assets/img/technical-support.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-size: cover;
+        }
+        /*!
+        Left Extended Navigation Button CSS
+        */
+        #btn-nav-1 {
+            position: fixed !important;
+            top: 88px;
+            left: 16px;
+            z-index: 999 !important;
+            cursor: pointer !important;
+        }
+        #btn-nav-1:hover {
+            opacity: 0.75;
+            filter: alpha(opacity=75);
+        }
+        /*!
+        Right Extended Navigation Button CSS
+        */
+        #btn-nav-2 {
+            position: fixed !important;
+            top: 88px;
+            right: 16px;
+            z-index: 999 !important;
+            cursor: pointer !important;
+        }
+        #btn-nav-2:hover {
+            opacity: 0.75;
+            filter: alpha(opacity=75);
+        }
+        /*!
+        Scroll To Top Button CSS
+        */
+        #btn-top {
+            display: none;
+            position: fixed !important;
+            bottom: 16px;
+            right: 16px;
+            z-index: 999 !important;
+            cursor: pointer !important;
+            opacity: 0.50;
+            filter: alpha(opacity=50);
+        }
+        #btn-top:hover {
+            opacity: 0.75;
+            filter: alpha(opacity=75);
+        }
+        /*!
+        Any Button on Hover Behavior
+        */
+        .btn-act:hover {
+            opacity: 0.75;
+            filter: alpha(opacity=75);
+        }
+        /*!
+        Any Button Enlarge on Hover
+        */
+        .btn-enl-lg:hover {
+            transform: scale(1.2);
+        }
+        .btn-enl-xl:hover {
+            transform: scale(1.5);
+            }
+        /*!
+        Any Button Standard Width
+        */
+        .btn-std {
+            width: 256px !important;
+        }
+        /*!
+        Any List Item Color and on Hover Behavior
+        */
+        .list-unstyled-item {
+            color: #212529 !important;
+        }
+        .list-unstyled-item:hover {
+            color: #f4623a !important;
+        }
+        /*!
+        Empty Link Item
+        */
+        .span-item {
+            cursor: pointer !important;
+        }
+        /*!
+        Custom CSS Margins
+        */
+        .mb-6 {
+            margin-bottom: -128px !important;
+        }
+        /*!
+        Full Screen Content Overlay CSS
+        */
+        .overlay {
+            height: 100% !important;
+            min-height: 100vh !important;
+            width: 0;
+            position: fixed !important;
+            z-index: 9999 !important;
+            top: -70px !important;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding-bottom: 70px !important;
+            transform: translateY(70px) !important;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0, 0.9);
+            overflow-x: hidden !important;
+            transition: 0;
+        }
+        .overlay-content {
+            position: relative !important;
+            top: 0;
+            width: 100%;
+            text-align: center !important;
+            margin-top: 0;
+        }
+        .overlay a {
+            padding: 8px;
+            text-decoration: none !important;
+            font-size: 36px;
+            color: #818181 !important;
+            display: block !important;
+            transition: 0.3s;
+        }
+        .overlay a:hover, .overlay a:focus {
+            color: #f1f1f1 !important;
+        }
+        @media screen and (max-width: 768px) {
+            .overlay a {
+                font-size: 30px;
+            }
+        }
+        @media screen and (max-width: 576px) {
+            .overlay a {
+                font-size: 24px;
+            }
+        }
+        .overlay .closebtn-lg {
+            position: absolute !important;
+            top: 0;
+            right: 24px;
+            font-size: 60px;
+            color: #818181 !important;
+            text-decoration: none !important;
+            cursor: pointer !important;
+        }
+        .overlay .closebtn-lg:hover, .closebtn-lg:focus {
+            color: #f1f1f1 !important;
+        }
+        @media screen and (max-width: 768px) {
+            .overlay .closebtn-lg {
+                font-size: 54px;
+            }
+        }
+        @media screen and (max-width: 576px) {
+            .overlay .closebtn-lg {
+                font-size: 48px;
+            }
+        }
+        .overlay-item:hover, .overlay-item:focus {
+            color: #f4623a !important;
+        }
+        /*!
+        Flex Box (Place It in the Very Center)
+        */
+        .flex-box {
+            position: relative !important;
+            top: 50% !important;
+            left: 50% !important;
+            transform: translate(-50%, -50%) !important;
+        }
+        /*!
+        Dotted Underline
+        */
+        .border-bottom-1 {
+            border-bottom: 1px dotted black !important;
+        }
+        </style>
+        <!-- END UI & UX Custom Inline CSS-->
         <!-- Facebook Open Graph-->
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://codex.gq/" />
@@ -242,7 +435,7 @@
         <meta name="msapplication-allowDomainMetaTags" content="true">
         <!-- Pinned Sites-->
         <meta name="application-name" content="codexgq" />
-        <meta name="application-name" lang="ru" content="codexgq - Веб-студия 2.0" />
+        <meta name="application-name" lang="ru" content="Веб-студия 2.0" />
         <meta name="msapplication-tooltip" content="Moving The Web" />
         <meta name="msapplication-starturl" content="https://codex.gq/" />
         <!-- Windows 8, 10 Color Scheme-->
@@ -257,7 +450,7 @@
             icon-uri=https://codex.gq/assets/shortcuts/russia-192x192.png" />
         <!-- Tap Highlighting-->
         <meta name="msapplication-tap-highlight" content="no" />
-        <!-- IE Comments-->
+        <!-- IE Comments Done Right-->
         <!--[if lt IE 7]>     <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
         <!--[if IE 7]>        <html class="lt-ie9 lt-ie8">        <![endif]-->
         <!--[if IEMobile 7 ]> <html class="iem7" lang="en"> <![endif]-->
@@ -278,6 +471,8 @@
         <meta name="DC.Language" content="en" />
         <!-- END Content Language-->
         <!-- SEO Core-->
+        <link rel="canonical" href="https://codex.gq/" />
+        <!-- ...then Item Property for Schema.org-->
         <link itemprop="url" data-rel="canonical" content="https://codex.gq/" href="https://codex.gq/" />
         <!-- ...and DCMI-->
         <meta name="DC.Identifier" content="https://codex.gq/" />
@@ -292,8 +487,6 @@
         <!-- Default-->
         <link rel="alternate" hreflang="x-default" href="https://codex.gq/" />
         <!-- END Hreflang Tags-->
-        <!-- Linking to Dublin Core™ metadata in XML from HTML-->
-        <link rel="meta" href="dc.xml" />
         <!-- Markup (JSON-LD) structured in Schema.org START-->
         <!-- WebSite Markup-->
         <script type='application/ld+json'>
@@ -336,7 +529,7 @@
                     "url": "https://codex.gq/assets/logo.logoset/logo-snippet.svg",
                     "width": 1920,
                     "height": 1080,
-                    "caption": "FHD Logotype | codexgq - Moving The Web",
+                    "caption": "FullHD Logotype | codexgq - Moving The Web",
                     "@id": "https://codex.gq/#logo"
                 },
                 "contactPoint": {
@@ -460,6 +653,11 @@
             }
         </script>
         <!-- END Markup (JSON-LD) structured in Schema.org-->
+        <!-- Linking to Schema.org metadata (JSON-LD) in XML from HTML-->
+        <link rel="meta" href="schema.xml" />
+        <!-- Linking to Dublin Core™ metadata in XML from HTML-->
+        <link rel="meta" href="dc.xml" />
+        <!-- .this is the end my freind-->
     </head>
     <body id="website">
         <!-- .website @id schema.org-->
@@ -469,116 +667,168 @@
         <!-- .organization @id schema.org-->
         <!-- START SITE CONTENT-->
         <!-- Main Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav"><!-- id @mainNav-->
             <div class="container px-4 px-lg-5">
                 <a class="navbar-brand btn-enl-lg" href="/" title="codexgq - Moving The Web">codexgq</a>
+                <!-- .title-->
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle Navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarResponsive" itemscope itemtype="https://schema.org/SiteNavigationElement">
+                <!-- .button-->
+                <div class="collapse navbar-collapse" id="navbarResponsive" itemscope itemtype="https://schema.org/SiteNavigationElement"><!-- id @navbarResponsive-->
                     <meta itemprop="name" content="Welcome to our official website!" />
                     <meta itemprop="description" content="We're doing fast, trendy and well secured web and cloud based projects since 2014." />
+                    <!-- .meta-->
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
                         <li class="nav-item">
                             <a itemprop="url" class="nav-link" href="#about">
                                 <span itemprop="name" content="About">About</span>
                                 <meta itemprop="description" content="Our DevOps will help you to rocket your most promising projects." />
+                                <!-- .meta-->
                             </a>
+                            <!-- .url-->
                         </li>
+                        <!-- .element-->
                         <li class="nav-item">
                             <a itemprop="url" class="nav-link" href="#services">
                                 <span itemprop="name" content="Services">Services</span>
                                 <meta itemprop="description" content="A wide range of services from web development to marketing, hosting, and data science." />
+                                <!-- .meta-->
                             </a>
+                            <!-- .url-->
                         </li>
+                        <!-- .element-->
                         <li class="nav-item">
                             <a itemprop="url" class="nav-link" href="#solutions">
                                 <span itemprop="name" content="Solutions">Solutions</span>
                                 <meta itemprop="description" content="A plenty of ready-to-go and on-demand tools to support your digital business." />
+                                <!-- .meta-->
                             </a>
+                            <!-- .url-->
                         </li>
+                        <!-- .element-->
                         <li class="nav-item">
                             <a itemprop="url" class="nav-link" href="#products">
                                 <span itemprop="name" content="Products">Products</span>
                                 <meta itemprop="description" content="We love WordPress, Bootstrap and Cloudflare for all things Internet." />
+                                <!-- .meta-->
                             </a>
+                            <!-- .url-->
                         </li>
+                        <!-- .element-->
                         <li class="nav-item">
                             <a itemprop="url" class="nav-link" href="#contact">
                                 <span itemprop="name" content="Contact">Contact</span>
                                 <meta itemprop="description" content="Visit our official website to submit an order or ask a question." />
+                                <!-- .meta-->
                             </a>
+                            <!-- .url-->
                         </li>
+                        <!-- .element-->
                         <li class="nav-item">
                             <a itemprop="url" class="nav-link" href="#store">
                                 <svg class="bi bi-cart text-primary btn-enl-lg" width="1.25em" height="1.25em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
                                 </svg>
+                                <!-- .bs-icon-->
                                 <span itemprop="name" content="Store">&nbsp;Store</span>
                                 <meta itemprop="description" content="We offer free hosting and domain for everyone. Learn more!" />
+                                <!-- .meta-->
                             </a>
+                            <!-- .url-->
                         </li>
+                        <!-- .element-->
                     </ul>
+                    <!-- .array-->
                 </div>
+                <!-- .id @navbarResponsive-->
             </div>
+            <!-- .container-->
         </nav>
+        <!-- .id @mainNav-->
         <!-- END Main Navigation-->
         <!-- Left Extended Navigation HTML (Full Screen Navigation)-->
-        <div id="fullscreenNav" class="overlay" itemscope itemtype="https://schema.org/SiteNavigationElement">
+        <div id="fullscreenNav" class="overlay" itemscope itemtype="https://schema.org/SiteNavigationElement"><!-- id @fullscreenNav-->
             <meta itemprop="name" content="Learn more about us!" />
             <meta itemprop="description" content="Our agency is developing and promotinng the best websites, landings, blogs and online stores since 2014." />
+            <!-- .meta-->
             <span class="closebtn-lg span-item" onclick="closeFullscreenNav()">&times;</span>
+            <!-- .button-->
             <div class="overlay-content flex-box" onclick="closeFullscreenNav()">
                 <a itemprop="url" href="#about">
                     <span itemprop="name" content="About">About</span>
                     <meta itemprop="description" content="Take a glance at our Team." />
+                    <!-- .meta-->
                 </a>
+                <!-- .url .element-->
                 <a itemprop="url" href="#services">
                     <span itemprop="name" content="Services">Services</span>
                     <meta itemprop="description" content="Explore our Services!" />
+                    <!-- .meta-->
                 </a>
+                <!-- .url .element-->
                 <a itemprop="url" href="#solutions">
                     <span itemprop="name" content="Solutions">Solutions</span>
                     <meta itemprop="description" content="Dive into the deep for disruptive technologies!" />
+                    <!-- .meta-->
                 </a>
+                <!-- .url .element-->
                 <a itemprop="url" href="#products">
                     <span itemprop="name" content="Products">Products</span>
                     <meta itemprop="description" content="Get familiar with our global Products!" />
+                    <!-- .meta-->
                 </a>
+                <!-- .url .element-->
                 <a itemprop="url" href="#free">
                     <span itemprop="name" content="Special Offer">Special Offer</span>
                     <meta itemprop="description" content="Get hosting and domain for free!" />
+                    <!-- .meta-->
                 </a>
+                <!-- .url .element-->
                 <a itemprop="url" href="#contact">
                     <span itemprop="name" content="Contact">Contact</span>
                     <meta itemprop="description" content="Let's get in touch!" />
+                    <!-- .meta-->
                 </a>
+                <!-- .url .element-->
                 <hr class="divider divider-primary" />
                 <a itemprop="url" href="https://store.codex.gq/" target="_blank" rel="noopener" title="Free and paid hosting and domain name registration is here!">
                     <svg class="bi bi-activity btn-enl-lg overlay-item" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z"/>
                     </svg>
+                    <!-- .bs-icon-->
                     <span itemprop="name" content="Store">&nbsp;Store</span>
                     <meta itemprop="description" content="We have our own hosting and domain name registration services. Visit our Store!" />
+                    <!-- .meta-->
                 </a>
+                <!-- .url .element-->
             </div>
+            <!-- .array-->
         </div>
+        <!-- .id @fullscreenNav-->
+        <!-- Left Extended Navigation Button-->
         <svg onclick="openFullscreenNav()" id="btn-nav-1" class="bi bi-justify-left fs-1 text-primary btn-enl-lg" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
         </svg>
+        <!-- .bs-icon-->
         <!-- END Full Screen Navigation-->
         <!-- Right Extended Navigation HTML (Hreflang Menu)-->
         <div class="dropdown" itemscope itemtype="https://schema.org/SiteNavigationElement">
             <meta itemprop="name" content="codexgq - Веб-студия 2.0" />
             <meta itemprop="description" content="Разработка и продвижение лучших сайтов, лэндингов, блогов и интернет-магазинов." />
+            <!-- .meta-->
             <svg id="btn-nav-2" class="bi bi-geo-alt fs-1 text-primary dropdown-toggle" role="button" data-bs-toggle="dropdown" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-haspopup="true" aria-expanded="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
             </svg>
+            <!-- .bs-icon-->
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="btn-nav-2">
                 <span class="dropdown-item span-item">English</span>
+                <!-- .element-->
                 <a itemprop="url" class="dropdown-item" href="ru" hreflang="ru"><span itemprop="name" content="Russian (Русский язык)">Russian (Русский язык)</span>
                     <meta itemprop="description" content="Наши разработчики помогут реализовать Ваши самые смелые проекты. Мы говорим по-русски!" />
                 </a>
+                <!-- .url .element-->
             </div>
+            <!-- .array-->
         </div>
         <!-- END Hreflang Menu-->
         <!-- Masthead-->
@@ -587,18 +837,25 @@
                 <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
                     <div class="col-lg-8 align-self-end">
                         <h1 class="text-white font-weight-bold">Creating prominent web projects!</h1>
+                        <!-- .h1-outline-->
                         <hr class="divider" />
                     </div>
+                    <!-- .col-->
                     <div class="col-lg-8 align-self-baseline">
                         <h2 class="mb-5"><code class="text-white-75">&nbsp;Deploying digital ecosystems you dream of.&nbsp;</code></h2>
+                        <!-- .h2-outline-->
                         <a href="#about" title="Find Out More" aria-label="Find Out More">
                             <svg class="bi bi-mouse text-primary btn-act btn-enl-lg" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-label="Find Out More" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M8 3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3zm4 8a4 4 0 0 1-8 0V5a4 4 0 1 1 8 0v6zM8 0a5 5 0 0 0-5 5v6a5 5 0 0 0 10 0V5a5 5 0 0 0-5-5z"/>
                             </svg>
                         </a>
+                        <!-- .url .bs-icon-->
                     </div>
+                    <!-- .col-->
                 </div>
+                <!-- .row-->
             </div>
+            <!-- .container-->
         </header>
         <!-- END Masthead-->
         <!-- START Main Content-->
@@ -609,16 +866,22 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 text-center">
                         <h2 class="mt-0">About us at a glance:</h2>
+                        <!-- .h2-outline-->
                         <hr class="divider divider-primary" />
                         <br>
                             <p class="text-muted mb-4 mt-0 fs-5">&nbsp;We make fast, trendy and highly secured web and cloud assets, compose digital stories that people love, using advanced technologies for simple solutions to complex problems.&nbsp;</p>
                         <br>
+                        <!-- .plain-text-->
                         <h3>
                         <a class="btn btn-light btn-xl btn-std btn-act border border-2 border-primary bg-white" href="#services" title="Let's Get Started!">Let's Get Started!</a>
                         </h3>
+                        <!-- .url .button .h3-outline-->
                     </div>
+                    <!-- .col-->
                 </div>
+                <!-- .row-->
             </div>
+            <!-- .container-->
         </section>
         <!-- END About-->
         <div class="container">
@@ -628,6 +891,7 @@
         <section class="page-section" id="services">
             <div class="container px-4 px-lg-5 pt-0 mb-6">
                 <h2 class="text-center mt-0">Our Services</h2>
+                <!-- .h2-outline-->
                 <hr class="divider" />
                 <div class="row gx-4 gx-lg-5">
                     <div class="col-lg-3 col-md-6 text-center">
@@ -637,10 +901,14 @@
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"/>
                                 </svg>
                             </div>
+                            <!-- .bs-icon-->
                             <h3 class="h4 mb-2">Development</h3>
+                            <!-- .h3-outline .h4-display-->
                             <p class="text-muted mb-0">Best websites, landing pages, blogs, and online stores.</p>
+                            <!-- .plain-text-->
                         </div>
                     </div>
+                    <!-- .col .element-->
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">
                             <div class="mb-2">
@@ -648,10 +916,14 @@
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M4 11H2v3h2v-3zm5-4H7v7h2V7zm5-5v12h-2V2h2zm-2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1h-2zM6 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm-5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3z"/>
                                 </svg>
                             </div>
+                            <!-- .bs-icon-->
                             <h3 class="h4 mb-2">Marketing</h3>
+                            <!-- .h3-outline .h4-display-->
                             <p class="text-muted mb-0">SEO and SMM to enforce online media around the world.</p>
+                            <!-- .plain-text-->
                         </div>
                     </div>
+                    <!-- .col .element-->
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">
                             <div class="mb-2">
@@ -660,10 +932,14 @@
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2H8.5v3a1.5 1.5 0 0 1 1.5 1.5h5.5a.5.5 0 0 1 0 1H10A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5H.5a.5.5 0 0 1 0-1H6A1.5 1.5 0 0 1 7.5 10V7H2a2 2 0 0 1-2-2V4zm1 0v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1zm6 7.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5z"/>
                                 </svg>
                             </div>
+                            <!-- .bs-icon-->
                             <h3 class="h4 mb-2">Hosting</h3>
+                            <!-- .h3-outline .h4-display-->
                             <p class="text-muted mb-0">Cloud hosting on a clustered platform in global data centers.</p>
+                            <!-- .plain-text-->
                         </div>
                     </div>
+                    <!-- .col .element-->
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">
                             <div class="mb-2">
@@ -671,10 +947,14 @@
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
                                 </svg>
                             </div>
+                            <!-- .bs-icon-->
                             <h3 class="h4 mb-2">Domains</h3>
+                            <!-- .h3-outline .h4-display-->
                             <p class="text-muted mb-0">Domain names registration, DNS services, and SSL certificates.</p>
+                            <!-- .plain-text-->
                         </div>
                     </div>
+                    <!-- .col .element-->
                 </div>
                 <!-- .row-->
                 <div class="row gx-4 gx-lg-5">
@@ -686,10 +966,14 @@
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
                                 </svg>
                             </div>
+                            <!-- .bs-icon-->
                             <h3 class="h4 mb-2">Security</h3>
+                            <!-- .h3-outline .h4-display-->
                             <p class="text-muted mb-0">Cybersecurity for yor servers, websites and computers.</p>
+                            <!-- .plain-text-->
                         </div>
                     </div>
+                    <!-- .col .element-->
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">
                             <div class="mb-2">
@@ -697,10 +981,14 @@
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M4.98 1a.5.5 0 0 0-.39.188L1.54 5H6a.5.5 0 0 1 .5.5 1.5 1.5 0 0 0 3 0A.5.5 0 0 1 10 5h4.46l-3.05-3.812A.5.5 0 0 0 11.02 1H4.98zm9.954 5H10.45a2.5 2.5 0 0 1-4.9 0H1.066l.32 2.562A.5.5 0 0 0 1.884 9h12.234a.5.5 0 0 0 .496-.438L14.933 6zM3.809.563A1.5 1.5 0 0 1 4.981 0h6.038a1.5 1.5 0 0 1 1.172.563l3.7 4.625a.5.5 0 0 1 .105.374l-.39 3.124A1.5 1.5 0 0 1 14.117 10H1.883A1.5 1.5 0 0 1 .394 8.686l-.39-3.124a.5.5 0 0 1 .106-.374L3.81.563zM.125 11.17A.5.5 0 0 1 .5 11H6a.5.5 0 0 1 .5.5 1.5 1.5 0 0 0 3 0 .5.5 0 0 1 .5-.5h5.5a.5.5 0 0 1 .496.562l-.39 3.124A1.5 1.5 0 0 1 14.117 16H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .121-.393zm.941.83.32 2.562a.5.5 0 0 0 .497.438h12.234a.5.5 0 0 0 .496-.438l.32-2.562H10.45a2.5 2.5 0 0 1-4.9 0H1.066z"/>
                                 </svg>
                             </div>
+                            <!-- .bs-icon-->
                             <h3 class="h4 mb-2">Data Science</h3>
+                            <!-- .h3-outline .h4-display-->
                             <p class="text-muted mb-0">Big data analysis and applied transformation.</p>
+                            <!-- .plain-text-->
                         </div>
                     </div>
+                    <!-- .col .element-->
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">
                             <div class="mb-2">
@@ -708,10 +996,14 @@
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z"/>
                                 </svg>
                             </div>
+                            <!-- .bs-icon-->
                             <h3 class="h4 mb-2">Consulting</h3>
+                            <!-- .h3-outline .h4-display-->
                             <p class="text-muted mb-0">Support in choosing and planting of a technology stack.</p>
+                            <!-- .plain-text-->
                         </div>
                     </div>
+                    <!-- .col .element-->
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">
                             <div class="mb-2">
@@ -719,10 +1011,14 @@
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z"/>
                                 </svg>
                             </div>
+                            <!-- .bs-icon-->
                             <h3 class="h4 mb-2">On-Demand</h3>
+                            <!-- .h3-outline .h4-display-->
                             <p class="text-muted mb-0">Ad-hoc collaborations aimed to make the World better.</p>
+                            <!-- .plain-text-->
                         </div>
                     </div>
+                    <!-- .col .element-->
                 </div>
                 <!-- .row-->
             </div>
@@ -733,6 +1029,7 @@
         <section class="page-section" id="solutions">
             <div class="container px-4 px-lg-5 mb-6">
                 <h2 class="text-center mt-0">Solutions</h2>
+                <!-- .h2-outline-->
                 <hr class="divider" />
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-4 text-center mb-5 mb-lg-0">
@@ -744,10 +1041,14 @@
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-2 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
                                 </svg>
                             </div>
+                            <!-- .bs-icon-->
                             <h3 class="h4 mb-2">CodexHost™</h3>
+                            <!-- .h3-outline .h4-display-->
                             <p class="text-muted mb-0">Free and paid web hosting, VPS, domains and SSL for everyone.</p>
+                            <!-- .plain-text-->
                         </div>
                     </div>
+                    <!-- .col .element-->
                     <div class="col-lg-4 text-center mb-5 mb-lg-0">
                         <div class="mt-5">
                             <div class="mb-2">
@@ -756,10 +1057,14 @@
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M6.854 4.646a.5.5 0 0 1 0 .708L4.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0zm2.292 0a.5.5 0 0 0 0 .708L11.793 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0z"/>
                                 </svg>
                             </div>
+                            <!-- .bs-icon-->
                             <h3 class="h4 mb-2">CodexSites™</h3>
+                            <!-- .h3-outline .h4-display-->
                             <p class="text-muted mb-0">Websites on Bootstrap, WordPress and other popular CMS, and zero-coding.</p>
+                            <!-- .plain-text-->
                         </div>
                     </div>
+                    <!-- .col .element-->
                     <div class="col-lg-4 text-center mb-5 mb-lg-0">
                         <div class="mt-5">
                             <div class="mb-2">
@@ -768,10 +1073,14 @@
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M0 9.665v1.717a1 1 0 0 0 .553.894l6.553 3.277a2 2 0 0 0 1.788 0l6.553-3.277a1 1 0 0 0 .553-.894V9.665c0-.1-.06-.19-.152-.23L9.5 6.715v.993l5.227 2.178a.125.125 0 0 1 .001.23l-5.94 2.546a2 2 0 0 1-1.576 0l-5.94-2.546a.125.125 0 0 1 .001-.23L6.5 7.708l-.013-.988L.152 9.435a.25.25 0 0 0-.152.23z"/>
                                 </svg>
                             </div>
+                            <!-- .bs-icon-->
                             <h3 class="h4 mb-2">CodexRemote™</h3>
+                            <!-- .h3-outline .h4-display-->
                             <p class="text-muted mb-0">Professional solutions for an enhancement of the remote work.</p>
+                            <!-- .plain-text-->
                         </div>
                     </div>
+                    <!-- .col .element-->
                 </div>
                 <!-- .row-->
                 <div class="row gx-4 gx-lg-5 justify-content-center">
@@ -783,10 +1092,14 @@
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M7 5a4.5 4.5 0 0 1 4.473 4h.027a2.5 2.5 0 0 1 0 5H3a3 3 0 0 1-.247-5.99A4.502 4.502 0 0 1 7 5zm3.5 4.5a3.5 3.5 0 0 0-6.89-.873.5.5 0 0 1-.51.375A2 2 0 1 0 3 13h8.5a1.5 1.5 0 1 0-.376-2.953.5.5 0 0 1-.624-.492V9.5z"/>
                                 </svg>
                             </div>
+                            <!-- .bs-icon-->
                             <h3 class="h4 mb-2">CodexCloud™</h3>
+                            <!-- .h3-outline .h4-display-->
                             <p class="text-muted mb-0">Multi-CDN, peering network, and private repository for all your needs.</p>
+                            <!-- .plain-text-->
                         </div>
                     </div>
+                    <!-- .col .element-->
                     <div class="col-lg-4 text-center mb-5 mb-lg-0">
                         <div class="mt-5">
                             <div class="mb-2">
@@ -795,10 +1108,14 @@
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
                                 </svg>
                             </div>
+                            <!-- .bs-icon-->
                             <h3 class="h4 mb-2">CodexLab™</h3>
+                            <!-- .h3-outline .h4-display-->
                             <p class="text-muted mb-0">Startups digital business acceleration with prominent MVP solutions.</p>
+                            <!-- .plain-text-->
                         </div>
                     </div>
+                    <!-- .col .element-->
                     <div class="col-lg-4 text-center mb-5 mb-lg-0">
                         <div class="mt-5">
                             <div class="mb-2">
@@ -809,10 +1126,14 @@
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M0 11.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 7H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 3H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z"/>
                                 </svg>
                             </div>
+                            <!-- .bs-icon-->
                             <h3 class="h4 mb-2">CodexMedia™</h3>
+                            <!-- .h3-outline .h4-display-->
                             <p class="text-muted mb-0">Promotion of local artists and musicians on global digital marketplaces.</p>
+                            <!-- .plain-text-->
                         </div>
                     </div>
+                    <!-- .col .element-->
                 </div>
                 <!-- .row-->
                 <div class="row gx-4 gx-lg-5 justify-content-center">
@@ -823,10 +1144,14 @@
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.356 3.356a1 1 0 0 0 1.414 0l1.586-1.586a1 1 0 0 0 0-1.414l-3.356-3.356a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0zm9.646 10.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708zM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11z"/>
                                 </svg>
                             </div>
+                            <!-- .bs-icon-->
                             <h3 class="h4 mb-2">CodexTools™</h3>
+                            <!-- .h3-outline .h4-display-->
                             <p class="text-muted mb-0">Simplify problem resolution and troubleshoot website, network, and CDN issues.</p>
+                            <!-- .plain-text-->
                         </div>
                     </div>
+                    <!-- .col .element-->
                     <div class="col-lg-4 text-center mb-5 mb-lg-0">
                         <div class="mt-5">
                             <div class="mb-2">
@@ -835,10 +1160,14 @@
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 6.5a1.5 1.5 0 0 1-1 1.415l.385 1.99a.5.5 0 0 1-.491.595h-.788a.5.5 0 0 1-.49-.595l.384-1.99a1.5 1.5 0 1 1 2-1.415z"/>
                                 </svg>
                             </div>
+                            <!-- .bs-icon-->
                             <h3 class="h4 mb-2">CodexShield™</h3>
+                            <!-- .h3-outline .h4-display-->
                             <p class="text-muted mb-0">Secure your websites, Internet applications, servers, and devices.</p>
+                            <!-- .plain-text-->
                         </div>
                     </div>
+                    <!-- .col .element-->
                     <div class="col-lg-4 text-center mb-5 mb-lg-0">
                         <div class="mt-5">
                             <div class="mb-2">
@@ -849,10 +1178,14 @@
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M12 10h-1.783l1.542-1.639c.097-.103.178-.218.241-.34V10zm0-3.354V6h-.646a1.5 1.5 0 0 1 .646.646zM16 8a1.5 1.5 0 0 1-1.5 1.5v-3A1.5 1.5 0 0 1 16 8z"/>
                                 </svg>
                             </div>
+                            <!-- .bs-icon-->
                             <h3 class="h4 mb-2">CodexSEO™</h3>
+                            <!-- .h3-outline .h4-display-->
                             <p class="text-muted mb-0">Supercharge your website with search engines love and pigeons.</p>
+                            <!-- .plain-text-->
                         </div>
                     </div>
+                    <!-- .col .element-->
                 </div>
                 <!-- .row-->
             </div>
@@ -863,6 +1196,7 @@
         <section class="page-section" id="products">
             <div class="container px-4 px-lg-5">
                 <h2 class="text-center mt-0">Products</h2>
+                <!-- .h2-outline-->
                 <hr class="divider" />
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-4 text-center mb-5 mb-lg-0">
@@ -874,10 +1208,14 @@
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8c0-4.411 3.589-8 8-8 4.41 0 8 3.589 8 8s-3.59 8-8 8c-4.411 0-8-3.589-8-8zm.367 0c0 4.209 3.424 7.633 7.633 7.633 4.208 0 7.632-3.424 7.632-7.633C15.632 3.79 12.208.367 8 .367 3.79.367.367 3.79.367 8z"/>
                                 </svg>
                             </div>
+                            <!-- .bs-icon-->
                             <h3 class="h4 mb-2">WordPress</h3>
+                            <!-- .h3-outline .h4-display-->
                             <p class="text-muted mb-0">42% of the web uses WordPress, from hobby blogs to the biggest news sites online.</p>
+                            <!-- .plain-text-->
                         </div>
                     </div>
+                    <!-- .col .element-->
                     <div class="col-lg-4 text-center mb-5 mb-lg-0">
                         <div class="mt-5">
                             <div class="mb-2">
@@ -886,10 +1224,14 @@
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3H4z"/>
                                 </svg>
                             </div>
+                            <!-- .bs-icon-->
                             <h3 class="h4 mb-2">Bootstrap</h3>
+                            <!-- .h3-outline .h4-display-->
                             <p class="text-muted mb-0">The most popular HTML, CSS, and JS library in the world to build fast, responsive sites</p>
+                            <!-- .plain-text-->
                         </div>
                     </div>
+                    <!-- .col .element-->
                     <div class="col-lg-4 text-center mb-5 mb-lg-0">
                         <div class="mt-5">
                             <div class="mb-2">
@@ -897,13 +1239,18 @@
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383zm.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
                                 </svg>
                             </div>
+                            <!-- .bs-icon-->
                             <h3 class="h4 mb-2">Cloudflare</h3>
+                            <!-- .h3-outline .h4-display-->
                             <p class="text-muted mb-0">A global network which protects and accelerates your websites, apps, and teams.</p>
+                            <!-- .plain-text-->
                         </div>
                     </div>
+                    <!-- .col .element-->
                     <h3 class="text-center">
                     <a class="btn btn-light btn-xl btn-std btn-act border border-2 border-primary bg-white mt-5" href="#free" title="Get Hosting and Domain for Free">Special Offer</a>
                     </h3>
+                    <!-- .url .button .h3-outline-->
                 </div>
                 <!-- .row-->
             </div>
@@ -916,12 +1263,16 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 text-center">
                         <h2 class="text-white mt-0">We've Got What You Need!</h2>
+                        <!-- .h2-outline-->
                         <hr class="divider divider-primary" />
                         <p class="text-white-75 mb-4 fs-5">Cloud hosting with an unlimited plan and a domain name in a zone of your choice are provided free of charge when ordering a turnkey website. Cloudflare is included as well.</p>
+                        <!-- .plain-text-->
                         <h3>
                         <a class="btn btn-light btn-xl btn-std btn-act bg-white mt-4" href="#contact" title="Place an Order Online">Order Now</a>
                         </h3>
+                        <!-- .url .button h3-outline-->
                     </div>
+                    <!-- .col-->
                 </div>
                 <!-- .row-->
             </div>
@@ -933,9 +1284,12 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 col-xl-6 text-center">
                         <h2 class="mt-0">Let's Get In Touch!</h2>
+                        <!-- .h2-outline-->
                         <hr class="divider" />
                         <p class="text-muted mb-5">Ready to start your next project with us? Send us a messages and we will get back to you as soon as possible!</p>
+                        <!-- .plain-text-->
                     </div>
+                    <!-- .col-->
                 </div>
                 <!-- .row-->
                 <div class="row gx-4 gx-lg-5 justify-content-center mb-1">
@@ -943,28 +1297,40 @@
                         <div class="row gx-4 gx-lg-5 justify-content-center">
                             <div class="col-lg-4 col-md-6 text-center mb-5 mb-lg-0">
                                 <h3 class="h4 mb-2">Email</h3>
+                                <!-- .h3-outline .h4-display-->
                                 <a class="text-decoration-none" href="mailto:info@codex.gq" target="_blank" rel="noopener nofolow" aria-label="Email Us">
                                     <div class="btn-enl-xl">
                                         <svg class="bi bi-envelope fs-1 text-primary fs-2 mb-3 mt-2 btn-enl" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
                                         </svg>
                                     </div>
+                                    <!-- .bs-icon-->
                                     <p class="text-dark">info@codex.gq</p>
+                                    <!-- .plain-text-->
                                 </a>
+                                <!-- .url-->
                             </div>
+                            <!-- .col .element-->
                             <div class="col-lg-4 col-md-6 text-center mb-5 mb-lg-0">
                                 <h3 class="h4 mb-2">Telegram</h3>
+                                <!-- .h3-outline .h4-display-->
                                 <a class="text-decoration-none" href="https://t.me/codexgq" target="_blank" rel="noopener nofolow" aria-label="Telegram Us">
                                     <div class="btn-enl-xl">
                                         <svg class="bi bi-telegram fs-1 text-primary fs-2 mb-3 mt-2 btn-enl" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
                                         </svg>
                                     </div>
+                                    <!-- .bs-icon-->
                                     <p class="text-dark">@codexgq</p>
+                                    <!-- .plain-text-->
                                 </a>
-                            </div>                    
+                                <!-- .url-->
+                            </div>
+                            <!-- .col .element-->
                         </div>
+                        <!-- .row-->
                     </div>
+                    <!-- .col-->
                 </div>
                 <!-- .row-->
             </div>
@@ -977,16 +1343,22 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 text-center">
                         <h2 class="mt-0">And that's not all!</h2>
+                        <!-- .h2-outline-->
                         <hr class="divider divider-primary" />
                         <br>
                             <p class="text-muted mb-4 mt-0 fs-5">&nbsp;We have our own hosting and domain names registration services. We are dedicated to provide everything you need for your online presence, and offer free hosting and domain for everyone.&nbsp;</p>
                         <br>
+                        <!-- .plain-text-->
                         <h3>
                         <a class="btn btn-light btn-xl btn-std btn-act border border-2 border-primary bg-white" href="https://store.codex.gq/" target="_blank" rel="noopener" title="Visit our Store for FREE signup!">Visit Our Store</a>
                         </h3>
+                        <!-- .url .button h3-outline-->
                     </div>
+                    <!-- .col-->
                 </div>
+                <!-- .row-->
             </div>
+            <!-- .container-->
         </section>
         <!-- END Store-->
         </main>
@@ -1003,20 +1375,27 @@
                         <link itemprop="url" href="assets/logo.logoset/logo-cropped.svg">
                     </a>
                 </div>
-                <h4 itemscope itemtype="https://schema.org/SiteNavigationElement">
+                <!-- .url .img-->
+                <h4 itemscope itemtype="https://schema.org/SiteNavigationElement"><!-- hreflang-->
                     <meta itemprop="name" content="Choose your language!" />
                     <meta itemprop="description" content="We speak English and Russian. Other languages are available on-demand." />
+                    <!-- .meta-->
                     <a itemprop="url" class="list-unstyled-item text-decoration-none pe-2" href="https://codex.gq/" title="Home Page (English, Английский язык)">
                         <span itemprop="name" content="Home Page">EN</span>
                         <meta itemprop="description" content="If you already have an app or a website or create a project from the scratch our team is here to assist you for the better World." />
+                        <!-- .meta--> 
                     </a>
+                    <!-- .url .element-->
                     &nbsp;|&nbsp;
+                    <!-- .interscope-->
                     <a itemprop="url" class="list-unstyled-item text-decoration-none ps-2" href="https://codex.gq/ru/" title="Russian (Русский язык)">
                         <span itemprop="name" content="Russian (Русский язык)">RU</span>
                         <meta itemprop="description" content="Русская версия сайта здесь. Добро пожаловать!" />
-                    </a>                    
+                        <!-- .meta-->
+                    </a>
+                    <!-- .url .element-->                    
                 </h4>
-                <!-- .languages-->
+                <!-- .hreflang .h4-outline-->
             </div>
             <!-- .container-->
         </section>
@@ -1026,64 +1405,90 @@
             <div class="container">
                 <hr class="my-5">
                 <div class="row">
+                    <!-- Social-->
                     <div class="col-lg-8 col-md-8 mb-5 mb-md-0" itemscope itemtype="http://schema.org/Organization">
                         <a itemprop="sameAs" class="text-decoration-none" href="https://www.linkedin.com/company/codexgq" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn">
                             <svg class="bi bi-linkedin fs-1 text-primary btn-act btn-enl-lg" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
                             </svg>
                             <meta itemprop="name" content="LinkedIn" />
+                            <!-- .meta-->
                         </a>
+                        <!-- .url .bs-icon .element-->
                         <a itemprop="sameAs" class="text-decoration-none ps-3" href="https://github.com/codexgq" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
                             <svg class="bi bi-github fs-1 text-primary btn-act btn-enl-lg" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
                             </svg>
                             <meta itemprop="name" content="GitHub" />
+                            <!-- .meta-->
                         </a>
+                        <!-- .url .bs-icon .element-->
                     </div>
                     <!-- .col-->
+                    <!-- END Social-->
+                    <!-- Footer Navigation-->
                     <div class="col-lg-2 col-md-4 mb-5 mb-md-0" itemscope itemtype="https://schema.org/SiteNavigationElement">
                         <meta itemprop="name" content="Our Projects" />
-                        <meta itemprop="description" content="We run commercial and Open Source projects aimed to make the World better!" />                        
+                        <meta itemprop="description" content="We run commercial and Open Source projects aimed to make the World better!" />
+                        <!-- .meta-->
                         <div class="text-uppercase text-muted mb-4">
                             <h2 class="fs-5">Projects</h2>
+                            <!-- .h2-outline-->
                         </div>
+                        <!-- .partition-->
                         <ul class="list-unstyled mb-0">
                             <li class="mb-2">
                                 <a itemprop="url" class="list-unstyled-item text-decoration-none span-item border-bottom-1" href="https://store.codex.gq/" target="_blank" rel="noopener">
                                     <span itemprop="name" content="Online Store">Store</span>
                                     <meta itemprop="description" content="We have our own hosting and domain name registration services. Visit our Store!" />
+                                    <!-- .meta-->
                                 </a>
+                                <!-- .url-->
                             </li>
+                            <!-- .element-->
                         </ul>
+                        <!-- .array-->
                     </div>
-                    <!-- .col-->
                     <!-- .col-->
                     <div class="col-lg-2 col-md-4 mb-5 mb-md-0" itemscope itemtype="https://schema.org/SiteNavigationElement">
                         <meta itemprop="name" content="Legal Agreements" />
-                        <meta itemprop="description" content="Your agreement with us includes but not limited to Terms, Privacy and Disclaimer." />  
+                        <meta itemprop="description" content="Your agreement with us includes but not limited to Terms, Privacy and Disclaimer." />
+                        <!-- .meta--> 
                         <div class="text-uppercase text-muted mb-4">
                             <h2 class="fs-5">Legal</h2>
+                            <!-- .h2-outline-->
                         </div>
+                        <!-- .partition-->
                         <ul class="list-unstyled mb-0">
                             <li class="mb-2">
                                 <a itemprop="url" class="list-unstyled-item text-decoration-none span-item" href="legal/privacy.html">
                                     <span itemprop="name" content="Privacy Policy">Privacy</span>
                                     <meta itemprop="description" content="Our Privacy Policy explains how we collect, safeguard and disclose information that results from your use of our Service." />
+                                    <!-- .meta-->
                                 </a>
+                                <!-- .url-->
                             </li>
+                            <!-- .element-->
                             <li class="mb-2">
                                 <a itemprop="url" class="list-unstyled-item text-decoration-none span-item" href="legal/terms.html">
                                     <span itemprop="name" content="Terms and Conditions">Terms</span>
                                     <meta itemprop="description" content="Our Terms and Conditions govern your use of our Platform including all directly related subdomains and applications." />
+                                    <!-- .meta-->
                                 </a>
+                                <!-- .url-->
                             </li>
+                            <!-- .element-->
                             <li class="mb-2">
                                 <a itemprop="url" class="list-unstyled-item text-decoration-none span-item" href="legal/disclaimer.html">
                                     <span itemprop="name" content="Disclaimer">Disclaimer</span>
                                     <meta itemprop="description" content="Our liabilities are limited to as described in the Disclaimer Statement and related documents." />
+                                    <!-- .meta-->
                                 </a>
+                                <!-- .url-->
                             </li>
+                            <!-- .element-->
                         </ul>
+                        <!-- .array-->
                     </div>
                     <!-- .col-->
                 </div>
@@ -1096,12 +1501,15 @@
         <svg onclick="topFunction()" id="btn-top" class="bi bi-arrow-up-square fs-1 btn-enl-lg" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
         </svg>
+        <!-- .bs-icon-->
         <!-- Footer-->
         <footer class="bg-light py-5" itemscope itemtype="http://schema.org/WPFooter">
             <div class="container px-4 px-lg-5">
                 <div class="small text-center text-dark">Copyright &copy; <span itemprop="copyrightYear">2014-2021</span> - codexgq, Inc.</div>
+                <!-- .plain-text-->
             </div>
             <meta itemprop="copyrightHolder" content="codexgq">
+            <!-- .meta-->
         </footer>
         <!-- END SITE CONTENT-->
         <!-- START Microdata Inline Markup -->
@@ -1111,57 +1519,79 @@
                     <a itemprop="url" href="/" rel="index up up up" title="codexgq - Moving The Web">
                         <span itemprop="name" content="Home Page"></span>
                     </a>
+                    <!-- .url .parent up up up-->
                         <meta itemprop="title" content="codexgq - Moving The Web" />
                         <meta itemprop="description" content="Development and marketing of the best websites, landing pages, blogs, and online stores." />
+                        <!-- .meta-->
                     <span>
                         <span itemprop="child" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
                             <a itemprop="url" href="ru" rel="up up" title="codexgq - Веб-студия 2.0">
                                 <span itemprop="name" content="Russian (Русский язык)"></span>
                             </a>
+                            <!-- .url-->
                             <meta itemprop="title" content="codexgq - Веб-студия 2.0" />
                             <meta itemprop="description" content="Разработка и продвижение лучших сайтов, лэндингов, блогов и интернет-магазинов." />
+                            <!-- .meta-->
                         </span>
+                        <!-- .child up up-->
                         <span itemprop="child" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
                             <a itemprop="url" href="legal" rel="up up" title="Legal Agreements">
                                 <span itemprop="name" content="Legal Agreements"></span>
                             </a>
+                            <!-- .url .partition-->
                             <span itemprop="title" content="Legal Agreements"></span>
                             <meta itemprop="description" content="codexgq, Inc. Legal Agreements" />
+                            <!-- .meta-->
                             <span>
                                 <span itemprop="child" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
                                     <a itemprop="url" href="legal/privacy.html" rel="up" title="Privacy Policy">
                                         <span itemprop="name" content="Privacy Policy"></span>
                                     </a>
+                                    <!-- .url-->
                                     <meta itemprop="title" content="Privacy Policy" />
                                     <meta itemprop="description" content="codexgq, Inc. Privacy Policy" />
+                                    <!-- .meta-->
                                 </span>
+                                <!-- .element-->
                                 <span itemprop="child" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
                                     <a itemprop="url" href="legal/terms.html" rel="up" title="Terms and Conditions">
                                         <span itemprop="name" content="Terms and Conditions"></span>
                                     </a>
+                                    <!-- .url-->
                                     <meta itemprop="title" content="Terms and Conditions" />
                                     <meta itemprop="description" content="codexgq, Inc. Terms and Conditions" />
+                                    <!-- .meta-->
                                 </span>
+                                <!-- .element-->
                                 <span itemprop="child" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
                                     <a itemprop="url" href="legal/disclaimer.html" rel="up" title="Disclaimer">
                                         <span itemprop="name" content="Disclaimer"></span>
                                     </a>
+                                    <!-- .url-->
                                     <meta itemprop="title" content="Disclaimer" />
                                     <meta itemprop="description" content="codexgq, Inc. Disclaimer Statement" />
+                                    <!-- .meta-->
                                 </span>
+                                <!-- .element-->
                             </span>
+                            <!-- .child up group-->
                         </span>
+                        <!-- .child up up-->
                     </span>
+                    <!-- .child up up group-->
                 </span>
+                <!-- .data-vocabulary.org scope-->
             </div>
+            <!-- .display-->
         </div>
+        <!-- .schema.org scope-->
         <!-- END Microdata Inline Markup -->
         <!-- Bootstrap Core JS-->
         <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core Theme JS-->
         <script defer src="https://cdn.codex.gq/js/scripts.js"></script>
         <!-- Inline JavaScript (JS)-->
-        <!-- Lazy Load Images-->
+        <!-- Lazy Load Images (The running script is in the <head> inline)-->
         <script>
             // Call the function.
             deferimg('img[data-src],picture[srcset]')
@@ -1184,9 +1614,6 @@
             add_hint('dns-prefetch', 'https://www.jsdelivr.com/');
             add_hint('dns-prefetch', 'https://fonts.gstatic.com/');
             add_hint('dns-prefetch', 'https://fonts.googleapis.com/');
-            add_hint('preload', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js');
-            add_hint('preload', 'https://cdn.codex.gq/js/scripts.js');            
-	        add_hint('preload', 'https://cdn.codex.gq/css/all.slim.min.css');
             // Speed up transitions between pages by prerendering them within a domain.
             document.addEventListener("mousemove", function (e) {
                 if (!e.target.href ||
@@ -1198,9 +1625,9 @@
         </script> 
         <!-- Scroll To Top Button JS-->
         <script>
-            // Get the button
+            // Get the button.
             var topButton = document.getElementById("btn-top");
-            // When the user scrolls down 20px from the top of the document, show the button
+            // When the user scrolls down 20px from the top of the document, show the button.
             window.onscroll = function() {
                 scrollFunction()
             };
@@ -1211,7 +1638,7 @@
                     topButton.style.display = "none";
                 }
             }
-            // When the user clicks on the button, scroll to the top of the document
+            // When the user clicks on the button, scroll to the top of the document.
             function topFunction() {
                 document.body.scrollTop = 0;
                 document.documentElement.scrollTop = 0;
@@ -1231,15 +1658,6 @@
             if (top != self) {
             	  top.location.href = self.location.href;
                 }
-        </script>
-        <!-- Application Cache-->
-        <script>
-        function updateCache() {
-            // If you change the appcache manifest file and reload the page, the browser will download the new files in the cache, and then switch to the new cache.
-            window.applicationCache.addEventListener('updateready', function(){
-                window.applicationCache.swapCache();
-            }, false);
-        }
         </script>
         <!-- END Inline JavaScript (JS)-->
     </body>
