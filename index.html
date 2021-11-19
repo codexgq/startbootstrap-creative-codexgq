@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd" -->
 <html lang="en" xml:lang="en" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
-    <head itemscope itemtype="http://schema.org/WPHeader">
+    <head itemscope itemtype="http://schema.org/WPHeader"><!-- schema.org scope WPHeader-->
         <meta charset="utf-8" /><!-- Meta Core-->
         <meta http-equiv="X-UA-Compatible" content="IE=edge" /><!-- Internet Explorer Rendering ("old but not useless")-->
         <!-- START Profiles-->
@@ -521,7 +521,7 @@
             {
                 "@context": "https://schema.org/",
                 "@type": "Organization",
-                "name": "codexgq",
+                "name": "codexgq, Inc.",
                 "@id": "https://codex.gq/#organization",
                 "url": "https://codex.gq/",
                 "logo": {
@@ -661,21 +661,28 @@
     </head>
     <body id="website">
         <!-- .website @id schema.org-->
-        <span id="webpage"></span>
+        <span id="webpage">
+        </span>
         <!-- .webpage @id schema.org-->
-        <span id="organization"></span>
+        <span id="organization">
+        </span>
         <!-- .organization @id schema.org-->
         <!-- START SITE CONTENT-->
+        <div itemscope itemtype="https://schema.org/WebSite"><!-- schema.org scope WebSite-->
+            <meta itemprop="name" content="codexgq - Moving The Web" />
+            <meta itemprop="description" content="Development and marketing of the best websites, landing pages, blogs, and online stores." />
+            <meta itemprop="url" content="https://codex.gq/" />
+        </div>
         <!-- Main Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav"><!-- id @mainNav-->
-            <div class="container px-4 px-lg-5">
+            <div class="container px-4 px-lg-5" itemscope itemtype="https://schema.org/SiteNavigationElement"><!-- schema.org scope SiteNavigationElement-->
                 <a class="navbar-brand btn-enl-lg" href="/" title="codexgq - Moving The Web">codexgq</a>
+                <meta itemprop="name" content="Welcome to our official website!" />
+                <meta itemprop="description" content="We're doing fast, trendy and well secured web and cloud based projects since 2014." />                
                 <!-- .title-->
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle Navigation"><span class="navbar-toggler-icon"></span></button>
                 <!-- .button-->
-                <div class="collapse navbar-collapse" id="navbarResponsive" itemscope itemtype="https://schema.org/SiteNavigationElement"><!-- id @navbarResponsive-->
-                    <meta itemprop="name" content="Welcome to our official website!" />
-                    <meta itemprop="description" content="We're doing fast, trendy and well secured web and cloud based projects since 2014." />
+                <div class="collapse navbar-collapse" id="navbarResponsive"><!-- id @navbarResponsive-->
                     <!-- .meta-->
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
                         <li class="nav-item">
@@ -741,12 +748,13 @@
                 </div>
                 <!-- .id @navbarResponsive-->
             </div>
-            <!-- .container-->
+            <!-- .container .SiteNavigationElement-->
         </nav>
         <!-- .id @mainNav-->
         <!-- END Main Navigation-->
         <!-- Left Extended Navigation HTML (Full Screen Navigation)-->
-        <div id="fullscreenNav" class="overlay" itemscope itemtype="https://schema.org/SiteNavigationElement"><!-- id @fullscreenNav-->
+        <div class="container" itemscope itemtype="https://schema.org/SiteNavigationElement"><!-- schema.org scope SiteNavigationElement-->
+        <div id="fullscreenNav" class="overlay" ><!-- id @fullscreenNav-->
             <meta itemprop="name" content="Learn more about us!" />
             <meta itemprop="description" content="Our agency is developing and promotinng the best websites, landings, blogs and online stores since 2014." />
             <!-- .meta-->
@@ -804,6 +812,8 @@
             <!-- .array-->
         </div>
         <!-- .id @fullscreenNav-->
+        </div>
+        <!-- .container .SiteNavigationElement-->
         <!-- Left Extended Navigation Button-->
         <svg onclick="openFullscreenNav()" id="btn-nav-1" class="bi bi-justify-left fs-1 text-primary btn-enl-lg" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
@@ -811,7 +821,7 @@
         <!-- .bs-icon-->
         <!-- END Full Screen Navigation-->
         <!-- Right Extended Navigation HTML (Hreflang Menu)-->
-        <div class="dropdown" itemscope itemtype="https://schema.org/SiteNavigationElement">
+        <div class="dropdown" itemscope itemtype="https://schema.org/SiteNavigationElement"><!-- schema.org scope SiteNavigationElement-->
             <meta itemprop="name" content="codexgq - Веб-студия 2.0" />
             <meta itemprop="description" content="Разработка и продвижение лучших сайтов, лэндингов, блогов и интернет-магазинов." />
             <!-- .meta-->
@@ -830,6 +840,7 @@
             </div>
             <!-- .array-->
         </div>
+        <!-- .SiteNavigationElement-->
         <!-- END Hreflang Menu-->
         <!-- Masthead-->
         <header class="masthead">
@@ -894,7 +905,7 @@
                 <!-- .h2-outline-->
                 <hr class="divider" />
                 <div class="row gx-4 gx-lg-5">
-                    <div class="col-lg-3 col-md-6 text-center">
+                    <div class="col-lg-3 col-md-6 text-center" id="web-development">
                         <div class="mt-5">
                             <div class="mb-2">
                                 <svg class="bi bi-code-slash fs-1 text-primary" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
@@ -909,7 +920,7 @@
                         </div>
                     </div>
                     <!-- .col .element-->
-                    <div class="col-lg-3 col-md-6 text-center">
+                    <div class="col-lg-3 col-md-6 text-center" id="marketing">
                         <div class="mt-5">
                             <div class="mb-2">
                                 <svg class="bi bi-bar-chart fs-1 text-primary" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
@@ -924,7 +935,7 @@
                         </div>
                     </div>
                     <!-- .col .element-->
-                    <div class="col-lg-3 col-md-6 text-center">
+                    <div class="col-lg-3 col-md-6 text-center" id="hosting">
                         <div class="mt-5">
                             <div class="mb-2">
                                 <svg class="bi bi-hdd-network fs-1 text-primary" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
@@ -940,7 +951,7 @@
                         </div>
                     </div>
                     <!-- .col .element-->
-                    <div class="col-lg-3 col-md-6 text-center">
+                    <div class="col-lg-3 col-md-6 text-center" id="domains">
                         <div class="mt-5">
                             <div class="mb-2">
                                 <svg class="bi bi-globe fs-1 text-primary" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
@@ -958,7 +969,7 @@
                 </div>
                 <!-- .row-->
                 <div class="row gx-4 gx-lg-5">
-                    <div class="col-lg-3 col-md-6 text-center">
+                    <div class="col-lg-3 col-md-6 text-center" id="security">
                         <div class="mt-5">
                             <div class="mb-2">
                                 <svg class="bi bi-shield-check fs-1 text-primary" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
@@ -974,7 +985,7 @@
                         </div>
                     </div>
                     <!-- .col .element-->
-                    <div class="col-lg-3 col-md-6 text-center">
+                    <div class="col-lg-3 col-md-6 text-center" id="data-science">
                         <div class="mt-5">
                             <div class="mb-2">
                                 <svg class="bi bi-inboxes fs-1 text-primary" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
@@ -989,7 +1000,7 @@
                         </div>
                     </div>
                     <!-- .col .element-->
-                    <div class="col-lg-3 col-md-6 text-center">
+                    <div class="col-lg-3 col-md-6 text-center" id="consulting">
                         <div class="mt-5">
                             <div class="mb-2">
                                 <svg class="bi bi-laptop fs-1 text-primary" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
@@ -1004,7 +1015,7 @@
                         </div>
                     </div>
                     <!-- .col .element-->
-                    <div class="col-lg-3 col-md-6 text-center">
+                    <div class="col-lg-3 col-md-6 text-center" id="on-demand">
                         <div class="mt-5">
                             <div class="mb-2">
                                 <svg class="bi bi-gem fs-1 text-primary" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
@@ -1032,7 +1043,7 @@
                 <!-- .h2-outline-->
                 <hr class="divider" />
                 <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                    <div class="col-lg-4 text-center mb-5 mb-lg-0" id="codexhost">
                         <div class="mt-5">
                             <div class="mb-2">
                                 <svg class="bi bi-hdd-stack fs-1 text-primary" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
@@ -1049,7 +1060,7 @@
                         </div>
                     </div>
                     <!-- .col .element-->
-                    <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                    <div class="col-lg-4 text-center mb-5 mb-lg-0" id="codexsites">
                         <div class="mt-5">
                             <div class="mb-2">
                                 <svg class="bi bi-code-square fs-1 text-primary" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
@@ -1065,7 +1076,7 @@
                         </div>
                     </div>
                     <!-- .col .element-->
-                    <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                    <div class="col-lg-4 text-center mb-5 mb-lg-0" id="codexremote">
                         <div class="mt-5">
                             <div class="mb-2">
                                 <svg class="bi bi-joystick fs-1 text-primary" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
@@ -1084,7 +1095,7 @@
                 </div>
                 <!-- .row-->
                 <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                    <div class="col-lg-4 text-center mb-5 mb-lg-0" id="codexcloud">
                         <div class="mt-5">
                             <div class="mb-2">
                                 <svg class="bi bi-clouds fs-1 text-primary" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
@@ -1100,7 +1111,7 @@
                         </div>
                     </div>
                     <!-- .col .element-->
-                    <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                    <div class="col-lg-4 text-center mb-5 mb-lg-0" id="codexlab">
                         <div class="mt-5">
                             <div class="mb-2">
                                 <svg class="bi bi-bag-plus fs-1 text-primary" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
@@ -1116,7 +1127,7 @@
                         </div>
                     </div>
                     <!-- .col .element-->
-                    <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                    <div class="col-lg-4 text-center mb-5 mb-lg-0" id="codexmedia">
                         <div class="mt-5">
                             <div class="mb-2">
                                 <svg class="bi bi-music-note-list fs-1 text-primary" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
@@ -1137,7 +1148,7 @@
                 </div>
                 <!-- .row-->
                 <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                    <div class="col-lg-4 text-center mb-5 mb-lg-0" id="codextools">
                         <div class="mt-5">
                             <div class="mb-2">
                                 <svg class="bi bi-tools fs-1 text-primary" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
@@ -1152,7 +1163,7 @@
                         </div>
                     </div>
                     <!-- .col .element-->
-                    <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                    <div class="col-lg-4 text-center mb-5 mb-lg-0" id="codexshield">
                         <div class="mt-5">
                             <div class="mb-2">
                                 <svg class="bi bi-shield-lock fs-1 text-primary" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
@@ -1168,7 +1179,7 @@
                         </div>
                     </div>
                     <!-- .col .element-->
-                    <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                    <div class="col-lg-4 text-center mb-5 mb-lg-0" id="codexseo">
                         <div class="mt-5">
                             <div class="mb-2">
                                 <svg class="bi bi-battery-charging fs-1 text-primary" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
@@ -1199,7 +1210,7 @@
                 <!-- .h2-outline-->
                 <hr class="divider" />
                 <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                    <div class="col-lg-4 text-center mb-5 mb-lg-0" id="wordpress">
                         <div class="mt-5">
                             <div class="mb-2">
                                 <svg class="bi bi-wordpress fs-1 text-primary" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
@@ -1216,7 +1227,7 @@
                         </div>
                     </div>
                     <!-- .col .element-->
-                    <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                    <div class="col-lg-4 text-center mb-5 mb-lg-0" id="bootstrap">
                         <div class="mt-5">
                             <div class="mb-2">
                                 <svg class="bi bi-bootstrap fs-1 text-primary" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
@@ -1232,7 +1243,7 @@
                         </div>
                     </div>
                     <!-- .col .element-->
-                    <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                    <div class="col-lg-4 text-center mb-5 mb-lg-0" id="cloudflare">
                         <div class="mt-5">
                             <div class="mb-2">
                                 <svg class="bi bi-cloud fs-1 text-primary" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
@@ -1295,7 +1306,7 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center mb-1">
                     <div class="col-lg-6">
                         <div class="row gx-4 gx-lg-5 justify-content-center">
-                            <div class="col-lg-4 col-md-6 text-center mb-5 mb-lg-0">
+                            <div class="col-lg-4 col-md-6 text-center mb-5 mb-lg-0" id="email">
                                 <h3 class="h4 mb-2">Email</h3>
                                 <!-- .h3-outline .h4-display-->
                                 <a class="text-decoration-none" href="mailto:info@codex.gq" target="_blank" rel="noopener nofolow" aria-label="Email Us">
@@ -1311,7 +1322,7 @@
                                 <!-- .url-->
                             </div>
                             <!-- .col .element-->
-                            <div class="col-lg-4 col-md-6 text-center mb-5 mb-lg-0">
+                            <div class="col-lg-4 col-md-6 text-center mb-5 mb-lg-0" id="telegram">
                                 <h3 class="h4 mb-2">Telegram</h3>
                                 <!-- .h3-outline .h4-display-->
                                 <a class="text-decoration-none" href="https://t.me/codexgq" target="_blank" rel="noopener nofolow" aria-label="Telegram Us">
@@ -1366,7 +1377,7 @@
         <!-- X-tra Section-->
         <section class="py-1" id="logo">
             <div class="container align-items-center justify-content-center text-center">
-                <div class="pb-4" itemscope itemtype="https://schema.org/ImageObject">
+                <div class="pb-4" itemscope itemtype="https://schema.org/ImageObject"><!-- schema.org scope ImageObject-->
                     <a href="/" title="codexgq - Moving The Web">
                         <img class="img-fluid" src="data:image/gif;base64,R0lGODlhAQABAPAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://cdn.codex.gq/assets/logo.logoset/logo-cropped.svg" alt="Logotype" aria-hidden="true" />
                         <meta itemprop="width" content="512">
@@ -1375,8 +1386,8 @@
                         <link itemprop="url" href="assets/logo.logoset/logo-cropped.svg">
                     </a>
                 </div>
-                <!-- .url .img-->
-                <h4 itemscope itemtype="https://schema.org/SiteNavigationElement"><!-- hreflang-->
+                <!-- .url .img .ImageObject-->
+                <h4 itemscope itemtype="https://schema.org/SiteNavigationElement"><!-- h4-outline + hreflang + schema.org scope SiteNavigationElement-->
                     <meta itemprop="name" content="Choose your language!" />
                     <meta itemprop="description" content="We speak English and Russian. Other languages are available on-demand." />
                     <!-- .meta-->
@@ -1395,49 +1406,51 @@
                     </a>
                     <!-- .url .element-->                    
                 </h4>
-                <!-- .hreflang .h4-outline-->
+                <!-- .h4-outline .hreflang .SiteNavigationElement-->
             </div>
             <!-- .container-->
         </section>
         <!-- END X-tra Section-->
         <!-- Footer Menu-->
-        <section class="py-3">
-            <div class="container">
+        <section class="py-3" id="footer-menu">
+            <div class="container" itemscope itemtype="http://schema.org/Organization"><!-- schema.org scope Organization-->
                 <hr class="my-5">
                 <div class="row">
                     <!-- Social-->
-                    <div class="col-lg-8 col-md-8 mb-5 mb-md-0" itemscope itemtype="http://schema.org/Organization">
-                        <a itemprop="sameAs" class="text-decoration-none" href="https://www.linkedin.com/company/codexgq" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn">
+                    <div class="col-lg-8 col-md-8 mb-5 mb-md-0" id="social"><!-- schema.org scope sameAs-->
+                        <a itemprop="sameAs" class="text-decoration-none" href="https://www.linkedin.com/company/codexgq" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn" id="linkedin">
                             <svg class="bi bi-linkedin fs-1 text-primary btn-act btn-enl-lg" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
                             </svg>
                             <meta itemprop="name" content="LinkedIn" />
+                            <meta itemprop="description" content="Expand your professional community. Find us on LinkedIn." />
                             <!-- .meta-->
                         </a>
                         <!-- .url .bs-icon .element-->
-                        <a itemprop="sameAs" class="text-decoration-none ps-3" href="https://github.com/codexgq" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
+                        <a itemprop="sameAs" class="text-decoration-none ps-3" href="https://github.com/codexgq" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub" id="github">
                             <svg class="bi bi-github fs-1 text-primary btn-act btn-enl-lg" width="1.0em" height="1.0em" viewBox="0 0 16 16" fill="currentColor" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
                             </svg>
                             <meta itemprop="name" content="GitHub" />
+                            <meta itemprop="description" content="The home for our projects and Open Source initiatives. Technology, ideas, outlook." />
                             <!-- .meta-->
                         </a>
                         <!-- .url .bs-icon .element-->
                     </div>
-                    <!-- .col-->
+                    <!-- .col .sameAs-->
                     <!-- END Social-->
-                    <!-- Footer Navigation-->
-                    <div class="col-lg-2 col-md-4 mb-5 mb-md-0" itemscope itemtype="https://schema.org/SiteNavigationElement">
+                    <div class="col-lg-2 col-md-4 mb-5 mb-md-0" itemscope itemtype="https://schema.org/SiteNavigationElement"><!-- schema.org scope SiteNavigationElement-->
                         <meta itemprop="name" content="Our Projects" />
                         <meta itemprop="description" content="We run commercial and Open Source projects aimed to make the World better!" />
                         <!-- .meta-->
-                        <div class="text-uppercase text-muted mb-4">
+                        <div class="text-uppercase text-muted mb-4" id="projects">
                             <h2 class="fs-5">Projects</h2>
                             <!-- .h2-outline-->
                         </div>
                         <!-- .partition-->
                         <ul class="list-unstyled mb-0">
                             <li class="mb-2">
+                                <h3 style="display: none;">Store</h3>
                                 <a itemprop="url" class="list-unstyled-item text-decoration-none span-item border-bottom-1" href="https://store.codex.gq/" target="_blank" rel="noopener">
                                     <span itemprop="name" content="Online Store">Store</span>
                                     <meta itemprop="description" content="We have our own hosting and domain name registration services. Visit our Store!" />
@@ -1449,18 +1462,19 @@
                         </ul>
                         <!-- .array-->
                     </div>
-                    <!-- .col-->
-                    <div class="col-lg-2 col-md-4 mb-5 mb-md-0" itemscope itemtype="https://schema.org/SiteNavigationElement">
+                    <!-- .col .SiteNavigationElement-->
+                    <div class="col-lg-2 col-md-4 mb-5 mb-md-0" itemscope itemtype="https://schema.org/SiteNavigationElement"><!-- schema.org scope SiteNavigationElement-->
                         <meta itemprop="name" content="Legal Agreements" />
                         <meta itemprop="description" content="Your agreement with us includes but not limited to Terms, Privacy and Disclaimer." />
                         <!-- .meta--> 
-                        <div class="text-uppercase text-muted mb-4">
+                        <div class="text-uppercase text-muted mb-4" id="legal">
                             <h2 class="fs-5">Legal</h2>
                             <!-- .h2-outline-->
                         </div>
                         <!-- .partition-->
                         <ul class="list-unstyled mb-0">
-                            <li class="mb-2">
+                            <li class="mb-2" id="privacy">
+                                <h3 style="display: none;">Privacy</h3>
                                 <a itemprop="url" class="list-unstyled-item text-decoration-none span-item" href="legal/privacy.html">
                                     <span itemprop="name" content="Privacy Policy">Privacy</span>
                                     <meta itemprop="description" content="Our Privacy Policy explains how we collect, safeguard and disclose information that results from your use of our Service." />
@@ -1469,7 +1483,8 @@
                                 <!-- .url-->
                             </li>
                             <!-- .element-->
-                            <li class="mb-2">
+                            <li class="mb-2" id="terms">
+                                <h3 style="display: none;">Terms</h3>
                                 <a itemprop="url" class="list-unstyled-item text-decoration-none span-item" href="legal/terms.html">
                                     <span itemprop="name" content="Terms and Conditions">Terms</span>
                                     <meta itemprop="description" content="Our Terms and Conditions govern your use of our Platform including all directly related subdomains and applications." />
@@ -1478,7 +1493,8 @@
                                 <!-- .url-->
                             </li>
                             <!-- .element-->
-                            <li class="mb-2">
+                            <li class="mb-2" id="disclaimer">
+                                <h3 style="display: none;">Disclaimer</h3>
                                 <a itemprop="url" class="list-unstyled-item text-decoration-none span-item" href="legal/disclaimer.html">
                                     <span itemprop="name" content="Disclaimer">Disclaimer</span>
                                     <meta itemprop="description" content="Our liabilities are limited to as described in the Disclaimer Statement and related documents." />
@@ -1490,11 +1506,11 @@
                         </ul>
                         <!-- .array-->
                     </div>
-                    <!-- .col-->
+                    <!-- .col .SiteNavigationElement-->
                 </div>
                 <!-- .row-->
             </div>
-            <!-- .container-->
+            <!-- .container .Organization-->
         </section>
         <!-- END Footer Menu-->
         <!-- Scroll To Top Button HTML-->
@@ -1503,7 +1519,7 @@
         </svg>
         <!-- .bs-icon-->
         <!-- Footer-->
-        <footer class="bg-light py-5" itemscope itemtype="http://schema.org/WPFooter">
+        <footer class="bg-light py-5" itemscope itemtype="http://schema.org/WPFooter"><!-- schema.org scope WPFooter-->
             <div class="container px-4 px-lg-5">
                 <div class="small text-center text-dark">Copyright &copy; <span itemprop="copyrightYear">2014-2021</span> - codexgq, Inc.</div>
                 <!-- .plain-text-->
@@ -1513,9 +1529,10 @@
         </footer>
         <!-- END SITE CONTENT-->
         <!-- START Microdata Inline Markup -->
-        <div itemscope itemtype="http://schema.org/BreadcrumbList">
+        <!-- Breadcrumbs Markup-->
+        <div itemscope itemtype="http://schema.org/BreadcrumbList"><!-- schema.org scope BreadcrumbList-->
             <div style="display: none;">
-                <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+                <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><!-- START data-vocabulary.org.org scope Breadcrumb-->
                     <a itemprop="url" href="/" rel="index up up up" title="codexgq - Moving The Web">
                         <span itemprop="name" content="Home Page"></span>
                     </a>
@@ -1584,7 +1601,7 @@
             </div>
             <!-- .display-->
         </div>
-        <!-- .schema.org scope-->
+        <!-- .schema.org scope .Breadcrumbs Markup-->
         <!-- END Microdata Inline Markup -->
         <!-- Bootstrap Core JS-->
         <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
