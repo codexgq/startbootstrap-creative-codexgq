@@ -2,9 +2,9 @@ User-agent: *
 
 Disallow: /scripts/
 Disallow: /src/
-Disallow: package.json
-Disallow: package-lock.json
-Disallow: *?
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: *?=
 
 Crawl-delay: 0.1
 
