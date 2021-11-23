@@ -23,7 +23,7 @@ const filesToCache = [
 ];
 const resourcesToCache = [
 	'https://codex.gq/assets/favicon-package/android-chrome-144x144.png',
-	'https://codex.gq/assets/screenshots/desktop-homepage.png',
+	'https://codex.gq/assets/screenshots/mobile-homepage.png',
 	'https://codex.gq/assets/screenshots/mobile-about.png',
 	'https://codex.gq/assets/screenshots/mobile-services.png',
 	'https://codex.gq/assets/screenshots/mobile-solutions.png',
@@ -31,7 +31,7 @@ const resourcesToCache = [
 	'https://codex.gq/assets/screenshots/mobile-free.png',
 	'https://codex.gq/assets/screenshots/mobile-contact.png',
 	'https://codex.gq/assets/screenshots/mobile-store.png',
-	'https://codex.gq/assets/screenshots/mobile-homepage.png',
+	'https://codex.gq/assets/screenshots/desktop-homepage.png',
 	'https://codex.gq/assets/screenshots/desktop-hreflang.png',
 	'https://codex.gq/assets/screenshots/desktop-about.png',
 	'https://codex.gq/assets/screenshots/desktop-services.png',

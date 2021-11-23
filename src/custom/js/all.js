@@ -1,4 +1,65 @@
 /*!
+* Start Bootstrap - Creative v7.0.5 (https://startbootstrap.com/theme/creative)
+* Copyright 2013-2021 Start Bootstrap
+* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-creative/blob/master/LICENSE)
+*/
+
+// These scripts are aimed to improve UI & UX for the theme.
+
+window.addEventListener('DOMContentLoaded', event => {
+
+    // Define navigation bar shrink function.
+    var navbarShrink = function () {
+        const navbarCollapsible = document.body.querySelector('#mainNav');
+        if (!navbarCollapsible) {
+            return;
+        }
+        if (window.scrollY === 0) {
+            navbarCollapsible.classList.remove('navbar-shrink')
+        } else {
+            navbarCollapsible.classList.add('navbar-shrink')
+        }
+
+    };
+
+    // Shrink the navbar.
+    navbarShrink();
+
+    // Shrink the navbar when page is scrolled.
+    document.addEventListener('scroll', navbarShrink);
+
+    // Activate Bootstrap scrollspy on the main navigation element.
+    const mainNav = document.body.querySelector('#mainNav');
+    if (mainNav) {
+        new bootstrap.ScrollSpy(document.body, {
+            target: '#mainNav',
+            offset: 74,
+        });
+    };
+
+    // Collapse responsive navigation bar when toggler is visible.
+    const navbarToggler = document.body.querySelector('.navbar-toggler');
+    const responsiveNavItems = [].slice.call(
+        document.querySelectorAll('#navbarResponsive .nav-link')
+    );
+    responsiveNavItems.map(function (responsiveNavItem) {
+        responsiveNavItem.addEventListener('click', () => {
+            if (window.getComputedStyle(navbarToggler).display !== 'none') {
+                navbarToggler.click();
+            }
+        });
+    });
+
+    // Activate SimpleLightbox plugin for portfolio items.
+    // Uncomment the following lines to switch on SimpleLightbox functionality.
+    // NB: this should be in HTML <body>: <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+    // new SimpleLightbox({
+        // elements: '#portfolio a.portfolio-box'
+    // });
+
+});
+
+/*!
  * Custom JS - startbootstrap-creative-codexgq v1.0.0 (https://github.com/codexgq/startbootstrap-creative-codexgq)
  * Copyright 2014-2021 codexgq, Inc.
  * Licensed under MIT (https://github.com/codexgq/startbootstrap-creative-codexgq/blob/master/LICENSE)
@@ -13,7 +74,7 @@
 // Lazy Load Images (The running script is in the <head> inline)
 
     // Call the function.
-    deferimg('img[data-src],picture[srcset]')
+    deferimg('img[data-src],picture[srcset]');
 
 // HTML5 Link Prefetch and Page Prerender
 
@@ -61,7 +122,7 @@
     function topFunction() {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
-    }
+    };
 
 // Full Screen Navigation JS
 
@@ -70,19 +131,10 @@
     }
     function closeFullscreenNav() {
         document.getElementById("fullscreenNav").style.width = "0%";
-    }
+    };
 
 // Prevent Frame
 
     if (top != self) {
           top.location.href = self.location.href;
-        }
-
-// Application Cache
-
-function updateCache() {
-    // If you change the appcache manifest file and reload the page, the browser will download the new files in the cache, and then switch to the new cache.
-    window.applicationCache.addEventListener('updateready', function(){
-        window.applicationCache.swapCache();
-    }, false);
-}
+        };

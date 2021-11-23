@@ -15,21 +15,21 @@ This fork is SEO friendly, multilingual, and has its own features. It also has s
 ### Custom Implementation
 
 - Progressive Web Application
-- Application Cache
-- Lazy-loading
+- Extended Lazy-loading (scripts, styles, iframes, images)
 - HTML5 Link Prefetch
 - Page Prerender
-- Include HTML
 - Prevent Frame
 - Scroll to Top
+- Full Screen Overlay
 - PurifyCSS
 - Extended Meta Data for SEO and responsive browsing experience
 - Schema.org
 - Dublin Core
 - Multilingual
 - Offline
-- Windows 11 ready
 - Minor changes in UI & UX
+- Extra Custom Snippets
+- Minified and Obfuscated versions
 
 #### Important Notification
 
@@ -115,9 +115,17 @@ For Creative itself run `npm install` and then run `npm start` which will open u
 
 You must have npm installed in order to use this build environment.
 
+#### Master, Minified and Obfuscated Versions
+
+There are master, minified and obfuscated versions created at startbootstrap-creative-codexgq theme for your mind games and puzzles. Please refer to the source code to choose.
+
+- [Master](https://github.com/codexgq/startbootstrap-creative-codexgq/blob/master/src/custom/mdoc/master.mdoc)
+- [Minified](https://github.com/codexgq/startbootstrap-creative-codexgq/blob/master/src/custom/mdoc/minified.mdoc)
+- [Obfuscated](https://github.com/codexgq/startbootstrap-creative-codexgq/blob/master/src/custom/mdoc/obfuscated.mdoc)
+
 ### Contact Form
 
-The contact form available with this theme is prebuilt to use [SB Forms](https://startbootstrap.com/solution/contact-forms).
+The contact form available with the Creative theme is prebuilt to use [SB Forms](https://startbootstrap.com/solution/contact-forms).
 SB Forms is a simple form solution for adding functional forms to your theme. Since this theme is prebuilt using our
 SB Forms markup, all you need to do is sign up for [SB Forms on Start Bootstrap](https://startbootstrap.com/solution/contact-forms).
 
@@ -128,13 +136,28 @@ access key. Copy this and paste it into the `data-sb-form-api-token='API_TOKEN'`
 If you aren't using SB Forms, simply delete the custom data attributes from the form, and remove the link above the
 closing `</body>` tag to SB Forms.
 
-**NB:** There is no Contact Form onboard at startbootstrap-creative-codexgq. We use online contact row instead, and third parties services.
+**NB:** There is no Contact Form onboard at startbootstrap-creative-codexgq theme. We use online contact row instead, and third parties services.
+
+### Extra Custom Snippets
+
+The usage of extra custom snippets, scripts and styles is described in Docs.
+
+- [Scripts](https://github.com/codexgq/startbootstrap-creative-codexgq/blob/master/src/custom/mdoc/js.mdoc)
+- [Styles](https://github.com/codexgq/startbootstrap-creative-codexgq/blob/master/src/custom/mdoc/css.mdoc)
 
 ## Bugs and Issues
 
 ### Bugs and Issues of startbootstrap-creative-codexgq
 
 Have a bug or an issue with this template? [Open a new issue](https://github.com/codexgq/startbootstrap-creative-codexgq/issues) here on GitHub or leave a comment on the [official website](https://codex.gq/#contact).
+
+#### Debugging
+
+Debugging for Visual Studio Code, Chrome, Firefox and Microsoft Edge is available with `launch.json` configuration.
+
+#### Known Bugs
+
+Responsive menu and dropdown with Bootstrap 5 may not be functional from the box with some older browsers and OS. Bootstrap 5 has dropped the support of many older versions of browsers like Internet Explorer 10 and 11, Microsoft Edge < 16 (Legacy Edge), Firefox < 60, Safari and iOS Safari < 12, Chrome < 60. Known solutions on Stack Overflow and around not always work. So if you haven't updated your browser, operating system or a device, you are doomed to suffer. This is life. Meanwhile, codexgq Team works hard to make it easier.
 
 ### Bugs and Issues of Creative
 
@@ -148,13 +171,13 @@ codexgq, Inc. (CGQ) is doing fast, trendy and well secured web and cloud based p
 
 If you already have an app or a website, CGQ will conduct an audit, fix bugs, reduce the loading time of your project dramatically.
 
-If you create a project from the scratch, they will be happy to provide you a support in choosing a registrar, a hosting and a technology stack.
+If you create a project from the scratch, our Team will be happy to provide you a support in choosing a registrar, a hosting and a technology stack.
 
 CGQ also does digital marketing incl. SEO, and SMM. It has its own hosting and domain names registration. It provides solutions for remote work, cybersecurity, data science and cloud.
 
 #### Business Inquiries
 
-Visit [official website](https://codex.gq/) to submit an order or ask a question.
+Visit [official website](https://codex.gq/#contact) to submit an order or ask a question.
 
 The codexgq Project was created and is maintained by **[mitkine a.k.a. computer god](https://github.com/mitkine)**.
 

@@ -26,25 +26,13 @@ Based on super-progressive-web-apps project `(https://github.com/SuperPWA/Super-
 
 Licensed under GNU GPL `(https://github.com/SuperPWA/Super-Progressive-Web-Apps/blob/master/license.txt)`.
 
-This PWA is applied to Google Chrome and supported browsers, Android, iOS and Windows 10.
+This PWA is applied to Google Chrome and supported browsers, Android, iOS and Windows 10. It should be Windows 11 ready.
 
 ### PWA Manifest
 
 The manifest and related favicon package are built with RealFaviconGenerator `(https://realfavicongenerator.net/)`, Maskable.app `(https://maskable.app/)` and Monochrome.fyi `(https://monochrome.fyi/)`.
 
 We also recommend App Manifest Generator of Firebase `(https://app-manifest.firebaseapp.com/)` for this exersize, and Progressive Web Apps at web.dev `(https://web.dev/progressive-web-apps/)` as a knowledgebase.
-
-### Application Cache
-
-#### Light Version
-
-This easy but powerfull piece of code appeared courtesy to Shwetank Dixit of Dev.Opera `(https://github.com/operasoftware/devopera/blob/master/src/articles/_posts/2010-07-01-offline-applications-html5-appcache.md)`.
-
-Licenced under the Creative Commons Attribution 3.0 Unported (CC BY 3.0) `(https://creativecommons.org/licenses/by/3.0/)`.
-
-#### Extended Version
-
-An extended version of the Application Cache based on the original idea of Eric Bidelman of HTML5 Rocks (is now Web Fundamentals) is avalable at GitHub `(https://github.com/codexgq/startbootstrap-creative-codexgq/blob/master/src/custom/js/appcache.js)`.
 
 ### Lazy-loading
 
@@ -82,11 +70,37 @@ W3Schools `(https://www.w3schools.com/)`.
 Licensed under MIT `(https://github.com/codexgq/startbootstrap-creative-codexgq/blob/master/LICENSE)`.
 
 - Scroll To Top Button
-- Include HTML (includes any file content into visual HTML)
+- Other
 
 ### Prevent Frame
 
 This script is based on a number of brilliant ideas grooved from Stack Overflow `(https://stackoverflow.com/)`.
+
+### Extra Custom Snippets
+
+#### Application Cache
+
+**Light Version:**
+
+This easy but powerfull piece of code appeared courtesy to Shwetank Dixit of Dev.Opera `(https://github.com/operasoftware/devopera/blob/master/src/articles/_posts/2010-07-01-offline-applications-html5-appcache.md)`.
+
+Licenced under the Creative Commons Attribution 3.0 Unported (CC BY 3.0) `(https://creativecommons.org/licenses/by/3.0/)`.
+
+GitHub: `(https://github.com/codexgq/startbootstrap-creative-codexgq/blob/master/src/custom/js/simple-appcache.js)`
+
+**Extended Version:**
+
+An extended version of the Application Cache based on the original idea of Eric Bidelman of HTML5 Rocks (is now Web Fundamentals) is avalable at GitHub `(https://github.com/codexgq/startbootstrap-creative-codexgq/blob/master/src/custom/js/appcache.js)`.
+
+#### Include Content
+
+Includes any file content into visual HTML. Based on the W3Schools 'How TO' templates for Include HTML snippets.
+
+#### Disable Right Click
+
+This is inspired by and based on the Stack Overflow pipeline.
+
+**NB:** These Custom Snippets are not included in the master version from the box. Please refer to the Docs `(https://github.com/codexgq/startbootstrap-creative-codexgq/blob/master/src/custom/mdoc/js.mdoc)` for usage.
 
 ### Icons
 
@@ -96,17 +110,39 @@ All inline SVG icons are Bootstrap Icons `(https://icons.getbootstrap.com/)`.
 
 Shortcuts icons made by itim2101 `(https://www.flaticon.com/authors/itim2101)` from Flaticon `(https://www.flaticon.com/)`.
 
+### Screenshots
+
+Screenshots are created manually based on the recommendations of PWABuilder `(https://www.pwabuilder.com/)`.
+
+### Splashscreens
+
+Splashscreens are made with Appscope `(https://appsco.pe/developer/splash-screens)` and Human Interface Guidelines by Apple Developer `(https://developer.apple.com/design/human-interface-guidelines/)`. We tried to cover most of sizes, ratios, and devices but this is the endless game.
+
+**NB:** Inline HTML markup for splashscreens doesn't pass though W3C Validation. PWA Manifest doesn't have a splashscreens property. Apple doesn't support PWA functionality in full. So someone has to do something. We believe in common sence.
+
+### AppImages
+
+App images for online stores are created with the help of PWABuilder imageGenerator `(https://www.pwabuilder.com/imageGenerator)` and MakeAppIcon `(https://makeappicon.com/)`.
+
 ### Official Visualization
 
 For credentials for the official visualization including but not limited to favicons, icons, logotypes, logomarks, snippets, thumbnails, and etc. please refer to the source code of corresponding SVG images on GitHub `(https://github.com/codexgq/startbootstrap-creative-codexgq/tree/master/assets)`.
 
 ### Other Images
 
-#### Images Onboard
+#### Image Assets
 
 The main background image is inherit from the Creative theme by Start Bootstrap. All other images are taken from the Internet search. For copyright issues please contact us immediately. We will be happy to make credentials for authors.
 
-#### Image Tools
+#### Map
+
+The map is created with Yandex Map Constructor `(https://yandex.com/map-constructor/)`.
+
+#### Gifs
+
+We use an extremly light .gif image for lazy-loading converted to Base64 asset.
+
+### Image Tools
 
 We used a plenty of online tools and apps for image creation, optimization and convertion:
 
@@ -135,13 +171,22 @@ We used Visual Studio Code `(https://code.visualstudio.com/)` for most of the ca
 - BeautifyTools `(https://beautifytools.com/)`
 - HTML Strip `(https://www.htmlstrip.com/)`
 - Online HTML Code Beautifier `(https://htmlbeautify.com/)`
+- HTML Minifier `(https://minify-html.com/)`
 - Online JavaScript Beautifier `(https://beautifier.io/)`
 - Clean CSS `(https://www.cleancss.com/)`
 - Web Code Tools `(https://webcode.tools/)`
+- SnapBuilder `(https://snapbuilder.com/)`
+
+**Inspect Source Code:**
+
+- Master: `(https://codex.gq/src/custom/mdoc/master.mdoc)`
+- Minified: `(https://codex.gq/src/custom/mdoc/minified.mdoc)`
+- Obfuscated: `(https://codex.gq/src/custom/mdoc/obfuscated.mdoc)`
 
 #### Validation
 
 - The W3C Markup Validation Service `(https://validator.w3.org/)`
+- CSS Validation Service `(https://jigsaw.w3.org/css-validator/)`
 - Validator Schema.org `(https://validator.schema.org/)`
 - Reach Results Test `(https://search.google.com/test/rich-results)`
 - Lighthouse `(https://developers.google.com/web/tools/lighthouse)`
@@ -180,6 +225,8 @@ This website and its content are build by codexgq Team based on the Creative the
 The source code and tools by third-parties are used as per the Disclaimer statement above.
 
 Copyrights, licenses and open source code are as mentioned below.
+
+All lists may be not exhaustive. Please contact us immediately if you feel that we forget something or someone. We will be happy to update our notes then.
 
 ### codexgq - Moving The Web
 

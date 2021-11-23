@@ -1,8 +1,12 @@
 User-agent: *
 
-Disallow: /
+Disallow: /scripts/
+Disallow: /src/
+Disallow: package.json
+Disallow: package-lock.json
+Disallow: *?
 
-Crawl-delay: 
+Crawl-delay: 0.1
 
 Host: https://codex.gq/
 
