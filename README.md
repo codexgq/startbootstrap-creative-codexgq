@@ -149,7 +149,7 @@ The usage of extra custom snippets, scripts and styles is described in Docs.
 
 ### Bugs and Issues of startbootstrap-creative-codexgq
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/codexgq/startbootstrap-creative-codexgq/issues) here on GitHub or leave a comment on the [official website](https://codex.gq/#contact).
+Have a bug, vulnerability or an issue with this template? [Open a new issue](https://github.com/codexgq/startbootstrap-creative-codexgq/issues) here on GitHub or leave a comment on the [official website](https://codex.gq/#contact).
 
 #### Debugging
 
@@ -162,6 +162,16 @@ Responsive menu and dropdown with Bootstrap 5 may not be functional from the box
 ### Bugs and Issues of Creative
 
 Have a bug or an issue with this template? [Open a new issue](https://github.com/StartBootstrap/startbootstrap-creative/issues) here on GitHub or leave a comment on the [theme overview page at Start Bootstrap](https://startbootstrap.com/theme/creative/).
+
+## Security
+
+### Secirity Policy
+
+For security and vulnerability issues please refer to [SECURITY.md](https://github.com/codexgq/startbootstrap-creative-codexgq/blob/master/SECURITY.md#security-policy).
+
+### Code Scannig
+
+Code scanning and analysis is done with [CodeGL](https://github.com/codexgq/startbootstrap-creative-codexgq/blob/master/.github/workflows/codeql-analysis.yml).
 
 ## About
 
@@ -202,14 +212,14 @@ Start Bootstrap was created by and is maintained by **[David Miller](https://dav
 
 Start Bootstrap is based on the [Bootstrap](https://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
 
+## Other
+
+For legal issues, acknowledgements, and third-parties code disclaimer please refer to [declaration.md](https://github.com/codexgq/startbootstrap-creative-codexgq/blob/master/declaration.md#open-source-declaration).
+
 ## Copyright and Licenses
 
 Copyright 2013-2021 Start Bootstrap LLC. Code released under the [MIT](https://github.com/StartBootstrap/startbootstrap-creative/blob/master/LICENSE) license.
 
 Copyright 2014-2021 codexgq, Inc. Code released under the [MIT](https://github.com/codexgq/startbootstrap-creative-codexgq/blob/master/LICENSE) license.
-
-## Other
-
-For legal issues, acknowledgements, and third-parties code disclaimer please refer to [declaration.md](https://github.com/codexgq/startbootstrap-creative-codexgq/blob/master/declaration.md#open-source-declaration).
 
 **[⬆ back to top](#startbootstrap-creative-codexgq)**

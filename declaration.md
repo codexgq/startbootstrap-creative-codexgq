@@ -16,7 +16,7 @@ For details incl. copyright and licenses please refer to given acknowledgements 
 
 ## Acknowledgements
 
-The following given acknowledgments are presented in order of appearance of the corresponding event within HTML.
+The following given acknowledgements are presented in order of appearance of the corresponding event within HTML.
 
 ### Progressive Web Application (PWA)
 
