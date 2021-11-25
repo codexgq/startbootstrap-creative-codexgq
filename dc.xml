@@ -10,8 +10,8 @@
 		<documentation xml:lang="en" source="http://dublincore.org/documents/2002/07/31/dcmes-xml/"></documentation>
 	</annotation>
 	<import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/xml.xsd"/>
-	<dc:subject>web development, digital marketing, wordpress, bootstrap, websites, codexgq</dc:subject>
-	<dc:description>Development and promotion of the best sites, landing pages, blogs, and online stores.</dc:description>
+	<dc:subject>web development, digital marketing, wordpress, bootstrap, websites, hosting, domain names</dc:subject>
+	<dc:description>Development and promotion of the best sites, landing pages, blogs, and online stores. Digital services, solutions and products for global and local markets.</dc:description>
 	<dc:abstract>Web Development</dc:abstract>
 	<dc:title>codexgq - Moving The Web</dc:title>
 	<dcterms:alternative>codexgq - Moving The Web</dcterms:alternative>

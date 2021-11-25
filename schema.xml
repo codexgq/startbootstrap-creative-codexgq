@@ -7,7 +7,7 @@
     <url>https://codex.gq/</url>
     <inLanguage>en, ru</inLanguage>
     <name>codexgq - Moving The Web</name>
-    <description>Development and marketing of the best websites, landing pages, blogs, and online stores.</description>
+    <description>Development and marketing of the best websites, landing pages, blogs, and online stores. Digital services, solutions and products for global and local markets.</description>
     <potentialAction>
       <XML_Serializer_Tag>SearchAction</XML_Serializer_Tag>
       <target>https://codex.gq/?s={query}</target>
@@ -52,6 +52,10 @@
   <sameAs>https://store.codex.gq/</sameAs>
   <sameAs>https://www.codex.gq/</sameAs>
   <sameAs>https://codex.gcdn.co/</sameAs>
+  <sameAs>https://codexgq.onrender.com/</sameAs>
+  <sameAs>https://cgq.onrender.com/</sameAs>
+  <sameAs>https://cgq.business.site/</sameAs>
+  <sameAs>https://z8t7z6c9.hostrycdn.com/</sameAs>
   <XML_Serializer_Tag>https://schema.org/</XML_Serializer_Tag>
   <XML_Serializer_Tag>ServiceChannel</XML_Serializer_Tag>
   <availableLanguage>

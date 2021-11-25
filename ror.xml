@@ -6,23 +6,23 @@
 
 <item>
      <link>https://codex.gq/</link>
-     <title></title>
-     <description>Development and marketing of the best websites, landing pages, blogs, and online stores.</description>
+     <title>codexgq - Moving The Web</title>
+     <description>Development and marketing of the best websites, landing pages, blogs, and online stores. Digital services, solutions and products for global and local markets.</description>
      <ror:updatePeriod></ror:updatePeriod>
      <ror:sortOrder>0</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 <item>
      <link>https://codex.gq/ru/</link>
-     <title></title>
-     <description>Разработка и продвижение лучших сайтов, лэндингов, блогов и интернет-магазинов.</description>
+     <title>codexgq - Веб-студия 2.0</title>
+     <description>Разработка и продвижение лучших сайтов, лэндингов, блогов и интернет-магазинов на WordPress и Bootstrap. Хостинг и регистрация доменов.</description>
      <ror:updatePeriod></ror:updatePeriod>
      <ror:sortOrder>1</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 <item>
      <link>https://codex.gq/legal/privacy.html</link>
-     <title></title>
+     <title>Privacy Policy</title>
      <description>codexgq, Inc. Privacy Policy</description>
      <ror:updatePeriod></ror:updatePeriod>
      <ror:sortOrder>1</ror:sortOrder>
@@ -30,7 +30,7 @@
 </item>
 <item>
      <link>https://codex.gq/legal/terms.html</link>
-     <title></title>
+     <title>Terms and Conditions</title>
      <description>codexgq, Inc. Terms and Conditions</description>
      <ror:updatePeriod></ror:updatePeriod>
      <ror:sortOrder>1</ror:sortOrder>
@@ -38,7 +38,7 @@
 </item>
 <item>
      <link>https://codex.gq/legal/disclaimer.html</link>
-     <title></title>
+     <title>Disclaimer</title>
      <description>codexgq, Inc. Disclaimer Statement</description>
      <ror:updatePeriod></ror:updatePeriod>
      <ror:sortOrder>1</ror:sortOrder>
@@ -47,7 +47,7 @@
 <item>
      <link>https://codex.gq/legal/</link>
      <title>Legal Agreements</title>
-     <description>Legal Agreements</description>
+     <description>codexgq, Inc. Legal Agreements</description>
      <ror:updatePeriod></ror:updatePeriod>
      <ror:sortOrder>2</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
