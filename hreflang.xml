@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+	<url>
+		<loc>https://codex.gq/</loc>
+		<xhtml:link rel="alternate" hreflang="en" href="https://codex.gq/" />
+		<xhtml:link rel="alternate" hreflang="ru" href="https://codex.gq/ru/" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://codex.gq/" />
+	</url>
+	<url>
+		<loc>https://codex.gq/ru/</loc>
+		<xhtml:link rel="alternate" hreflang="en" href="https://codex.gq/" />
+		<xhtml:link rel="alternate" hreflang="ru" href="https://codex.gq/ru/" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://codex.gq/" />
+	</url>
+</urlset>
