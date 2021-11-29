@@ -87,6 +87,9 @@ To begin using this template, choose one of the following options to get started
 - Install using npm: `npm i startbootstrap-creative`
 - Clone the repo: `git clone https://github.com/StartBootstrap/startbootstrap-creative.git`
 - [Fork, Clone, or Download on GitHub](https://github.com/StartBootstrap/startbootstrap-creative)
+- [Alternative Clone or Download on GitHub](https://github.com/codexgq/startbootstrap-creative-codexgq/tree/gh-pages)
+
+Alternative source code is avalable from the `gh-pages` branch of startbootstrap-creative-codexgq.
 
 ## Usage
 
@@ -94,7 +97,7 @@ To begin using this template, choose one of the following options to get started
 
 After downloading, simply edit the HTML and CSS files included with `dist` directory of Creative. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
 
-All custom things are already in `master` directory for startbootstrap-creative-codexgq. There is no `dist` directory in this fork.
+All custom things are already in the `master` branch of startbootstrap-creative-codexgq. There is no `dist` directory in the master branch of this fork. It is read-to-go as it is.
 
 ### Advanced Usage
 
@@ -117,7 +120,7 @@ You must have npm installed in order to use this build environment.
 
 #### Master, Minified and Obfuscated Versions
 
-There are master, minified and obfuscated versions created at startbootstrap-creative-codexgq theme for your mind games and puzzles. Please refer to the source code to choose.
+There are master, minified and obfuscated versions created at startbootstrap-creative-codexgq theme for your mind games and puzzles. Please refer to the source code to inspect and choose.
 
 - [Master](https://github.com/codexgq/startbootstrap-creative-codexgq/blob/master/src/custom/mdoc/master.mdoc)
 - [Minified](https://github.com/codexgq/startbootstrap-creative-codexgq/blob/master/src/custom/mdoc/minified.mdoc)
@@ -140,10 +143,7 @@ closing `</body>` tag to SB Forms.
 
 ### Extra Custom Snippets
 
-The usage of extra custom snippets, scripts and styles is described in Docs.
-
-- [Scripts](https://github.com/codexgq/startbootstrap-creative-codexgq/blob/master/src/custom/mdoc/js.mdoc)
-- [Styles](https://github.com/codexgq/startbootstrap-creative-codexgq/blob/master/src/custom/mdoc/css.mdoc)
+The extra custom snippets, scripts and styles are available in [custom source directory](https://github.com/codexgq/startbootstrap-creative-codexgq/tree/master/src/custom). All the code is obviously named and well commented.
 
 ## Bugs and Issues
 
