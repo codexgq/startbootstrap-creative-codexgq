@@ -4,7 +4,6 @@ Disallow: /scripts/
 Disallow: /src/
 Disallow: /package.json
 Disallow: /package-lock.json
-Disallow: *?=
 
 Host: https://codex.gq/
 
@@ -12,3 +11,5 @@ Sitemap: https://codex.gq/sitemap.xml
 Sitemap: https://codex.gq/ror.xml
 Sitemap: https://codex.gq/hreflang.xml
 Sitemap: https://codex.gq/urllist.txt
+
+Sitemap: https://a193604.sitemaphosting.com/4135619/sitemap.xml
