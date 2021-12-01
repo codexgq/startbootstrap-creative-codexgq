@@ -1,0 +1,22 @@
+<item turbo="true">
+  <title>codexgq - Moving The Web</title>
+  <link>https://codex.gq</link>
+  <turbo:content>
+    <![CDATA[
+      <header>
+        <h1>codexgq - Moving The Web</h1>
+        <h2>Web Studio 2.0</h2>
+        <figure>
+          <img src="https://codex.gq/assets/img/bg-masthead.jpg">
+		  <figcaption>Creating prominent web projects! Deploying digital ecosystems you dream of.</figcaption>
+        </figure>
+      </header>
+      <p>We make fast, trendy and highly secured web and cloud assets, compose digital stories that people love, using advanced technologies for simple solutions to complex problems.</p>
+      <p>Cloud hosting with an unlimited plan and a domain name in a zone of your choice are provided free of charge when ordering a turnkey website. Cloudflare is included as well.</p>
+      <button formaction="https://yandex.ru/business/widget/request/company/155957728887"
+              data-background-color="#5B97B0"
+              data-color="white"
+              data-primary="true">Order</button>
+    ]]>
+    </turbo:content>
+</item>
