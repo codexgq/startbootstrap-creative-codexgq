@@ -6,9 +6,9 @@ Disallow: /package.json
 Disallow: /package-lock.json
 Disallow: *?=
 
-Crawl-delay: 0.1
-
 Host: https://codex.gq/
 
 Sitemap: https://codex.gq/sitemap.xml
+Sitemap: https://codex.gq/ror.xml
+Sitemap: https://codex.gq/hreflang.xml
 Sitemap: https://codex.gq/urllist.txt
