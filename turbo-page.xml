@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:yandex="http://news.yandex.ru" xmlns:media="http://search.yahoo.com/mrss/" xmlns:turbo="http://turbo.yandex.ru" version="2.0">
+<rss xmlns:yandex="http://news.yandex.ru"
+  xmlns:media="http://search.yahoo.com/mrss/"
+  xmlns:turbo="http://turbo.yandex.ru" version="2.0">
   <channel>
+    <link>https://codex.gq</link>
+    <title>codexgq - Moving The Web</title>
+    <description>Development and marketing of the best websites, landing pages, blogs, and online stores. Digital services, solutions and products for global and local markets.</description>
+    <language>en</language>
+    <turbo:analytics type="Yandex" id="61319407"></turbo:analytics>
+    <turbo:analytics type="Google" id="UA-157525432-1"></turbo:analytics>
     <item turbo="true">
       <link>https://codex.gq</link>
-      <title>codexgq - Moving The Web</title>
-      <description>Development and marketing of the best websites, landing pages, blogs, and online stores. Digital services, solutions and products for global and local markets.</description>
-      <language>en</language>
-      <turbo:analytics type="Yandex" id="61319407"></turbo:analytics>
-      <turbo:analytics type="Google" id="UA-157525432-1"></turbo:analytics>
+      <author>codexgq</author>
       <turbo:content><![CDATA[
       <header>
         <h1>codexgq - Moving The Web</h1>
@@ -25,11 +29,11 @@
       <p>We also run our own hosting and domain names registration. Visit our <a href="https://store.codex.gq/" target="_blank" rel="noopener">Store</a>.</p>
       <h2>Special Offer</h2>
       <p>Cloud hosting with an unlimited plan and a domain name in a zone of your choice are provided free of charge when ordering a turnkey website. Cloudflare is included as well.</p>
-      <button formaction="https://yandex.ru/business/widget/request/company/155957728887" data-background-color="#cd2653" data-color="white" data-primary="true">Order</button>
+      <button formaction="https://codex.gq/#contact" data-background-color="#cd2653" data-color="white" data-primary="true">Order</button>
       <h3>Code Is Poetry</h3>
       <p>Stay tuned in the Cloud while we're moving the Web.</p>
       <p><b>Keep Calm and Code!</b></p>
-    ]]></turbo:content>
+    ]]>      </turbo:content>
     </item>
   </channel>
 </rss>
