@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
 <channel>
-  <title>ROR Sitemap for https://codex.gq/</title>
-  <link>https://codex.gq/</link>
-
 <item>
      <link>https://codex.gq/</link>
      <title>codexgq - Moving The Web</title>
@@ -54,4 +51,3 @@
 </item>
 </channel>
 </rss>
-  
