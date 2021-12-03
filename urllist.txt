@@ -3,6 +3,7 @@ https://codex.gq/ru/
 https://codex.gq/opensearch.xml
 https://codex.gq/schema.xml
 https://codex.gq/dc.xml
+https://codex.gq/rss.xml
 https://codex.gq/legal/privacy.html
 https://codex.gq/legal/terms.html
 https://codex.gq/legal/disclaimer.html
