@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:atom="http://www.w3.org/2005/Atom"
+    xmlns:media="http://search.yahoo.com/mrss/"
+    xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+    xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+    xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+    xmlns:georss="http://www.georss.org/georss"
+    xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" version="2.0">
+    <channel>
+        <title><![CDATA[ codexgq - Moving The Web :: Feed ]]></title>
+        <link>https://codex.gq/</link>
+        <description><![CDATA[ Development and marketing of the best websites, landing pages, blogs, and online stores. Digital services, solutions and products for global and local markets. ]]></description>
+        <image>
+            <url>https://codex.gq/assets/icons/rss-image-31x31.png</url>
+            <title>codexgq - Moving The Web :: Feed</title>
+            <link>https://codex.gq/</link>
+        </image>
+        <language>
+            <![CDATA[ en ]]>
+        </language>
+        <managingEditor>
+            <![CDATA[ am@codex.gq (Editor-in-Chief) ]]>
+        </managingEditor>
+        <webMaster>
+            <![CDATA[ info@codex.gq (codexgq WebDev Team) ]]>
+        </webMaster>
+        <atom:link href="https://codex.gq/rss.xml" rel="self" type="application/rss+xml"/>
+
+        <item>
+            <title><![CDATA[ codexgq - Moving The Web ]]></title>
+            <link>https://codex.gq/</link>
+            <guid isPermaLink="true">https://codex.gq/</guid>
+            <description><![CDATA[ Development and marketing of the best websites, landing pages, blogs, and online stores. Digital services, solutions and products for global and local markets. ]]></description>           
+            <content:encoded>
+                <![CDATA[ 
+                    <h1>Creating prominent web projects!</h1>
+                    <h2><code>Deploying digital ecosystems you dream of.</code></h2>
+                    <h2>About us at a glance:</h2>
+                    <p>We make fast, trendy and highly secured web and cloud assets, compose digital stories that people love, using advanced technologies for simple solutions to complex problems.</p>
+                    <p>The agency does development and marketing of the best websites, landing pages, blogs, and online stores. We provide our services for global and local markets.</p>
+                    <h2>We've Got What You Need!</h2>
+                    <p>Cloud hosting with an unlimited plan and a domain name in a zone of your choice are provided free of charge when ordering a turnkey website. Cloudflare is included as well.</p>
+                    <h2>And that's not all!</h2>
+                    <p>We have our own hosting and domain names registration services. We are dedicated to provide everything you need for your online presence, and offer free hosting and domain for everyone.</p>
+                ]]>
+            </content:encoded>
+            <dc:creator>
+                <![CDATA[ codexgq ]]>
+            </dc:creator>
+        </item>
+
+        <item>
+            <title><![CDATA[ codexgq - Веб-студия 2.0 ]]></title>
+            <link>https://codex.gq/ru/</link>
+            <guid isPermaLink="true">https://codex.gq/ru/</guid>
+            <description><![CDATA[ Разработка и продвижение лучших сайтов, лэндингов, блогов и интернет-магазинов на WordPress и Bootstrap. Хостинг и регистрация доменов. ]]></description>
+            <content:encoded>
+                <![CDATA[ 
+                    <p>
+                        Если у Вас уже есть сайт, наши специалисты проведут аудит, исправят ошибки, ускорят загрузку Вашего ресурса в несколько раз.
+                    </p>
+                    <p>
+                        Если Вы создаёте проект с нуля, будем рады оказать поддержку в выборе регистратора, хостинга и пакета технологических решений.
+                    </p>
+                    <p>
+                        Настроим SEO, поможем с продвижением в социальных сетях. Создадим полноценную цифровую экосистему.
+                    </p>
+                    <p>
+                        Работаем по методу Станиславского:
+                    </p>
+                    <p>
+                        <cite>
+                            Проще, выше, легче, веселее!
+                        </cite>
+                    </p>
+                    <p>
+                        Наши разработчики помогут реализовать Ваши самые смелые проекты.
+                    </p> 
+                ]]>
+            </content:encoded>            
+            <dc:creator>
+                <![CDATA[ codexgq ]]>
+            </dc:creator>
+        </item>
+
+        <item>
+            <title><![CDATA[ Privacy Policy ]]></title>
+            <link>https://codex.gq/legal/privacy.html</link>
+            <guid isPermaLink="true">https://codex.gq/legal/privacy.html</guid>
+            <description><![CDATA[ codexgq, Inc. Privacy Policy ]]></description>
+            <content:encoded>
+                <![CDATA[ 
+                    <p><b>codexgq, Inc.</b> (“us”, “we”, or “our”) operates <b>codex.gq</b> (hereinafter referred to as <b>“Service”</b>).</p>
+                    <p>Our Privacy Policy governs your visit to <b>codex.gq</b>, and explains how we collect, safeguard and disclose information that results from your use of our Service.</p>
+                    <p>We use your data to provide and improve Service. By using Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, the terms used in this Privacy Policy have the same meanings as in our Terms and Conditions.</p>
+                    <p>Our Terms and Conditions (<b>“Terms”</b>) govern all use of our Service and together with the Privacy Policy constitutes your agreement with us (<b>“agreement”</b>).</p> 
+                ]]>
+            </content:encoded>
+            <dc:creator>
+                <![CDATA[ codexgq ]]>
+            </dc:creator>
+        </item>
+
+        <item>
+            <title><![CDATA[ Terms and Conditions ]]></title>
+            <link>https://codex.gq/legal/terms.html</link>
+            <guid isPermaLink="true">https://codex.gq/legal/terms.html</guid>
+            <description><![CDATA[ codexgq, Inc. Terms and Conditions ]]></description>
+            <content:encoded>
+                <![CDATA[ 
+                    <p>These Terms and Conditions (“Terms”, “Terms of Service”) govern your use of our website located in the Internet at <b>codex.gq</b> including all directly related subdomains and applications (together or individually “Service”, “Platform”) operated by <b>codexgq, Inc.</b> (“Company”, “we”, “our”, “us”).</p>
+                    <p>Our Privacy Policy (“Privacy”) also governs your use of our Service and explains how we collect, safeguard and disclose information that results from your use of our web pages.</p>
+                    <p>Your agreement with us includes these Terms and our Privacy Policy. Our liabilities are limited to as described in the Disclaimer statement (“Disclaimer”). Terms, Privacy and Disclaimer are mentioned together but not limited to as “Agreements”. You acknowledge that you have read and understood all the Agreements and corresponding legislation concerned to the Service, and agree to be bound of them.</p>
+                    <p>If you do not agree with (or cannot comply with) Agreements, then you may not use the Service, but please let us know by emailing at <b>info@codex.gq</b> so we can try to find a solution. These Terms apply to all visitors, users and others who wish to access or use the Service.</p>
+                ]]>
+            </content:encoded>
+            <dc:creator>
+                <![CDATA[ codexgq ]]>
+            </dc:creator>
+        </item>
+
+        <item>
+            <title><![CDATA[ Disclaimer Statement ]]></title>
+            <link>https://codex.gq/legal/disclaimer.html</link>
+            <guid isPermaLink="true">https://codex.gq/legal/disclaimer.html</guid>
+            <description><![CDATA[ codexgq, Inc. Disclaimer Statement ]]></description>
+            <content:encoded>
+                <![CDATA[ 
+                    <p>The information provided by <b>codexgq, Inc.</b> (“Company”, “we”, “our”, “us”) on <b>codex.gq</b> (the “Site” as well as “Service”, “Platform” as mentioned in Agreements) is for general informational purposes only. All information on the Site is provided in good faith, however we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the Site.</p>
+                ]]>
+            </content:encoded>
+            <dc:creator>
+                <![CDATA[ codexgq ]]>
+            </dc:creator>
+        </item>
+
+    </channel>
+</rss>
