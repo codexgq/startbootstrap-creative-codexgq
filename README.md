@@ -218,8 +218,8 @@ For legal issues, acknowledgements, and third-parties code disclaimer please ref
 
 ## Copyright and Licenses
 
-Copyright 2013-2021 Start Bootstrap LLC. Code released under the [MIT](https://github.com/StartBootstrap/startbootstrap-creative/blob/master/LICENSE) license.
+Copyright 2013-2022 Start Bootstrap LLC. Code released under the [MIT](https://github.com/StartBootstrap/startbootstrap-creative/blob/master/LICENSE) license.
 
-Copyright 2014-2021 codexgq, Inc. Code released under the [MIT](https://github.com/codexgq/startbootstrap-creative-codexgq/blob/master/LICENSE) license.
+Copyright 2014-2022 codexgq, Inc. Code released under the [MIT](https://github.com/codexgq/startbootstrap-creative-codexgq/blob/master/LICENSE) license.
 
 **[⬆ back to top](#startbootstrap-creative-codexgq)**
