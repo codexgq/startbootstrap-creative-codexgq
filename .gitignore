@@ -1,2 +1,6 @@
+# Default Repo Settings
 node_modules
 .DS_Store
+
+# Serverless Dxirectories
+.serverless/
