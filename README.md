@@ -50,7 +50,7 @@ All `Bootstrap Icons` are inline SVG icons for better performance and stability.
 
 ### Preview of startbootstrap-creative-codexgq
 
-[![Preview](https://codex.gq/assets/screenshots/desktop-homepage-preview.png)](https://codex.gq/)
+[![Preview](https://github.com/codexgq/startbootstrap-creative-codexgq/blob/master/assets/screenshots/desktop-homepage-preview.png)(https://codex.gq/)
 
 **[View Live Preview](https://codexgq.github.io/startbootstrap-creative-codexgq/)**
 
