@@ -177,13 +177,7 @@ Code scanning and analysis is done with [CodeGL](https://github.com/codexgq/star
 
 ### About CodexGQ
 
-codexgq, Inc. (CGQ) is doing fast, trendy and well secured web and cloud based projects since 2014.
-
-If you already have an app or a website, CGQ will conduct an audit, fix bugs, reduce the loading time of your project dramatically.
-
-If you create a project from the scratch, our Team will be happy to provide you a support in choosing a registrar, a hosting and a technology stack.
-
-CGQ also does digital marketing incl. SEO, and SMM. It has its own hosting and domain names registration. It provides solutions for remote work, cybersecurity, data science and cloud.
+`digital inqubator | acquired as lasagna`
 
 #### Business Inquiries
 
